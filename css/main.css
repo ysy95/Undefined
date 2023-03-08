@@ -1,0 +1,317 @@
+@charset "utf-8";
+a{text-decoration: none;}
+#game{
+  position: relative;
+  margin-top:80px;
+  background-image: url('../img/main_background1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+
+}
+#game h2, .game--video h2{
+  display: none;
+}
+.game--wrap{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+}
+.game--video{
+  overflow:hidden;
+  margin-top: 50px;
+  border-radius: 25px;
+}
+.game--video video{
+  width: 700px;
+  height: 418px;
+}
+.game--site{
+  width:410px;
+  height: 317px;
+  transform: translateY(110px);
+  text-align: center;
+}
+.game--site img{
+  width:408px;
+}
+.game--site p{
+  color: var(--m-color06);
+  font-size: var(--f-size03);
+  margin-top: 25px;
+}
+.game--site a{
+  transform: translateY(50px);
+  margin: 0 auto;
+  display: block;
+  width:306px;height: 55px;
+  background-color:var(--m-color01);
+  line-height: 55px;
+  border-radius: 5px;
+  color: var(--m-color02);
+  font-weight: 600;
+}
+
+.game--list{
+  display: flex;
+  width: 1200px;
+  margin: 50px auto 0px auto;
+  justify-content: space-between;
+
+}
+.game--list li{
+  width: 280px;
+  height: 170px;
+  overflow: hidden;
+}
+.game--list figure{
+  position: relative;
+}
+.game--list figure img{
+  width: 100%;
+}
+.game--list figcaption{
+  width: 100%;
+  line-height: 40px;
+  background-color:rgba(79, 50, 32,0.5);
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  height: 40px;
+  color: var(--m-color05);
+  font-weight: 500;
+  font-size: var(--f-size02);
+}
+/* 넷마블 서식 */
+#netmarble{
+  position: relative;
+  padding: 50px 0px;
+  background-color: var(--m-color01);
+}
+#netmarble article{
+  border-radius: 25px;
+  box-shadow: 1px 1px 5px #888;
+}
+.netmarble--wrap{
+  width: 1200px;
+  margin: 50px auto;
+}
+#netmarble--story, #netmarble--news{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: var(--m-color02);
+  width: 580px;height: 540px;
+  background-color: var(--m-color05);
+  box-sizing: border-box;
+}
+#netmarble article h2{
+  padding-top: 35px;
+  font-size: var(--f-size05);
+}
+#netmarble--story p{
+  line-height: 30px;
+  margin: 20px 0px;
+}
+#netmarble--story a{
+  border: solid 1px var(--m-color02);
+  border-radius: 25px;
+  display: block;
+  width: 190px;height: 42px;
+  line-height: 40px;
+  margin: 0 auto;
+}
+#netmarble--story img{
+  transform: translateY(20px);
+  width: 460px;
+}
+
+/* 넷마블 소식 */
+#netmarble--news{
+  transform: translate(40px, -43px);
+}
+.netmarble--news--top {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  width: 465px;
+}
+.netmarble--news--top img{
+  width: 245px;
+}
+.netmarble--news--text{
+  width: 185px;
+  text-align: left;
+  line-height: 10px;
+  margin-top: 10px;
+}
+.netmarble--news--text span, .netmarble--news--bottom li span{
+  background-color: var(--m-color01);
+  padding: 3px 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: var(--f-size01);
+  color: var(--m-color02);
+}
+.netmarble--news--text h3{
+  margin-top: 30px;
+  line-height: 30px;}
+
+  .netmarble--news--bottom{
+    border-top: solid 1px #d9d9d9;
+    width: 450px;
+    margin: 0 auto;
+  }
+  .netmarble--news--bottom li{
+    line-height: 50px;
+    text-align: left;
+    color:var(--m-color06);
+    font-size: var(--f-size01);
+    border-bottom: solid 1px #d9d9d9;
+  }
+  .netmarble--news--bottom li:last-child a{
+    border:solid 1px var(--m-color02);
+    display: block;
+    width: 190px;height: 42px;
+    line-height: 42px;
+    margin: 20px auto;
+    color: var(--m-color02);
+    font-weight: 550;
+    border-radius: 25px;
+    text-align: center;
+  }
+  .netmarble--news--bottom li:last-child{
+    border-bottom: none;
+  }
+  .netmarble--news--bottom li a span{
+    margin-right: 15px;
+  }
+
+/* 넷마블 주가 */
+#stock{
+  height: 540px;
+  background-color: var(--m-color05);
+  display: flex;
+  justify-content: space-around;
+}
+#stock h2{
+  transform: translate(70px, 15px);
+  height: 42px; width: 200px;
+  background-color: aliceblue;
+  font-size: var(--f-size05);
+  color: var(--m-color02);
+}
+
+.stock--price{
+  width: 605px;
+  height:350px;
+  transform: translateY( 130px);
+  border:solid 1px black;
+}
+.stock--real{
+  transform: translate(200px, 105px);
+  width:380px;height: 370px;
+}
+.stock--real h3{
+  font-size: var(--f-size04);
+  text-align:center;
+  width: 50%;
+  display: inline-block;
+}
+.stock--real p{
+  font-size: var(--f-size04);
+  color:#f00;
+  font-weight: 600;
+  margin:30px 0px;
+  text-align: center;
+}
+.stock--info{
+  width: 380px;
+  height: 240px;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+}
+#stock img{
+  width: 308px;
+  height: 300px;
+  transform: translate(130px, 320px);
+}
+
+
+
+/* 채용공고 서식 */
+#employment{
+  position: relative;
+  padding: 50px 0px 70px 0px;
+}
+.employment--wrap{
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+} 
+#employment article{
+  border-radius: 10px;
+  width: 570px;height: 336px;
+  position: relative;
+  box-sizing: border-box;
+
+}
+#employment article h2{
+  margin: 35px 0px 20px 30px;
+  font-size: var(--f-size05);
+}
+#employment article p{
+  margin-left: 30px;
+  line-height: 30px;
+  font-size: var(--f-size02);
+}
+#employment article a{
+  margin:40px 0px 0px 30px;
+  border-radius: 25px;
+  text-align: center;
+  display: block;
+  width:190px; height: 45px;
+  line-height: 45px;
+}
+#employment article img{
+  position: absolute;
+  width: 40%;
+}
+#employment article:first-of-type img{
+  right: 20px;bottom: 0px;
+  width: 45%;
+}
+#employment article:nth-of-type(2) img{
+  right: 0px;bottom: 0px;
+}
+#employment article:nth-of-type(3) img{
+  right: 20px;bottom: 0px;
+}
+#employment article:last-of-type img{
+  right: -100px;top: 130px;
+  width:70%;
+}
+#employment--news, #employment--notice{
+  background-color: var(--m-color01);
+  color: var(--m-color02);
+}
+#employment--news a, #employment--notice a{
+  border: solid 1px var(--m-color02);
+  color: var(--m-color02);
+
+}
+#employment--faq, #employment--welfare{
+  background-color: var(--m-color02);
+  color: var(--m-color05);
+}
+#employment--faq a, #employment--welfare a{
+  border: solid 1px var(--m-color05);
+  color: var(--m-color05);
+
+}
