@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+article{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+article h2{
+  display: none;
+}
+article h3{
+  color: var(--m-color02);
+}
+#m_game{
+  background-image: url('../img/main_background1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 110px;
+}
+.m_game--video{
+  position: relative;
+}
+#m_game video{
+  width:358px;
+  position: relative;
+  left: 50%;
+  border-radius: 1.5rem;
+  transform: translateX(-50%);
+}
+.m_game--video img{
+  width: 20%;
+  position: absolute;
+  top:50%;left: 50%;
+  transform: translate(-50%,-50%);
+}
+.m_game--site--wrap{
+  overflow: hidden;
+  background-color: #fff;
+  padding-top: 40px;
+  
+}
+#m_game--site{
+  border-radius: 30px;
+  width: 100%;height: 17rem;
+  background-color: #fff;
+  padding-bottom: 1.8rem;
+  text-align: center;
+  margin-top: 1.8rem;
+
+
+}
+
+#m_game--site img{
+  width: 15rem;
+  margin-bottom: 30px;
+}
+#m_game--site p{
+  line-height: 30px;
+  font-size: var(--f-size01);
+}
+
+#m_game--site a{
+  display: inline-block;
+  width: 7.5rem;height: 1.8rem;
+  border-radius: 5px;
+  border: solid 1px var(--m-color02);
+  line-height: 1.8rem;
+  margin: 35px 0px 30px 0px;
+  font-size: var(--f-size01);
+}
+#m_game--site .arrow-left, 
+#m_game--site .arrow-right{
+  width: 2.5rem;  
+  position: absolute;
+}
+.arrow-left{
+  left: 0.6rem;
+  bottom: 2.2rem;
+}
+.arrow-right{
+  right: 0.6rem;
+  bottom: 2.2rem;
+}
+
+/* 넷마블소식 */
+#m_netmarble{
+  background-color: var(--m-color01);
+  padding: 50px 0px;
+}
+#m_netmarble h2{display: none;}
+#m_netmarble article{
+  background-color: #fff;
+  border-radius: 0.9rem;
+  width: 22rem;
+  margin: 0rem auto 1rem auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+#m_netmarble h3{
+  font-size: var(--f-size04);
+  padding:1.8rem 0rem;
+}
+#m_netmarble--story img{
+  width:18.75rem;
+}
+#m_netmarble p{
+  line-height: 30px;
+}
+#m_netmarble--story a{
+
+  display: block;
+  width:18rem; height: 2.5rem;
+  border: solid 1px var(--m-color02);
+  border-radius: 5px;
+  line-height: 2.7rem;
+  margin: 20px auto;
+}
+
+/* 넷마블 소식 */
+#m_netmarble--news{
+  padding-bottom: 1.5rem;
+}
+.m_netmarble--news--wrap{
+  display: flex;
+  justify-content: space-around;
+}
+.m_netmarble--news--wrap img{
+  width:10.3rem;
+}
+.m_netmarble--news--wrap p{
+  width: 9.2rem;
+  text-align: left;
+  font-size: 0.8rem;
+  color: var(--m-color02);
+  font-weight: 600;
+}
+.m_netmarble--news--wrap span:first-child{
+  background-color: var(--m-color01);
+  padding:0.25rem 0.5rem;
+}
+.m_netmarble--news--wrap span:last-child{
+  font-weight: normal;
+  color: #888;
+}
+.m_netmarble--news--list{
+  margin:30px auto;
+  border-top: solid 1px #d9d9d9;
+  width: 95%;
+}
+
+.m_netmarble--news--list li{
+  padding: 0.6rem 0rem;
+  font-size: 0.7rem;
+  border-bottom: solid 1px #d9d9d9;
+}
+.date{
+  color:#888;
+}
+.game{
+  background-color: var(--m-color01);
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.5rem;
+  font-weight: 600;
+}
+
+#m_netmarble--news .news_btn{
+  border: solid 1px var(--m-color02);
+  display: block;
+  width: 20rem; height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 0.2rem;
+  margin: 0 auto;
+  color: var(--m-color02);
+}
+
+
+/* 넷마블 주가 */
+
+.m_netmarble--stock--top{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.m_netmarble--stock--top p{
+  color:#f00;
+  font-weight: bold;
+}
+.m_netmarble--stock--bottom{
+  background-color: #f5f5f5;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3rem 1rem 1rem 1rem;
+  box-sizing: border-box;
+}
+.m_netmarble--stock--bottom li{
+  width: 45%;
+  padding-bottom: 10%;
+}
+
+
+.m_em--wrap{
+  width: 22.3rem;
+  margin: 3.125rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.m_em--wrap li{
+  padding: 0.9rem 0rem 0rem 0.9rem;
+  border-radius: 1rem;
+  width: 45%;
+  margin-bottom: 0.8rem;
+  border:solid 1px #333;
+}
+.m_em--wrap li:first-of-type, .m_em--wrap li:last-of-type{
+  color: var(--m-color02);
+  background-color: var(--f-size01);
+}
+.m_em--wrap h3{
+  font-size: var(--f-size04);
+}
+.m_em--wrap img{
+  width: 40%;
+}
