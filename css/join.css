@@ -43,10 +43,15 @@ input{
   height: 55px;
   width: 400px;
   background-color: #f8f8f8;
+  border: 2px solid #f8f8f8;
   color: #888;
   padding-left: 15px;
   line-height: 55px;
   margin-bottom: 15px;
+}
+input:focus{
+  outline: none;
+  border-color: var(--m-color01);
 }
 input[type="checkbox"] + label{
   line-height: 30px;

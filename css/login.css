@@ -39,6 +39,7 @@ input:focus{
   padding-left: 15px;
   line-height: 55px;
   margin-bottom: 15px;
+  border: solid 2px #f8f8f8;
 }
 .login--btn, .login--join{
   font-size: 20px;
@@ -67,4 +68,8 @@ input:focus{
 .login--p03{
   color: #555;
   margin-bottom: 15px;
+}
+input[type=text]:focus{
+  outline: none;
+  border-color: var(--m-color01);
 }
