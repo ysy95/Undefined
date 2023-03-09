@@ -29,6 +29,9 @@ a{text-decoration: none;}
   width: 700px;
   height: 418px;
 }
+.game--video img{
+  transform: translate(300px, -280px);
+}
 .game--site{
   width:410px;
   height: 317px;
@@ -86,10 +89,14 @@ a{text-decoration: none;}
   font-size: var(--f-size02);
 }
 /* 넷마블 서식 */
+
 #netmarble{
   position: relative;
   padding: 50px 0px;
   background-color: var(--m-color01);
+}
+.n_title{
+  display: none;
 }
 #netmarble article{
   border-radius: 25px;
@@ -199,8 +206,7 @@ a{text-decoration: none;}
 }
 #stock h2{
   transform: translate(70px, 15px);
-  height: 42px; width: 200px;
-  background-color: aliceblue;
+  height: 42px; width: 300px;
   font-size: var(--f-size05);
   color: var(--m-color02);
 }
@@ -208,7 +214,7 @@ a{text-decoration: none;}
 .stock--price{
   width: 605px;
   height:350px;
-  transform: translateY( 130px);
+  transform: translate(-100px, 130px);
   border:solid 1px black;
 }
 .stock--real{

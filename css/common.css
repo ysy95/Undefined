@@ -94,6 +94,9 @@ footer {
 footer *{
     font-family: var(--f-style);
 }
+.f_top h2{
+    display: none;
+}
 #f_wrap {
     position: relative;
     left: 0;
