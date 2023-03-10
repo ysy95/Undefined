@@ -20,7 +20,7 @@ header {
     background: #fff;
     transition: 0.3s;
 }
-.h_wrapper:hover {
+.h_wrapper:hover{
     height: 320px;
 }
 #h_wrap {
@@ -29,6 +29,7 @@ header {
     margin: 0 auto;
     top: 0;
 }
+
 #h_wrap h1 {
     width: 170px;
     transform: translateY(10px);

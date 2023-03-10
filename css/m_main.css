@@ -70,7 +70,7 @@ article h3{
   width: 15%;
   display: flex;
   justify-content: space-evenly;
-  transform: translate(50%, -220%);
+  transform: translateY(-220%);
 }
 .m_game--btn img{
   height: 2.5rem;
@@ -146,7 +146,7 @@ article h3{
 .m_netmarble--news--list{
   margin:30px auto;
   border-top: solid 1px #d9d9d9;
-  width: 95%;
+  width: 92%;
 }
 
 .m_netmarble--news--list li{
