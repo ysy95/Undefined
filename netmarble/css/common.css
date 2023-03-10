@@ -1,0 +1,119 @@
+@charset "utf-8";
+*{margin:0px;padding:0px;}
+header{
+  position:fixed;
+  top:0px;left: 0px;
+  width: 100%; height: 80px;
+  z-index:10000;
+  line-height: 80px;
+}
+.h_wrapper{
+  width: 100%;
+  border-bottom: solid 1px #d9d9d9;
+}
+#h_wrap{
+  position: relative;
+  width:1200px;
+  margin: 0 auto;
+}
+#h_wrap h1{width:170px;transform: translateY(10px);}
+#h_wrap h1 img{width:100%;}
+
+
+
+#h_wrap > .h_right > nav > .gnb {
+  position: absolute;
+  top:0px; left: 50%;
+  transform: translateX(-50%);
+  width:720px;
+  font-weight: 600;
+}
+#h_wrap > .h_right > nav >.gnb li{
+  text-align: center;
+  width:120px;
+}
+.gnb, .lnb{
+  display: flex;
+  justify-content: center;
+
+}
+
+.lnb{
+  position: absolute;
+  right: 0px; top:0px;
+  font-size: 14px;
+}
+
+/* 서브 서식 */
+#h_wrap > .h_right >nav .gnb li >.sub{
+  display: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: left!important;
+}
+#h_wrap > .h_right > nav >.gnb:hover .sub{
+  display: block;
+}
+
+/* 푸터영역 */
+
+footer{
+  width:100%;
+  height: 340px;
+  color: #fff;
+  font-size: 14px;
+}
+#f_wrap{
+  position: relative;left: 0px;top: 0px;
+  width:100%;
+  margin: 0 auto;
+}
+.f_top{
+  width: 100%;
+  height: 60px;
+  background-color: #4f3220;
+}
+.f_nav{
+  display: flex;
+  justify-content: center;
+}
+.f_nav a{
+  width:1200px;
+  margin: 0 auto;
+  color:#fff; 
+  padding: 15px 25px;
+  line-height: 60px;
+}
+
+
+.f_bottom{
+  width: 100%;
+  height: 280px;
+  background-color: #333;
+  
+}
+.f_bottom dl{
+  position: relative;
+  color:#d9d9d9;
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 35px;
+}
+.f_bottom dt, .f_bottom > dl dd > label{display: none;}
+.f_bottom > dl dd:first-of-type img{width:170px;margin:30px 0px 20px 0px;}
+.f_bottom > dl dd > select{
+  position:absolute;
+  top:30px; right: 0px;
+  background-color: #111;
+  color: #d9d9d9;
+  width:185px;height: 34px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border-color:#111;
+}
+.f_bottom dl dd > address{
+  margin-top: 20px;
+  left: 0px;
+  font-style: normal;
+}

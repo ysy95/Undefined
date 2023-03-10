@@ -1,0 +1,805 @@
+@charset "utf-8";
+
+
+
+
+/* common 에 넣을 서식 */
+
+.flexable {
+  display : flex;
+}
+
+main{
+  /* 메인 탑 마진 */
+  margin-top : 80px;
+}
+
+.hide {
+  display : none;
+}
+
+.point {
+  color : #C56F3E;
+}
+
+/* common 에 넣을 서식 */
+
+
+.more {
+  display : block;
+  width: 135px;
+  height: 40px;
+  border-radius : 50px;
+  background-color : #C56F3E;
+  color : #fff;
+  line-height : 40px;
+  overflow : hidden;
+}
+
+.more a {
+  color : #fff;
+  display : block;
+  text-align : center;
+}
+
+
+
+
+/*     넷마블 컴퍼니 서식 시작     */
+
+#n_company {
+  width : 100%;
+  padding-bottom : 70px;
+  background-color : #FFD800;
+  position : relative;
+
+}
+
+.ctntarea{
+  /* 1200px == 1920 기준 62.5vw */
+  width : 1200px;
+  margin : 0 auto;
+  padding : 70px 0;
+  box-sizing : border-box;
+}
+
+.ctntarea-title {
+  justify-content : space-between;
+}
+
+.gray{
+  color : #4F3220;
+}
+
+/* 섹션 타이틀 */
+.sect--title {
+  /* 34px */
+  font-size : 2.125rem;
+  line-height : 42px;
+}
+
+/* 섹션 타이틀 옆 작은 타이틀 */
+.sect-sub_title {
+  /* 24px */
+  font-size : 1.5rem;
+  padding-top : calc(42px - 24px);
+  margin-left : 15px;
+  color : rgba(79,50,32,.3);
+  font-weight : bold;
+}
+
+.title--box {
+  width : 100%;
+  height : 42px;
+}
+
+.n_art--slogan {
+  margin-top : 20px;
+  font-size : 1.125rem;
+  line-height : 35px;
+}
+
+.n_bold {
+  color : #4f3220;
+  font-weight : bold;
+}
+
+.slogan01 {
+  font-size : 1.125rem;
+  line-height : 35px;
+}
+
+.sub_title {
+  font-size : 1.5rem;
+  font-weight : bold;
+  margin-top : 50px;
+  
+}
+
+.n_art-ul {
+  justify-content : space-between;
+  margin-top : 30px;
+}
+
+
+.ul-company{
+  /* 180px */
+  width : 180px;
+  height : 180px;
+  border-radius : 50%;
+  overflow : hidden;
+}
+
+.ul-company > a {
+  display : block;
+  width : 100%;
+  height : 100%;
+  text-align : center;
+
+}
+
+.cpny_title {
+  font-size : 24px;
+  padding : 70px 0 10px 0;
+  color : #fff;
+  font-weight : bold;
+
+}
+.cpny_more {
+  font-size : 12px;
+  color : #f9c205;
+}
+
+.cpny_title, .cpny_more{
+  display : none;
+}
+
+
+/* 넷마블 컴퍼니 주요 개발사 오버 시 이미지 변경 */
+
+.n_art-ul01 li:first-child a {
+  background-image : url('../img/sp_img01.jpg');
+  background-position : 0px 0px;
+}
+
+
+.n_art-ul01 li:first-child a:hover {
+  background-image : url('../img/hover_sp_img01.jpg');
+  background-position : 0px 0px;
+}
+
+/* 오버 시 텍스트 보이는 서식 */
+.n_art-ul01 li:first-child a:hover .cpny_title, .n_art-ul01 li:first-child a:hover .cpny_more{
+  display : block;
+}
+
+
+
+.n_art-ul01 li:nth-child(2) a {
+  background-image : url('../img/sp_img01.jpg');
+  background-position : -410px 0px;
+}
+
+.n_art-ul01 li:nth-child(2) a:hover {
+  background-image : url('../img/hover_sp_img01.jpg');
+  background-position : -410px 0px;
+}
+
+/* 오버 시 텍스트 보이는 서식 */
+.n_art-ul01 li:nth-child(2) a:hover .cpny_title, .n_art-ul01 li:nth-child(2) a:hover .cpny_more{
+  display : block;
+}
+
+
+
+.n_art-ul01 li:nth-child(3) a:hover {
+  background-image : url('../img/hover_sp_img01.jpg');
+  background-position : -615px 0px;
+}
+
+.n_art-ul01 li:nth-child(3) a {
+  background-image : url('../img/sp_img01.jpg');
+  background-position : -615px 0px;
+}
+
+/* 오버 시 텍스트 보이는 서식 */
+.n_art-ul01 li:nth-child(3) a:hover .cpny_title, .n_art-ul01 li:nth-child(3) a:hover .cpny_more{
+  display : block;
+}
+
+
+
+.n_art-ul01 li:nth-child(4) a:hover {
+  background-image : url('../img/hover_sp_img01.jpg');
+  background-position : 0px -206px;
+}
+
+.n_art-ul01 li:nth-child(4) a {
+  background-image : url('../img/sp_img01.jpg');
+  background-position : 0px -206px;
+}
+
+/* 오버 시 텍스트 보이는 서식 */
+.n_art-ul01 li:nth-child(4) a:hover .cpny_title, .n_art-ul01 li:nth-child(4) a:hover .cpny_more{
+  display : block;
+}
+
+
+
+
+
+.n_art-ul01 li:last-child a:hover {
+  background-image : url('../img/hover_sp_img01.jpg');
+  background-position : -205px -205px;
+}
+
+.n_art-ul01 li:last-child a {
+  background-image : url('../img/sp_img01.jpg');
+  background-position : -205px -205px;
+}
+
+/* 오버 시 텍스트 보이는 서식 */
+.n_art-ul01 li:last-child a:hover .cpny_title, .n_art-ul01 li:last-child a:hover .cpny_more{
+  display : block;
+}
+
+
+
+
+
+/* 글로벌 네트워크 오버 시 이미지 변경 서식 */
+
+.n_art-ul02 li:first-child a {
+  background-image : url('../img/sp_img02.jpg');
+  background-position : -410px -204px;
+}
+
+.n_art-ul02 li:first-child a:hover {
+  background-image : url('../img/hover_sp_img02.jpg');
+  background-position : -410px -204px;
+}
+
+
+
+.n_art-ul02 li:nth-child(2) a {
+  background-image : url('../img/sp_img02.jpg');
+  background-position : -615px -204px;
+}
+
+.n_art-ul02 li:nth-child(2) a:hover {
+  background-image : url('../img/hover_sp_img02.jpg');
+  background-position : -615px -204px;
+}
+
+
+
+.n_art-ul02 li:nth-child(3) a {
+  background-image : url('../img/sp_img02.jpg');
+  background-position : -820px -204px;
+}
+
+.n_art-ul02 li:nth-child(3) a:hover {
+  background-image : url('../img/hover_sp_img02.jpg');
+  background-position : -820px -204px;
+}
+
+
+
+.n_art-ul02 li:nth-child(4) a {
+  background-image : url('../img/sp_img02.jpg');
+  background-position : 0px 0px;
+}
+
+.n_art-ul02 li:nth-child(4) a:hover {
+  background-image : url('../img/hover_sp_img02.jpg');
+  background-position : 0px 0px;
+}
+
+
+
+.n_art-ul02 li:nth-child(5) a {
+  background-image : url('../img/sp_img02.jpg');
+  background-position : -410px 0px;
+}
+
+.n_art-ul02 li:nth-child(5) a:hover {
+  background-image : url('../img/hover_sp_img02.jpg');
+  background-position : -410px 0px;
+}
+
+/* 넷마블 컴퍼니 서식 끝 */
+
+
+
+
+
+/* 연혁 서식 시작 */
+
+#n_history {
+  width : 100%;
+  border-radius : 70px 70px 0 0;
+  position : relative;
+  z-index : 1;
+  top : -70px;
+  background-color : #fff;
+  box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.n_history-t_mnu {
+  width : 100%;
+  justify-content : space-between;
+  margin-top : 50px;
+}
+
+.n_history-t_btn{
+  background-color : #F4F4F4;
+  color : #888;
+  width : 223px;
+  height : 50px;
+  line-height : 50px;
+  text-align : center;
+  font-size : 1.125rem;
+  font-weight : bold;
+  border-radius : 50px;
+  cursor : pointer;
+  margin-bottom : 40px;
+}
+
+.n_history-t_btn.on {
+  background-color : #FFD800;
+  color : #000;
+}
+
+/* 탭 콘텐츠 ul */
+.t_box-t_ctnt{
+  border-bottom : 1px solid #ccc;
+  box-sizing : border-box;
+}
+
+.t-y_wrap {
+  border-top : 1px solid #ccc;
+  box-sizing : border-box;
+}
+
+
+.h-year {
+  width : 250px;
+  padding : 20px calc(125px / 2);
+  box-sizing : border-box;
+  /* 50px */
+  font-size : 3.125rem;
+  font-weight : bold;
+  position : relative;
+  border-right : 2px solid #C56F3E;
+}
+
+.squar {
+  width : 10px;
+  height : 40px;
+  position : absolute;
+  right : 0;
+  top : 0;
+  border-right : 2px dashed #ccc;
+  z-index : 1;
+  transform :translateX(2px);
+  background-color : #fff;
+
+}
+
+.circle{
+  width : 13px;
+  height : 13px;
+  border-radius : 50%;
+  position : absolute;
+  top : 40px;
+  left : 242px;
+  background-color : #C56F3E;
+}
+
+.h-right {
+  padding : 40px 60px;
+  box-sizing : border-box;
+}
+
+
+.h-month {
+  margin-right : 60px;
+  line-height : 25px;
+
+  /* 18px */
+  font-size : 1.125rem;
+  font-weight : bold;
+}
+
+.h-desc {
+  font-size : 1rem;
+  line-height : 25px;
+}
+
+.h-desc > p {
+  margin-bottom : 10px;
+}
+
+/* 연혁 서식 끝 */
+
+
+
+
+/* 넷마블 둘러보기 서식 시작 */
+
+.around-n_art-wrap {
+  width : 100%;
+  justify-content : space-between;
+
+}
+
+.around-road {
+  width : 585px;
+}
+
+.around-fig {
+  margin : 20px 0;
+}
+
+.around-l_fig figcaption {
+  margin-top : 20px;
+}
+
+.around-l_fig figcaption strong {
+  display : block;
+  font-size : 1.125rem;
+  font-weight : 500;
+  line-height : 20px;
+  margin-bottom : 5px;
+}
+
+.around-l_fig figcaption p {
+  font-size : 1rem;
+  line-height : 18px;
+}
+
+
+
+
+.map_img {
+  width : 100%;
+}
+
+
+
+
+
+.inquiry {
+  border-radius : 10px;
+  overflow : hidden;
+}
+
+.inq-list {
+  height : 62px;
+}
+
+.inq-list dt {
+  background-color : #FFD800;
+  width : 130px;
+  line-height : 62px;
+  text-align : center;
+}
+
+.inq-list dd{
+  background-color : #f4f4f4;
+  width : 455px;
+  line-height : 62px;
+  align-items : center;
+  padding : 0 20px;
+  justify-content : space-between;
+}
+
+
+.inq_btn {
+  display : block;
+  width : 180px;
+  height : 40px;
+  font-size : 0.875rem;
+  border-radius : 50px;
+  line-height : 40px;
+  text-align : center;
+  background-color : #fff;
+  border : 1px solid #ccc;
+  /* text-align : center; */
+  cursor : pointer;
+}
+
+
+
+.around-convenience{
+  width : 585px;
+
+}
+
+.around-big_img {
+  width : 582px;
+  height : 291px;
+  border-radius : 10px;
+}
+
+
+
+
+
+.conv-tab_wrap{
+  margin : 13px 0;
+  width : 100%;
+  justify-content: space-between;
+}
+
+.arr_btn {
+  cursor : pointer;
+}
+
+
+
+/* 편의시설 탭 이미지 탭 컨텐츠 보이는 영역 */
+.conv-tab_wrap02 {
+  width : 460px;
+  overflow : hidden;
+  height : 55px;
+}
+
+/* 편의시설 탭 이미지 ul */
+.conv-tab {
+  width : 832px;
+  gap : 5px;
+}
+
+/* 편의시설 탭 이미지를 담은 li 서식 */
+.conv-tab_img {
+  width : 88px;
+  height : 55px;
+  border-radius : 7px;
+  cursor : pointer;
+  overflow : hidden;
+}
+
+
+/* 편의시설 탭 이미지의 이미지 서식 */
+.conv-tab_img > img {
+  width : 100%;
+  height : 100%;
+}
+
+.around-r_fig figcaption {
+  width : 100%;
+  height : 186px;
+  padding : 25px;
+  box-sizing : border-box;
+  background-color : #f4f4f4;
+  border-radius : 10px;
+  text-align : center;
+}
+
+.around-r_fig figcaption strong{
+  display : block;
+  font-size : 1.325rem;
+  margin-bottom : 15px;
+}
+
+.around-r_fig figcaption p {
+  font-size : 1rem;
+  line-height : 20px;
+}
+
+/* 넷마블 둘러보기 서식 끝 */
+
+
+
+/* 정도경영 서식 시작 */
+
+.n_manage-n_art{
+  min-height : 1800px;
+}
+
+.n_manage-tab {
+  background-color : #f4f4f4;
+  margin-top : 40px;
+  width : 100%;
+  border-radius : 35px;
+  position : relative;
+}
+
+.manage-t_btn {
+  width : 580px;
+  height : 60px;
+}
+
+.manage-t_btn.on{
+  width : 620px;
+  border-radius : 35px;
+  background-color : #ffd800;
+}
+
+.manage-t_btn.on .m_t_btn-text {
+  color : #000;
+  font-weight : bold;
+}
+
+.m_t_btn-text{
+  font-size : 1.125rem;
+  color : #888;
+  display : block;
+  text-align : center;
+  height : 60px;
+  line-height : 60px;
+  cursor : pointer;
+
+}
+
+.manage-t_ctnt{
+  position : absolute;
+  top : 130px;
+  z-index : 1;
+  width : 1200px;
+}
+
+.m-t_ctnt01 {
+  left : 0;
+}
+
+.m-t_ctnt02 {
+  left : 0;
+}
+
+.manage_fig01 {
+  width : 1050px;
+  margin-left : auto;
+  margin-right : auto;
+  margin-bottom : 70px;
+}
+
+.fig01_cap{
+  margin-left : 60px;
+  width : 460px;
+  height : 372px;
+}
+
+.fig01_cap p {
+  height : calc( 372px / 3 );
+  padding : 35px 5px ;
+  border-top : 3px solid #000;
+  box-sizing : border-box;
+  /* 20px */
+  font-size : 1.25rem;
+  font-weight : bold;
+  line-height : 24px;
+}
+
+.fig01_cap span {
+  display : block;
+  font-size : 1rem;
+  font-weight : 400;
+  color : #333;
+  /* margin-top : 10px; */
+}
+
+#n_manage .sub_title{
+  margin-bottom : 30px;
+}
+
+.value_p {
+  font-size : 1rem;
+  color : #333;
+}
+
+.manage_value {
+  width : 800px;
+  margin : 50px auto;
+}
+
+.value_box {
+  overflow : hidden;
+  border-radius : 15px;
+  height : 230px;
+  box-shadow : 4px 6px 15px #ccc;
+}
+
+.value_title{
+  background-color : #FFE200;
+  font-size : 28px;
+  height : 70px;
+  line-height : 70px;
+  text-align : center;
+}
+
+.value_ctnt {
+  height : 160px;
+  text-align : center;
+  padding : 40px;
+  box-sizing : border-box;
+}
+
+
+.value_sub_title {
+  font-size : 20px;
+  margin-bottom : 15px;
+}
+
+.t_point {
+  color : #298FD9;
+}
+
+.value_txt {
+  font-size : 1rem;
+  line-height : 20px;
+  color : #777;
+}
+
+.value_awe_box {
+  margin : 20px 0;
+  justify-content : space-around;
+}
+
+.value_awe_box .fa-down-long{
+  font-size : 24px;
+  color : #ccc;
+  font-weight: bold;
+}
+
+
+
+.value_box_wrap {
+  justify-content : space-between;
+}
+
+.small_value_box {
+  width : 48%;
+}
+
+.ethical{
+  justify-content : space-between;
+  flex-wrap : wrap;
+  margin-top : 40px;
+}
+
+.ethical li:nth-child(2n-1){
+  background-color : #4F3220;
+}
+
+.ethical li:nth-child(2n-1) p{
+  color : #fff;
+}
+
+.ethical li:nth-child(2n-1) span {
+  color : #ffd800;
+}
+
+.ethical_li {
+  width : 375px;
+  height : 255px;
+  border-radius : 10px;
+  background-color : #ffd800;
+  margin-bottom : 40px; 
+  padding : 30px;
+  box-sizing: border-box;
+}
+
+.ethical_title{
+  color : #4f3220;
+  font-size : 34px;
+  font-weight : bold;
+  line-height : 42px;
+}
+
+.ethical_no {
+  color : #4f3220;
+  display : block;
+  font-size : 96px;
+  font-weight : bold;
+  line-height : 125px;
+  text-align : end;
+  margin :20px 10px 0 0;
+}
+
+
+
+
+/* 정도경영 서식 끝 */
