@@ -38,17 +38,7 @@ header{
   z-index: 10000;
   display: none;
 }
-/* .m_close_btn{
-  width:2rem;height: 0.25rem;
-  background: #b69462;
-}
-.close01, .close02{
-  margin-bottom: 8px;
-  display: block;
-  background-color: #b69462;
-  height: 4px;
-  width:32px;
-} */
+
 #h_wrap > .h_nav > nav .lnb{
   position: absolute;top:90px;
   display: flex;

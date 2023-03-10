@@ -67,19 +67,19 @@ article h3{
   font-size: var(--f-size01);
 }
 .m_game--btn{
-  width: 15%;
+  width: 20%;
   display: flex;
   justify-content: space-evenly;
-  transform: translateY(-220%);
+  transform: translate(9.8rem,-220%);
 }
 .m_game--btn img{
   height: 2.5rem;
 }
 .arrow-left{
-  transform: translate(65%);
+  transform: translate(-350%);
 }
 .arrow-right{
-  transform: translateX(780%);
+  transform: translateX(350%);
 }
 
 /* 넷마블 */
@@ -160,7 +160,7 @@ article h3{
 .game{
   background-color: var(--m-color01);
   border-radius: 0.2rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem  0.5rem;
   font-weight: 600;
 }
 
