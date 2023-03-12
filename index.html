@@ -11,8 +11,9 @@
   <link rel="stylesheet" href="./css/main.css" type="text/css">
   <!-- 제이쿼리 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  script
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="./script/main.js" defer></script>
+  <script src="./script/common.js" defer></script>
 </head>
 <body>
   <header>
@@ -114,46 +115,83 @@
         <a href="https://2worlds.netmarble.com/ko" title="제2의 나라 공식사이트 바로가기">공식사이트 바로가기</a>
       </div>
     </article>
+    <div class="slider-1" data-slider-1-autoplay-timeout="5000" data-slider-1-autoplay-current="0" data-slider-1-autoplay-status="Y">
+      <ul class="slides">
+          <li>
+            <figure>
+              <img src="../Undefined/img/game01.png" alt="제2의나라">
+              <figcaption class="nav-bar">
+                <div class="cell">
+                  <div class="progress-bar">
+                          제2의나라 : Cross Worlds
+                          
+                            <div></div>
+                        </div>
   
-    <ul class="game--list">
-      <li>
-        <figure>
-          <img src="./img/game01.png" alt="제2의나라">
-          <figcaption class="nav-bar row con relative">제2의 나라: Cross Worlds
-            <div class="row absolute-bottom absolute-left">
-              <div class="cell">
-                <div></div>
-              </div>
-            </div>
-          </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure>
-          <img src="./img/game02.png" alt="세븐나이츠 레볼루션">
-          <figcaption>
-            세븐나이츠 레볼루션
-            <div class="row absolute-bottom absolute-left">
-              <div class="cell">
-                <div></div>
-              </div>
-            </div>
-          </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure>
-          <img src="./img/game03.png" alt="머지 쿵야 아일랜드">
-          <figcaption>머지 쿵야 아일랜드</figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure>
-          <img src="./img/game04.png" alt="샬롯의 테이블">
-          <figcaption>샬롯의 테이블</figcaption>
-        </figure>
-      </li>
-    </ul>
+                    </div>
+                    <div class="cell">
+                        <div class="btn-play">플레이</div>
+                        <div class="btn-stop">정지</div>
+                    </div>
+            </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="../Undefined/img/game02.png" alt="세븐나이츠 레볼루션">
+              <figcaption class="nav-bar">
+                <div class="cell">
+                  <div class="progress-bar">
+                    세븐나이츠 레볼루션
+                    <div></div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="btn-play">플레이</div>
+                  <div class="btn-stop">정지</div>
+                </div>
+                
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="../Undefined/img/game03.png" alt="머지 쿵야 아일랜드">
+              <figcaption class="nav-bar">
+                <div class="cell">
+                  <div class="progress-bar">
+                      머지 쿵야 아일랜드
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="btn-play">플레이</div>
+                        <div class="btn-stop">정지</div>
+                    </div>
+                
+            </figcaption>
+          </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="../Undefined/img/game04.png" alt="샬롯의 테이블">
+              <figcaption class="nav-bar">
+                    <div class="cell">
+                        <div class="progress-bar">
+                          샬롯의 테이블
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="btn-play">플레이</div>
+                        <div class="btn-stop">정지</div>
+                    </div>
+                
+            </figcaption>
+            </figure>
+          </li>
+        </ul>
+  </div>
   </section>
   
   <section id="netmarble">
@@ -192,18 +230,27 @@
 
 <!-- 넷마블 주가 -->
       <article id="stock">
-        <h2>넷마블 주가</h2>
-        <div class="stock--price">
-
-        </div>
-        <div class="stock--real">
-          <h3>실시간 주가</h3><h3>전일 대비</h3>
-          <p>W 2,529,870&emsp;&emsp;&emsp;&nbsp;&#9650; 67%</p>
-          <div class="stock--info">
+        <h3 style="display: none;">주가</h3>
+        <div class="stock--wrap">
+          <div class="stock--price">
+            <h2>넷마블 주가</h2>
 
           </div>
-        </div>
+          <div class="stock--real">
+            <p>
+              실시간 주가<br>          
+              <span>W 2,529,870</span>
+
+              </p>
+              <p>전일 대비<br>
+                <span>&#9650; 67%</span>
+              </p>
+            <div class="stock--info">
+
+            </div>
+          </div>
         <img src="./img/main_character02.png" alt="메인캐릭터">
+      </div>
       </article>
     </div>
   </section>
@@ -266,11 +313,11 @@
           <dd>
             <img src="./img/main_logo2.png" alt="메인로고">
             <label >Family_site</label>
-            <select>
+            <select onchange="siteUrl(this)">
               <option value="">Family_site</option>
-              <option value="">넷마블</option>
-              <option value="">넷마블 패밀리</option>
-              <option value="">넷마블 컴퍼니</option>
+              <option value="https://www.netmarble.net/">넷마블</option>
+              <option value="https://ch.netmarble.com/Index">넷마블 패밀리</option>
+              <option value="http://company.netmarble.com/">넷마블 컴퍼니</option>
             </select>
           </dd>
           <dd><strong>넷마블(주)</strong> 사업자번호 : 000-00-00000 통신판매업신고번호 : 제 2014-서울구로-0000호 각자 대표집행임원: 권영식, 도기욱 호스팅서비스 사업자 : 넷마블(주)</dd>

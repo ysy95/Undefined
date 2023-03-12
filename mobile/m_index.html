@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>넷마블 모바일 메인페이지입니다.</title>
   <link rel="stylesheet" href="../css/m_common.css" type="text/css">
-  <link rel="stylesheet" href="../css/base.css" type="text/css">
+  <link rel="stylesheet" href="../css/m-base.css" type="text/css">
   <link rel="stylesheet" href="../css/reset.css" type="text/css">
   <link rel="stylesheet" href="../css/m_main.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-</head>
+  <script src="../script/common.js" defer></script>
+</head> 
 <body>
   <header>
     <div id='h_wrap'>
@@ -234,11 +235,11 @@
   <footer>
     <div class="f_top">
       <label for=""></label>
-      <select name="" id="">
+      <select onchange="siteUrl(this);">
         <option value="">Family_site</option>
-        <option value="">넷마블</option>
-        <option value="">넷마블 패밀리</option>
-        <option value="">넷마블 컴퍼니</option>
+        <option value="https://www.netmarble.net/">넷마블</option>
+        <option value="https://ch.netmarble.com/Index">넷마블 패밀리</option>
+        <option value="http://company.netmarble.com/">넷마블 컴퍼니</option>
       </select>
     </div>
 
@@ -263,7 +264,7 @@
     
     <div class="f_bottom">
       <p>
-        <a href="../index.html" title="pc버전바로가기" class="pc_btn">PC버전 바로가기</a>
+        <a href="http://soyedpork27.dothome.co.kr/main/index.html?move_pc_screen=1" title="pc버전바로가기" class="pc_btn">PC버전 바로가기</a>
       </p>
     </div>
   </footer>
