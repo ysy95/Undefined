@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+#em h2, #em_info h2{
+  padding: 0px 1.5rem 1.5rem;
+  font-size: var(--f-size04);
+  font-weight: 700;
+}
+
+/* 페이지 내비게이션 */
+#page_nav {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.page_nav-item{
+  width: 100%;
+  position: absolute;
+  left:50%; transform: translateX(-50%);
+  bottom: 0px;
+  height: 40px;
+  line-height: 40px;
+}
+.page_nav-prav{
+  font-size: var(--f-size01);
+  color: #888;
+}
+.page_nav-right{
+  height: 10px;
+  padding: 0px 10px;
+}
+.page_nav-now{
+  font-size: var(--f-size01);
+  display: inline;
+}
+
+/* 채용 제목 부분 */
+#emb_h{
+  background-color: var(--m-color01);
+  padding: 50px 0px;
+}
+#emb_h h2{
+  font-size: var(--f-size04);
+  font-weight: 700;
+  text-align: center;
+}
+#emb_h > h2{
+  display: none;
+}
+.emb_h-wrap > h2{
+  display: none;
+}
+.emb_h-btn_wrap{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.h_btn-badge{
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 35px;
+  font-size: var(--f-size01);
+}
+.h_btn-badge.list01{
+  background-color: var(--m-color02);
+  color : var(--m-color05);
+  margin-right: 5px;
+}
+.h_btn-badge.list02{
+  background-color: var(--m-color04);
+  color : var(--m-color05);
+  margin-right: 5px;
+}
+.h_btn-badge.list03{
+  background-color: var(--m-color03);
+  color : var(--m-color05);
+}
+.h_btn-badge.list04{
+  background-color: #888;
+  color : var(--m-color05);
+}
+
+/* 채용 리스트 부분 */
+#emb_i{
+  background-color: var(--m-color05);
+  padding: 30px 0px;
+}
+#emb_i h2{
+  display: none;
+}
+.emb_i-textbox{
+  font-size: var(--f-size01);
+  line-height: 190%;
+  box-sizing: border-box;
+  padding: 0px 24px;
+}
+.emb_i-textbox p{
+  font-family: var(--f-style);
+}
+
+/* 채용버튼 */
+#emb_m-btn{
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  padding: 20px 16px;
+  background: var(--m-color05);
+  border-radius: 25px 20px 0px 0px;
+  box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+#emb_m-btn h2{
+  display: none;
+}
+.emb_btn{
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 35px;
+}
+.emb_btn.list01{
+  background-color: var(--m-color05);
+  color: var(--m-color02);
+  border: 1px solid var(--m-color02);
+  margin-right: 10px;
+  width: 40%;
+}
+.emb_btn.list02{
+  width: 60%;
+  background-color: var(--m-color02);
+  color: var(--m-color05);
+}
