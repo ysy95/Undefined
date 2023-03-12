@@ -35,6 +35,10 @@ if($job_date == '채용시까지' || $job_date == '2023년'){
   $job_type = '접수종료';
   $job_badge2 = '3';
 }
+
+if($job_id == null || $job_id == " "){
+  echo "<script>alert('지원한 채용이 없습니다.'); location.href='../m_em.php';</script>";
+}
 ?>
 
 <!DOCTYPE html>
@@ -47,6 +51,7 @@ if($job_date == '채용시까지' || $job_date == '2023년'){
   <link rel="stylesheet" href="../css/m_common.css" type="text/css">
   <link rel="stylesheet" href="../css/reset.css" type="text/css">
   <link rel="stylesheet" href="./css/m_em_read.css">
+  <script src="./script/em_read.js"></script>
 <title>넷마블 채용조회</title>
 </head>
 <body>
@@ -156,7 +161,7 @@ if($job_date == '채용시까지' || $job_date == '2023년'){
         </div>
 
         <div class="appform-btnwrap">
-          <button type="reset" class="appform-btn list01">지원취소</button>
+          <button type="reset" class="appform-btn list01" onclick="cancel()">지원취소</button>
           <a href="../form/m_em_form.php?id=<?php echo $job_data['job_id']?>&mode=modify" title="지원서 수정하기" class="appform-btn list02">지원서 수정</a>  
         </div>
 

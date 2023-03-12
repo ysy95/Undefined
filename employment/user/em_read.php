@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./css/em_read.css">
   <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
   <script src="http://soyedpork27.dothome.co.kr/employment/script/em_list.js" defer></script>
-  <script src="./script/em_form.js" defer></script>
+  <script src="./script/em_read.js" defer></script>
   <script src="../script/common.js"></script>
 
 <?php 
@@ -43,6 +43,10 @@
       $opt2 = $row['user_opt2'];
       $opt3 = $row['user_opt'];
       $intro = $row['user_intro'];
+  }
+
+  if($job_id == null || $job_id == " "){
+    echo "<script>alert('지원한 채용이 없습니다.'); location.href='../em.php';</script>";
   }
 
   ?>
@@ -179,7 +183,7 @@
         <h3>지원내용 작성</h3>
             <div class="form-grid">
               <div class="appform-profile">
-                <img src="http://soyedpork27.dothome.co.kr/employment/user/profileimg/<?php echo $img ?> " 
+                <img src="./profileimg/<?php echo $img ?> " 
                 
                 
                 alt="사진미리보기" class="profile-sample">
@@ -212,7 +216,6 @@
                 <label class="appform_data-label">보훈대상 유무</label>
 
                 <?php
-                  echo "<span class='em_info-opt2'>" . $opt1 . "</span>";
                   if($opt1 == '1'){
                     echo "<span class='em_info-on'>대상</span>";
                     echo "<span class='em_info-off'>비대상</span>";
@@ -226,7 +229,6 @@
               <div class="appform-opt2">
               <label class="appform_data-label">추천인 유무</label>
               <?php
-                  echo "<span class='em_info-opt2'>" . $opt2 . "</span>";
                   if($opt2 == '1'){
                     echo "<span class='em_info-on'>대상</span>";
                     echo "<span class='em_info-off'>비대상</span>";
