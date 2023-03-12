@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+/* 페이지 내비게이션 */
+#page_nav{
+  width: 100%; height: 140px;
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+}
+.page_nav--box{
+  position: absolute;
+  width: 1200px; height: 60px;
+  bottom:0px; left: 50%; transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page_nav--now{
+  font-weight: 700;
+  color: #333;
+}
+.page_nav--nav{
+  font-weight: 700;
+  font-size: var(--f-size02);
+}
+.page_nav--nav span{
+  color : #666;
+  font-weight: 500;
+}
+.page_nav--nav img{
+  height: 13px;
+  transform: translateY(1px);
+  padding: 0px 10px;
+}
+
+/* 채용 헤더 */
+#appform_h{
+  background: var(--m-color01);
+}
+.appform_h-wrap{
+  width:1200px;
+  margin: 0 auto;
+  padding: 50px 0px 120px;
+  position: relative;
+}
+.appform_h-title_text{
+  font-size: var(--f-size05);
+  line-height: 55px;
+  color: var(--m-color02);
+}
+.appform_h-title_info{
+  font-size: var(--f-size01);
+  font-family: var(--f-style);
+  font-weight: 300;
+  line-height: 22px;
+  color: var(--m-color02);
+}
+.appform_h-bg{
+  position: absolute;
+  right: 0px; top: 10px;
+}
+
+/* 채용 폼 영역 */
+#appform{
+    width: 100%;
+    padding: 50px 0px 0px;
+    transform: translateY(-70px);
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 70px 70px 0px 0px;
+    background: var(--m-color05);
+    z-index: 10;
+    position: relative;
+  }
+
+  #appform > h2{
+    display: none;
+  }
+  .appform-wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 0px 50px;
+  }
+  .appform-title{
+    font-size: var(--f-size04);
+    font-weight: 700;
+    color: var(--m-color02);
+  }
+
+  .appform-title-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .appform-index-title{
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+  }
+  .appform-index-info{
+    font-size: var(--f-size03);
+    font-weight: 300;
+    color: var(--m-color02);
+    line-height: 50px;
+    margin-top: 10px;
+  }
+  .appform-index-info strong{
+    font-weight: 700;
+  }
+  .appform-index-text{
+    font-size: var(--f-size05);
+    font-weight: 700;
+    color: var(--m-color02);
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+  .appform-index-badge{
+    display: inline-block;
+    font-size: var(--f-size03);
+    font-weight: 300;
+    background: var(--m-color02);
+    color: var(--m-color05);
+    line-height: 34px;
+    border-radius: 35px;
+    margin-left: 20px;
+    width: 80px;
+    transform: translateY(-6px);
+  }
+
+  /* 채용 폼 */
+  #appform_data{
+    width: 100%;
+    background: var(--m-color05);
+    border-radius: 20px;
+    padding: 0px 50px 0px;
+    transform: translateY(-70px);
+    position: relative;
+    z-index: 15;
+  }
+  #appform_data > h2{
+    display: none;
+  }
+  .appform_data-formwrap{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .appform_data-formwrap > h3{
+    display: none;
+  }
+  .form-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  legend{
+    display: none;
+  }
+  .form-grid > div:not(:first-of-type){
+    height: 80px;
+    position: relative;
+  }
+
+  /* 채용폼 공통 */
+  .appform_data-label{
+    display: block;
+    font-size: var(--f-size03);
+    font-weight: 500;
+    color: #333;
+  }
+
+  .em_info-text{
+    font-size: var(--f-size03);
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #d9d9d9;
+    position: absolute;
+    bottom: 0px;
+  }
+
+
+  .appform-profile{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    position: relative;
+  }
+  .profile-sample{
+    width: 134px; height: 190px;
+    border: 2px solid #d9d9d9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .appform-profile input{
+    display: none;
+  }
+  .profile-wrap{
+    position: relative;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .profile-btnwrap{
+    position: absolute;
+    bottom: 0px; right: 0px;
+    width: 100%;
+    text-align: left;
+  }
+  .profile-upload{
+    display: block;
+    font-size: var(--f-size03);
+    font-weight: 300;
+    background: var(--m-color02);
+    color: var(--m-color05);
+    line-height: 35px;
+    border-radius: 35px;
+    width: 100px;
+    text-align: center;
+    transform: translateY(-6px);
+  }
+  .profile-delete{
+    display: block;
+    font-size: var(--f-size03);
+    font-weight: 300;
+    background: var(--m-color04);
+    color: var(--m-color05);
+    line-height: 35px;
+    border-radius: 35px;
+    width: 100px;
+    margin-top: 10px;
+    text-align: center;
+    transform: translateY(-6px);
+  }
+
+  .em_info-off, .em_info-on{
+    display: inline-block;
+    font-size: var(--f-size03);
+    font-weight: 300;
+    line-height: 35px;
+    border-radius: 35px;
+    width: 100px;
+    text-align: center;
+    transform: translateY(-6px);
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  .em_info-off{
+    background: #d9d9d9;
+    color: #333;
+  }
+
+  .em_info-on{
+    background: var(--m-color02);
+    color: var(--m-color05);
+  } 
+
+  .em_info-opt3{
+    width: 360px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #d9d9d9;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .appform-intro{
+    grid-column: 1 / 3;
+    height: 400px;
+    margin-top: 30px;
+  }
+
+  .appform-intro-text{
+    width: 100%;
+    height: 300px;
+    border: 2px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 20px;
+    resize: none;
+    font-size: var(--f-size03);
+    font-weight: 300;
+    color: #333;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+
+  .appform-btnwrap{
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+
+  .appform-resetbtn{
+    display: block;
+    line-height: 35px;
+    width: 150px;
+    border-radius: 35px;
+    text-align: center;
+    background: #d9d9d9;
+    color : #888;
+  }
+
+  .appform-savebtn{
+    display: inline-block;
+    line-height: 35px;
+    width: 100px;
+    border-radius: 35px;
+    text-align: center;
+    background: var(--m-color02);
+    color : var(--m-color05);
+    margin-right: 20px;
+  }
+
+  .appform-submitbtn{
+    display: inline-block;
+    line-height: 35px;
+    width: 180px;
+    border-radius: 35px;
+    text-align: center;
+    background: var(--m-color03);
+    color : var(--m-color05);
+  }
+
