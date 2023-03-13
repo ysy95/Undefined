@@ -86,22 +86,21 @@ function Slider1__update(timestamp) {
 Slider1__init();
 
 
+
+// 영상 슬라이드
+let n = 1;//초기값
+const img_list = document.querySelectorAll('.lnb > li');
+
+img_list.forEach((el, index) => {
+    el.onclick=()=>{
+        document.getElementById('Bigvideo').src='./img/*'+'.mp4';
+    }
+});
+
+
+
 //모바일 슬라이드
 $(function(){
 
-  let slide = $('.m_game--slide');
-  let l_btn = $('#prev-btn');
-  let r_btn = $('#next-btn');
-  let w = $('.m_game--slide--wrap').width();
-
-  $('.m_game--slide > li:last-of-type').insertBefore('.m_game--slide > li:first-of-type');
-  slide.css('margin-left',-w);
-
-  function moveLeft(){
-    slide.animate({'margin-left':-w*2},500, function(){
-      $('.m_game--slide > li:first-of-type').insertAfter('.m_game--slide > li:last-of-type');
-      slide.css('margin-left',-w);
-    });
-  }
 
 });
