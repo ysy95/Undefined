@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <style>
+    html,
+    body {
+      position: relative;
+    }
+
+      
+  /* PLAY NOW 영역 */
+  .playnow-wrap {
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .playnow-banner {
+    width: 390px; height: 500px;
+  }
+  .playnow-banner-li {
+    width: 100%;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
+  }
+  .playnow-banner-li.s01 .playnow-bg {
+    background-image: url('../img/playnow_bg_01.jpg');
+  }
+  .playnow-banner-li.s02 .playnow-bg {
+    background-image: url('../img/playnow_bg_02.jpg');
+  }
+  .playnow-banner-li.s03 .playnow-bg {
+    background-image: url('../img/playnow_bg_03.jpg');
+  }
+  .playnow-bg {
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 83%;
+  }
+  .playnow-txt {
+    width: 100%;
+    text-align: left;
+    background: #F2F2F2;
+    border-radius: 0px 0px 25px 25px;
+  }
+  .playnow-figure {
+    margin: 0 auto;
+    padding: 14px 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .playnow-figure-wrap {
+    display: flex;
+  }
+  .playnow-figure-wrap > img {
+    width: 55px; height: 55px;
+  }
+  .playnow-figure-wrap > div {
+    margin-left: 10px;
+  }
+  .playnow-figure-wrap > div > p:first-child {
+    font-family: var(--f-style);
+    font-weight: 700;
+    font-size: var(--f-size02);
+    color: var(--m-color06);
+  }
+  .playnow-figure-wrap > div > p:last-child {
+    font-family: var(--f-style);
+    font-size: 0.8125em;
+    line-height: 140%;
+    color: #777;
+    margin-top: 3px;
+  }
+  .playnow-figure > a {
+    position: absolute;
+    right: 14px; top: 0px;
+    transform: translateY(-40%);
+  }
+  .playnow-figure > a > img {
+    width: 50px; height: 50px;
+  }
+  .playnow-btn {
+    position: absolute;
+    z-index: 150;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.15));
+  }
+  .playnow-btn.b-left {
+    top: 60%; left: 10px;
+  }
+  .playnow-btn.b-right {
+    top: 60%; right: 10px;
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <swiper-container class="mySwiper playnow-banner" pagination="true" pagination-clickable="true" navigation="true" space-between="30" loop="true">
+
+    <swiper-slide class="playnow-banner-li s01">
+      <div class="playnow-bg"></div>
+            <div class="playnow-txt">
+              <div class="playnow-figure">
+                <div class="playnow-figure-wrap">
+                  <img src="./img/icon_2wolds.png" alt="제2의나라 아이콘">
+                  <div>
+                    <p>제2의 나라: Cross Worlds</p>
+                    <p>마음속 깊이 간직했던 세계
+                      <br>『제2의 나라: Cross Worlds』로 당신을 초대합니다.</p>
+                  </div>
+                </div>
+                <a href="https://2worlds.netmarble.com/ko" target="_blank" title="제2의나라 공식사이트 바로가기" ><img src="./img/play_btn.png" alt="바로가기 버튼이미지"></a>
+              </div>
+            </div>
+    </swiper-slide>
+
+    <swiper-slide class="playnow-banner-li s02">
+      <div class="playnow-bg"></div>
+            <div class="playnow-txt">
+              <div class="playnow-figure">
+                <div class="playnow-figure-wrap">
+                  <img src="./img/icon_Mergekuyaisland.png" alt="머지쿵야아일랜드 아이콘">
+                  <div>
+                    <p>머지 쿵야 아일랜드</p>
+                    <p>더할수록 커지는 나만의 섬!
+                      <br>귀여운 쿵야들과 함께 오염된 섬을 정화시켜주세요!</p>
+                  </div>
+                </div>
+                <a href="https://mergekuyaisland.netmarble.com/ko" target="_blank" title="머지쿵야아일랜드 공식사이트 바로가기"><img src="./img/play_btn.png" alt="바로가기 버튼이미지"></a>
+              </div>
+            </div>
+    </swiper-slide>
+
+    <swiper-slide class="playnow-banner-li s03">
+      <div class="playnow-bg"></div>
+      <div class="playnow-txt">
+        <div class="playnow-figure">
+          <div class="playnow-figure-wrap">
+            <img src="./img/icon_Skr.png" alt="세븐나이츠레볼루션 아이콘">
+            <div>
+              <p>세븐나이츠 레볼루션</p>
+              <p>영웅이 깨어나는 순간, 위대한 모험이 시작된다.
+                <br> 영웅의 힘을 계승한 자여, 세상을 구원하라!</p>
+            </div>
+          </div>
+          <a href="https://skr.netmarble.com/" target="_blank" title="세븐나이츠레볼루션 공식사이트 바로가기"><img src="./img/play_btn.png" alt="바로가기 버튼이미지"></a>
+        </div>
+      </div>
+    </swiper-slide>
+
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>

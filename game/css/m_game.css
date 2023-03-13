@@ -158,6 +158,7 @@
   background: rgba(255, 255, 255, .7);
   width:100%; height: 10px;
   position: absolute; left: 0px; bottom: 0px;
+  display: none;
 }
 .newgame-banner-list li > div > span {
   display: block;
@@ -166,11 +167,17 @@
   position: absolute; left: 0px; bottom: 0px;
   z-index: 10;
 }
+.gage-on {
+  display: block !important;
+}
 
+
+
+/* 스와이퍼슬라이드 */
 /* PLAY NOW 영역 */
 #playnow {
   padding: 0px 14px;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 }
 .playnow-wrap {
   margin: 0 auto;
@@ -179,20 +186,19 @@
   text-align: center;
 }
 .playnow-banner {
-  width: 100%; height: 300px;
+  width: 390px; height: 500px;
 }
-.playnow-banner li {
+.playnow-banner-li {
   width: 100%;
-  display: none;
   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
 }
-.playnow-banner li:first-child .playnow-bg {
+.playnow-banner-li.s01 .playnow-bg {
   background-image: url('../img/playnow_bg_01.jpg');
 }
-.playnow-banner li:nth-child(2) .playnow-bg {
+.playnow-banner-li.s02 .playnow-bg {
   background-image: url('../img/playnow_bg_02.jpg');
 }
-.playnow-banner li:last-child .playnow-bg {
+.playnow-banner-li.s03 .playnow-bg {
   background-image: url('../img/playnow_bg_03.jpg');
 }
 .playnow-bg {
@@ -257,9 +263,31 @@
 .playnow-btn.b-right {
   top: 60%; right: 10px;
 }
-.playnow-on {
-  display: block !important;
+.mySwiper {
+  overflow: visible !important;
 }
+.swiper-button-prev:after {
+  display: none;
+}
+.swiper-button-next:after {
+  display: none;
+}
+.swiper-button-prev {
+  width: 45px !important; height: 45px !important;
+  background-image: url("../img/playnow_btn_left.png");
+  background-size: cover;
+  left: -10px !important; top: 50% !important;
+  transform: translateY(-50%);
+}
+.swiper-button-next {
+  width: 45px !important; height: 45px !important;
+  background-image: url("../img/playnow_btn_right.png");
+  background-size: cover;
+  right: -10px !important; top: 50% !important;
+  transform: translateY(-50%);
+}
+
+
 
 
 /* GAME LIST 영역 */
@@ -268,7 +296,6 @@
 }
 .gamelist-top {
   text-align: center;
-  padding-top: 50px;
 }
 .gamelist-wrap {
   margin: 0 auto;
@@ -314,7 +341,7 @@
   margin-bottom: 40px;
   position: relative;
 }
-.gamelist-list > li > div > div {
+.gamelist-list > li > div > a >  div {
   width: 100%; height: 230px;
   background-size: cover;
   border-radius: 7px;

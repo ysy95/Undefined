@@ -1,5 +1,8 @@
 
 $(function () {
+
+  ////////////////// 신작 게임 //////////////////////
+
   game_index = 0;
   $('.newgame-banner-list > li').eq(game_index).find('span').css('width', '0%');
   $('.newgame-banner-list > li').eq(game_index).find('span').animate({
@@ -40,7 +43,7 @@ $(function () {
       if (game_index > 2) {
         game_index = 0;
       }
-      console.log(game_index);
+      // console.log(game_index);
       $('.newgame-banner li').addClass('display-none').removeClass('newgame-banner-on');
       $('.newgame-banner-l video').get(game_index).currentTime = 0;
       $('.newgame-banner li').eq(game_index).removeClass('display-none').addClass('newgame-banner-on');
@@ -92,7 +95,6 @@ $(function () {
         </div>
       </div>
       `;
-
 
     // 해당 인덱스의 슬라이드의 모달이 나오게 if문 작성
     if (m === 0) {

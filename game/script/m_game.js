@@ -1,33 +1,58 @@
 
 $(function(){
 
+  ////////////////// 신작 게임 //////////////////////
 
-    ////////////////// 신작 게임 //////////////////////
+  game_index = 0;
+  $('.newgame-banner-list > li').eq(game_index).find('span').css('width', '0%');
+  $('.newgame-banner-list > li').eq(game_index).find('span').animate({
+    width: '100%'}, 6000);
 
-    let slide_list = $('.newgame-banner-list li');
+  let timer = setInterval(function () {
+    game_index++;
+    if (game_index > 2) {
+      game_index = 0;
+    }
+    $('.newgame-banner li').addClass('display-none').removeClass('newgame-banner-on');
+    $('.newgame-banner-l video').get(game_index).currentTime = 0;
+    $('.newgame-banner li').eq(game_index).removeClass('display-none').addClass('newgame-banner-on');
+    $('.newgame-banner-list > li').find('div').removeClass('gage-on');
+    $('.newgame-banner-list > li').eq(game_index).find('div').addClass('gage-on');
+    $('.newgame-banner-list > li').eq(game_index).find('span').css('width', '0%');
+    $('.newgame-banner-list > li').eq(game_index).find('span').stop().animate({
+      width: '100%'}, 6000);
+  }, 6000);
 
-    slide_list.click(function () {
   
-      let n = $('.newgame-banner-list li').index(this);
-  
-      // 슬라이드 클릭시 동영상/문구 변경
-      $('.newgame-banner li').removeClass('newgame-banner-on');
-      $('.newgame-banner li').eq(n).addClass('newgame-banner-on');
-  
-    });
 
-
-    // 오토슬라이드 기능 //
-    let count = 0;
-
-    setInterval(()=>{
-      count++;
-      if(count > 2){
-        count = 0;
+  $('.newgame-banner-list > li').click(function(){
+    clearInterval(timer);
+    let game_index = $('.newgame-banner-list > li').index(this);
+    $('.newgame-banner li').addClass('display-none').removeClass('newgame-banner-on');
+    $('.newgame-banner-l video').get(game_index).currentTime = 0;
+    $('.newgame-banner li').eq(game_index).removeClass('display-none').addClass('newgame-banner-on');
+    $('.newgame-banner-list > li').find('div').removeClass('gage-on');
+    $('.newgame-banner-list > li').eq(game_index).find('div').addClass('gage-on');
+    $('.newgame-banner-list > li').eq(game_index).find('span').css('width', '0%');
+    $('.newgame-banner-list > li').eq(game_index).find('span').stop().animate({
+      width: '100%'}, 6000);
+    timer = setInterval(function () {
+      game_index++;
+      if (game_index > 2) {
+        game_index = 0;
       }
-      $('.newgame-banner li').removeClass('newgame-banner-on');
-      $('.newgame-banner li').eq(count).addClass('newgame-banner-on');
-      }, 5000);
+      // console.log(game_index);
+      $('.newgame-banner li').addClass('display-none').removeClass('newgame-banner-on');
+      $('.newgame-banner-l video').get(game_index).currentTime = 0;
+      $('.newgame-banner li').eq(game_index).removeClass('display-none').addClass('newgame-banner-on');
+      $('.newgame-banner-list > li').find('div').removeClass('gage-on');
+      $('.newgame-banner-list > li').eq(game_index).find('div').addClass('gage-on');
+      $('.newgame-banner-list > li').eq(game_index).find('span').css('width', '0%');
+      $('.newgame-banner-list > li').eq(game_index).find('span').stop().animate({
+        width: '100%'}, 6000);
+    }, 6000);
+  });
+
 
 
 

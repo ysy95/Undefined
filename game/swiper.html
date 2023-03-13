@@ -1,61 +1,145 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <title>Swiper demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
+  <!-- Demo styles -->
   <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
 
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    swiper-container {
-      margin: 100px auto;
-      width: 390px;
-      height: 300px;
-    }
-
-    swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-      font-weight: bold;
-      color: #fff;
-    }
-
-    
-
+/* PLAY NOW 영역 */
+#playnow {
+  padding: 0px 14px;
+  padding-bottom: 100px;
+}
+.playnow-wrap {
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.playnow-banner {
+  width: 390px; height: 500px;
+}
+.playnow-banner-li {
+  width: 100%;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
+}
+.playnow-banner-li.s01 .playnow-bg {
+  background-image: url('../img/playnow_bg_01.jpg');
+}
+.playnow-banner-li.s02 .playnow-bg {
+  background-image: url('../img/playnow_bg_02.jpg');
+}
+.playnow-banner-li.s03 .playnow-bg {
+  background-image: url('../img/playnow_bg_03.jpg');
+}
+.playnow-bg {
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 83%;
+}
+.playnow-txt {
+  width: 100%;
+  text-align: left;
+  background: #F2F2F2;
+  border-radius: 0px 0px 25px 25px;
+}
+.playnow-figure {
+  margin: 0 auto;
+  padding: 14px 12px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.playnow-figure-wrap {
+  display: flex;
+}
+.playnow-figure-wrap > img {
+  width: 55px; height: 55px;
+}
+.playnow-figure-wrap > div {
+  margin-left: 10px;
+}
+.playnow-figure-wrap > div > p:first-child {
+  font-family: var(--f-style);
+  font-weight: 700;
+  font-size: var(--f-size02);
+  color: var(--m-color06);
+}
+.playnow-figure-wrap > div > p:last-child {
+  font-family: var(--f-style);
+  font-size: 0.8125em;
+  line-height: 140%;
+  color: #777;
+  margin-top: 3px;
+}
+.playnow-figure > a {
+  position: absolute;
+  right: 14px; top: 0px;
+  transform: translateY(-40%);
+}
+.playnow-figure > a > img {
+  width: 50px; height: 50px;
+}
+.playnow-btn {
+  position: absolute;
+  z-index: 150;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.15));
+}
+.playnow-btn.b-left {
+  top: 60%; left: 10px;
+}
+.playnow-btn.b-right {
+  top: 60%; right: 10px;
+}
+.mySwiper {
+  overflow: visible !important;
+}
+.swiper-button-prev:after {
+  display: none;
+}
+.swiper-button-next:after {
+  display: none;
+}
+.swiper-button-prev {
+  width: 45px; height: 45px;
+  background-image: url("./img/playnow_btn_left.png");
+  background-size: cover;
+  left: -15px; top: 30%;
+}
+.swiper-button-next {
+  width: 45px; height: 45px;
+  background-image: url("./img/playnow_btn_right.png");
+  background-size: cover;
+  right: -15px; top: 30%;
+}
   </style>
 </head>
 
 <body>
+  <!-- 추천게임 영역 -->
+  <!-- 스와이퍼 슬라이드 -->
+  
+  <section id="playnow">
+    <h2 class="display-none">넷마블 금주의 추천게임</h2>
+    <article class="playnow-wrap">
+    <span class="game-badge">Play Now</span>
+    <h2 class="game-title">넷마블 금주의 추천게임</h2>
 
-  <swiper-container init="false" class="swiper mySwiper2 playnow-banner">
 
-    <swiper-slide class="playnow-on">
-      <div class="playnow-bg"></div>
+  <div class="swiper mySwiper">
+
+    <div class="swiper-wrapper playnow-banner">
+
+      <div class="swiper-slide playnow-banner-li s01">
+        <div class="playnow-bg"></div>
             <div class="playnow-txt">
               <div class="playnow-figure">
                 <div class="playnow-figure-wrap">
@@ -69,10 +153,10 @@
                 <a href="https://2worlds.netmarble.com/ko" target="_blank" title="제2의나라 공식사이트 바로가기" ><img src="./img/play_btn.png" alt="바로가기 버튼이미지"></a>
               </div>
             </div>
-    </swiper-slide>
+      </div>
 
-    <swiper-slide class="playnow-on">
-      <div class="playnow-bg"></div>
+      <div class="swiper-slide playnow-banner-li s02">
+        <div class="playnow-bg"></div>
             <div class="playnow-txt">
               <div class="playnow-figure">
                 <div class="playnow-figure-wrap">
@@ -86,10 +170,10 @@
                 <a href="https://mergekuyaisland.netmarble.com/ko" target="_blank" title="머지쿵야아일랜드 공식사이트 바로가기"><img src="./img/play_btn.png" alt="바로가기 버튼이미지"></a>
               </div>
             </div>
-    </swiper-slide>
+      </div>
 
-    <swiper-slide class="playnow-on">
-      <div class="playnow-bg"></div>
+      <div class="swiper-slide playnow-banner-li s03">
+        <div class="playnow-bg"></div>
       <div class="playnow-txt">
         <div class="playnow-figure">
           <div class="playnow-figure-wrap">
@@ -103,35 +187,36 @@
           <a href="https://skr.netmarble.com/" target="_blank" title="세븐나이츠레볼루션 공식사이트 바로가기"><img src="./img/play_btn.png" alt="바로가기 버튼이미지"></a>
         </div>
       </div>
-    </swiper-slide>
+      </div>
 
-  </swiper-container>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+</article>
+</section>
 
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
   <script>
-    var swiper2El = document.querySelector(".mySwiper2");
-    Object.assign(swiper2El, {
-      grabCursor: true,
-      effect: "creative",
-      creativeEffect: {
-        prev: {
-          shadow: true,
-          translate: ["-150%", 0, -500],
-        },
-        next: {
-          shadow: true,
-          translate: ["150%", 0, -500],
-        },
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 50,
+      loop: true,
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-      loop : true,
-      autoplay: {
-          delay: 3000, // 시간 설정
-          disableOnInteraction: false, // false-스와이프 후 자동 재생
-        },
     });
-    swiper2El.initialize()
   </script>
 </body>
 
