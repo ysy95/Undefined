@@ -21,16 +21,22 @@ a{text-decoration: none;}
 
 }
 .game--video{
-  overflow:hidden;
+  display: flex;
+  width: 700px;
+  height: 418px;
   margin-top: 50px;
   border-radius: 25px;
+  position: relative
+}
+.game--video li{
+  position: absolute;
 }
 .game--video video{
   width: 700px;
-  height: 418px;
+  object-fit: cover;
 }
 .game--video img{
-  transform: translate(300px, -280px);
+  transform: translate(290px, -280px);
 }
 .game--site{
   width:410px;
@@ -57,7 +63,7 @@ a{text-decoration: none;}
   color: var(--m-color02);
   font-weight: 600;
 }
-
+/* 
 .game--list{
   display: flex;
   width: 1200px;
@@ -119,12 +125,12 @@ a{text-decoration: none;}
     display: none;
 
 }
-/* .game--list li{
+.game--list li{
   width: 280px;
   height: 170px;
   overflow: hidden;
-}
-.game--list figure{
+} */
+/* .game--list figure{
   position: relative;
 }
 .game--list figure img{
@@ -273,15 +279,16 @@ a{text-decoration: none;}
   display: flex;
   margin: 0 auto;
   gap: 60px;
-  transform: translateY(60px);
+  transform: translateY(70px);
 
 }
 .stock--price{
-  height:350px;
+  width: 100%;
   margin-top: 50px;
   background-image: url('https://ssl.pstatic.net/imgfinance/chart/item/area/day/251270.png?sidcode=1678519688067');
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 .stock--real{
   width:380px;height: 370px;

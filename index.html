@@ -16,8 +16,8 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="./script/main.js" defer></script>
   <script src="./script/common.js" defer></script>
-  <script src="./employment/script/common.js" defer></script>
-  <script src="./employment/script/em.js" defer></script>
+  <!-- <script src="./employment/script/common.js" defer></script>
+  <script src="./employment/script/em.js" defer></script> -->
 </head>
 <body>
   <header>
@@ -103,14 +103,42 @@
     <h2>게임</h2>
     <article class="game--wrap">
       <h2>게임내용</h2>
-      <div class="game--video">
-        <video muted autoplay loop>
-          <source src="./img/2wolds_Trim.mp4" type="video/mp4">
-        </video>
-          <a href="https://youtu.be/0xo6sCThrtM" title="제2의나라영상">
-            <img src="./img/videoplay_btn.png" alt="재생버튼">
-          </a>
-      </div>
+      <ul class="game--video">
+        <li>
+          <video muted autoplay loop>
+            <source src="./img/2wolds_Trim.mp4" type="video/mp4">
+          </video>
+            <a href="https://youtu.be/0xo6sCThrtM" title="제2의나라영상">
+              <img src="./img/videoplay_btn.png" alt="재생버튼">
+            </a>
+        </li>
+        <li>
+          <video muted autoplay loop>
+            <source src="./img/Skr_Trim.mp4" type="video/mp4">
+          </video>
+            <a href="https://youtu.be/0xo6sCThrtM" title="세븐나이츠 레볼루션">
+              <img src="./img/videoplay_btn.png" alt="재생버튼">
+            </a>
+        </li>
+        <li>
+          <video muted autoplay loop>
+            <source src="./img/Mergekuyaisland_Trim.mp4" type="video/mp4">
+          </video>
+            <a href="https://youtu.be/0xo6sCThrtM" title="머지쿵야 아앨랜드">
+              <img src="./img/videoplay_btn.png" alt="재생버튼">
+            </a>
+        </li>
+        <li>
+          <video muted autoplay loop>
+            <source src="./img/Charlottestable_Trim.mp4" type="video/mp4">
+          </video>
+            <a href="https://youtu.be/0xo6sCThrtM" title="샬롯의 테이블">
+              <img src="./img/videoplay_btn.png" alt="재생버튼">
+            </a>
+        </li>
+        </ul>
+
+
       <div class="game--site">
         <img src="./img/2worlds_logo.png" alt="제2의나라 로고">
         <p>스튜디오 지브리와의 합작, 감성 모함 RPG!<br>
@@ -119,83 +147,7 @@
         <a href="https://2worlds.netmarble.com/ko" title="제2의 나라 공식사이트 바로가기">공식사이트 바로가기</a>
       </div>
     </article>
-    <div class="slider-1" data-slider-1-autoplay-timeout="5000" data-slider-1-autoplay-current="0" data-slider-1-autoplay-status="Y">
-      <ul class="slides">
-          <li>
-            <figure>
-              <img src="../Undefined/img/game01.png" alt="제2의나라">
-              <figcaption class="nav-bar">
-                <div class="cell">
-                  <div class="progress-bar">
-                          제2의나라 : Cross Worlds
-                          
-                            <div></div>
-                        </div>
-  
-                    </div>
-                    <div class="cell">
-                        <div class="btn-play">플레이</div>
-                        <div class="btn-stop">정지</div>
-                    </div>
-            </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="../Undefined/img/game02.png" alt="세븐나이츠 레볼루션">
-              <figcaption class="nav-bar">
-                <div class="cell">
-                  <div class="progress-bar">
-                    세븐나이츠 레볼루션
-                    <div></div>
-                  </div>
-                </div>
-                <div class="cell">
-                  <div class="btn-play">플레이</div>
-                  <div class="btn-stop">정지</div>
-                </div>
-                
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="../Undefined/img/game03.png" alt="머지 쿵야 아일랜드">
-              <figcaption class="nav-bar">
-                <div class="cell">
-                  <div class="progress-bar">
-                      머지 쿵야 아일랜드
-                            <div></div>
-                        </div>
-                    </div>
-                    <div class="cell">
-                        <div class="btn-play">플레이</div>
-                        <div class="btn-stop">정지</div>
-                    </div>
-                
-            </figcaption>
-          </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="../Undefined/img/game04.png" alt="샬롯의 테이블">
-              <figcaption class="nav-bar">
-                    <div class="cell">
-                        <div class="progress-bar">
-                          샬롯의 테이블
-                            <div></div>
-                        </div>
-                    </div>
-                    <div class="cell">
-                        <div class="btn-play">플레이</div>
-                        <div class="btn-stop">정지</div>
-                    </div>
-                
-            </figcaption>
-            </figure>
-          </li>
-        </ul>
-  </div>
+   
   </section>
   
   <section id="netmarble">
@@ -286,7 +238,7 @@
         <h2>채용공고</h2>
         <p>게임에 진심인 당신, <br>넷마블의 열정이 되어주세요</p>
         <img src="./img/main_character06.png" alt="">
-        <a href="./em/em_list.html" title="채용공고 바로가기">채용공고 바로가기</a>
+        <a href="./employment/m_em.html" title="채용공고 바로가기">채용공고 바로가기</a>
       </article>
 
       </div>

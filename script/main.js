@@ -2,14 +2,14 @@
 var windowFocusHere = true;
 
 // 다른 탭으로 이동했을 때
-$(window).on("blur", function() {
-    windowFocusHere = false;
-});
+// $(window).on("blur", function() {
+//     windowFocusHere = false;
+// });
 
-// 다시 해당 윈도우(브라우저로 돌아왔을 때)
-$(window).on("focus", function() {
-    windowFocusHere = true;
-});
+// // 다시 해당 윈도우(브라우저로 돌아왔을 때)
+// $(window).on("focus", function() {
+//     windowFocusHere = true;
+// });
 
 
 function Slider1__init() {
@@ -86,36 +86,22 @@ function Slider1__update(timestamp) {
 Slider1__init();
 
 
+//모바일 슬라이드
+$(function(){
 
+  let slide = $('.m_game--slide');
+  let l_btn = $('#prev-btn');
+  let r_btn = $('#next-btn');
+  let w = $('.m_game--slide--wrap').width();
 
+  $('.m_game--slide > li:last-of-type').insertBefore('.m_game--slide > li:first-of-type');
+  slide.css('margin-left',-w);
 
-// API요청하기
-fetch('https://finance.naver.com/item/main.nhn?code=005930 ')
-  .then((response) => response.json())//기다렸다가 결과가오면 처리 json형식으로 바꿈.
-  .then((data) => {
-    document.getElementsByClassName('stock--price').innerHTML = data['stock--price'];
-  });
-  
+  function moveLeft(){
+    slide.animate({'margin-left':-w*2},500, function(){
+      $('.m_game--slide > li:first-of-type').insertAfter('.m_game--slide > li:last-of-type');
+      slide.css('margin-left',-w);
+    });
+  }
 
-  // POST 메서드 구현 예제
-async function postData(url = '', data = {}) {
-  // 옵션 기본 값은 *로 강조
-  const response = await fetch(url, {
-    method: 'POST', // *GET, POST, PUT, DELETE 등
-    mode: 'cors', // no-cors, *cors, same-origin
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'same-origin', // include, *same-origin, omit
-    headers: {
-      'Content-Type': 'application/json',
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    redirect: 'follow', // manual, *follow, error
-    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    body: JSON.stringify(data), // body의 데이터 유형은 반드시 "Content-Type" 헤더와 일치해야 함
-  });
-  return response.json(); // JSON 응답을 네이티브 JavaScript 객체로 파싱
-}
-
-postData('https://example.com/answer', { answer: 42 }).then((data) => {
-  console.log(data); // JSON 데이터가 `data.json()` 호출에 의해 파싱됨
 });

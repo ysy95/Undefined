@@ -36,6 +36,8 @@ article h3{
 .m_game--site--wrap{
   overflow: hidden;
   background-color: #fff;
+  
+
 }
 #m_game--site{
   border-radius: 30px;
@@ -45,41 +47,88 @@ article h3{
   text-align: center;
   margin-top: 1.8rem;
   transform: translateY(2rem);
+  position: relative;
+  
+}
+.m_game--slide--wrap{
+  width: 18rem;
+  border: solid 2px #333;
+  height: 300px;
+  margin: 0 auto;
+  padding-left: 3rem;
+  left: 0px;
+  position: relative;
+  overflow: hidden;
+
+
+}
+.m_game--slide{
+  display: flex;
+  position: relative;
+  left: 0rem;top: -5%;
+  width: 60rem;
 
 }
 
-#m_game--site img{
+.m_game--slide > li:not(:last-of-type){
   width: 15rem;
-  margin-bottom: 30px;
+  height: 300px;
+  margin-right: 4rem;
 }
+
+.m_game--slide > li:first-of-type > div img{
+  width: 15rem;
+}
+.m_game--slide > li:first-of-type > div{
+  transform: translateY(2.45rem);
+}
+.m_game--slide > li:nth-of-type(2) > div img{
+  width: 12rem;
+}
+.m_game--slide > li:nth-of-type(2) > div{
+  transform: translateY(2.45rem);
+}
+.m_game--slide > li:nth-of-type(3) > div img{
+  width: 12rem;
+}
+.m_game--slide > li:last-of-type > div img{
+  width: 10rem;
+  transform: translateY(1rem);
+}
+.m_game--slide > li:last-of-type div{
+  transform: translateY(-0.7rem);
+}
+
 #m_game--site p{
+  transform: translateY(1.2rem);
   line-height: 30px;
-  font-size: var(--f-size01);
+  font-size: 0.7rem;
 }
 
 #m_game--site a{
-  display: inline-block;
-  width: 7.5rem;height: 1.8rem;
+  display: block;
+  width: 7rem;height: 1.8rem;
   border-radius: 5px;
   border: solid 1px var(--m-color02);
   line-height: 1.8rem;
-  margin: 35px 0px 30px 0px;
-  font-size: var(--f-size01);
+  font-size: 0.7rem;
 }
-.m_game--btn{
-  width: 20%;
+.app_btn{
   display: flex;
-  justify-content: space-evenly;
-  transform: translate(9.8rem,-220%);
+  gap: 0.5rem;
+  margin-top: 2rem;
 }
-.m_game--btn img{
-  height: 2.5rem;
+#prev-btn, #next-btn{
+  cursor: pointer;
+  position: absolute;
+  top:42%;
+  width:2.5rem;
 }
-.arrow-left{
-  transform: translate(-350%);
+#prev-btn{
+  left: 0rem;
 }
-.arrow-right{
-  transform: translateX(350%);
+#next-btn{
+  right: 0rem;
 }
 
 /* 넷마블 */

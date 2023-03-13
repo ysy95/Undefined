@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../xampp/htdocs"
+		},
+		{
+			"path": "../../../Users/tptlf/OneDrive/바탕 화면/정보보안/PHP"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "UI_UX"
+	}
+}

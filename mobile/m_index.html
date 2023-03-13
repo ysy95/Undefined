@@ -10,9 +10,13 @@
   <link rel="stylesheet" href="../css/reset.css" type="text/css">
   <link rel="stylesheet" href="../css/m_main.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="../script/common.js" defer></script>
-  <script src="../employment/script/session.php" defer></script>
-  <script src="../employment/script/common.js" defer></script>
+  <!-- <script src="../employment/script/session.php" defer></script>
+  <script src="../employment/script/common.js" defer></script> -->
+
+  <script src="../script/common.js" defer></script>
 </head> 
 <body>
   <header>
@@ -115,19 +119,72 @@
     </div>
     <article id="m_game--site">
         <h2>게임다운</h2>
-        <div class="m_game--site--wrap">
-        <img src="../img/2worlds_logo.png" alt="제2의나라 로고">
-        <p>스튜디오 지브리와의 합작, 감성 모험 RPG!</p>
-        <p>마음속 깊이 간직했던 세계로 당신을 초대합니다.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.netmarble.enn" title="구글플레이"><i class="fa-brands fa-google-play"></i> Google Play</a>
-        <a href="" title="애플스토어"><i class="fa-brands fa-apple"></i> App Store</a>
+        <div class="m_game--slide--wrap">
+        <ul class="m_game--slide">
+        <li>
+          <div>
+
+            <img src="../img/2worlds_logo.png" alt="제2의나라 로고">
+            <p>스튜디오 지브리와의 합작, 감성 모험 RPG!</p>
+            <p>마음속 깊이 간직했던 세계로 당신을 초대합니다.</p>
+            <p class="app_btn">
+              
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.enn" title="구글플레이">
+                <i class="fa-brands fa-google-play"></i> Google Play
+              </a>
+              <a href="https://apps.apple.com/kr/app/id1488423517" title="애플스토어">
+                <i class="fa-brands fa-apple"></i> App Store
+              </a>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+
+            <img src="../img/Skr_logo.png" alt="세븐나이츠 레볼루션 로고">
+            <p>모두가 꿈꿔온 세븐나이츠 레볼루션의 세계로</p>
+            <p>감성충만 오픈필드 속 발견할 새로운 세계</p>
+            <p class="app_btn">
+              
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.skrv" title="구글플레이">
+                <i class="fa-brands fa-google-play"></i> Google Play
+              </a>
+              <a href="https://apps.apple.com/kr/app/id1488570532?l=kr" title="애플스토어">
+                <i class="fa-brands fa-apple"></i> App Store
+              </a>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+          <img src="../img/Mergekuyaisland_logo.png" alt="머지 쿵야 아일랜드 로고">
+          <p>더할수록 커지는 나만의 섬!</p>
+          <p>자원을 채집하고 합쳐 나만의 섬을 꾸며보세요!</p>
+          <p class="app_btn">
+          <a href="https://play.google.com/store/apps/details?id=com.netmarble.mkglobal" title="구글플레이"><i class="fa-brands fa-google-play"></i> Google Play</a>
+          <a href="https://apps.apple.com/app/id1625027068" title="애플스토어"><i class="fa-brands fa-apple"></i> App Store</a>
+        </p>
       </div>
-      <div class="m_game--btn">
-        <img class="arrow-left" src="../img/arrow-left.png" alt="왼쪽으로가기">
-        <img class="arrow-right" src="../img/arrow-right.png" alt="오른쪽으로가기">
+        </li>
+        <li>
+          <div>
+          <img src="../img/charlottestable_logo.png" alt="샬롯의 테이블로고">
+          <p>샬롯이 세계 최고의 셰프가 될 수 있도록 도와주세요!</p>
+          <p>샬롯의 테이블로 여러을 초대합니다.</p>
+          <p class="app_btn">
+
+            <a href="https://play.google.com/store/apps/details?id=com.netmarble.tab" title="구글플레이"><i class="fa-brands fa-google-play"></i> Google Play</a>
+            <a href="https://apps.apple.com/app/id1594117615" title="애플스토어"><i class="fa-brands fa-apple"></i> App Store</a>
+          </p>
+        </div>
+          </li>
+        </ul>
+          <img id="prev-btn" class="btn"src="../img/arrow-left.png" alt="왼쪽으로가기">
+          <img id="next-btn" class="btn"src="../img/arrow-right.png" alt="오른쪽으로가기">
       </div>
     </article>
   </section>
+  
 
 
   
@@ -224,7 +281,7 @@
         </a>
       </li>
       <li class="m_employment--notice">
-        <a class="color01" href="employment_notice.html" title="채용공고">
+        <a class="color01" href="../employment/m_em.html" title="채용공고">
           <h3>채용공고</h3>
           <p>넷마블의 열정이 <br>되어주세요</p>
           <img src="../img/main_character06.png" alt="보도자료">
@@ -233,7 +290,7 @@
     </ul>
   </section>
 
-
+<!-- 푸터영역 -->
   <footer>
     <div class="f_top">
       <select name="Family Site" id="family" onchange="siteUrl(this);">
