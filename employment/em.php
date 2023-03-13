@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>넷마블 메인페이지입니다.</title>
   <link rel="stylesheet" href="./css/base.css" type="text/css">
-  <link rel="stylesheet" href="./css/common.css" type="text/css">
-  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
+  <link rel="stylesheet" href="../css/reset.css" type="text/css">
   <link rel="stylesheet" href="./css/em.css">
   <script src="./script/em.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.6.3.js"></script>

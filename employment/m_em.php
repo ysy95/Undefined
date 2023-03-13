@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="./css/m_em.css">
   <link rel="stylesheet" href="./css/reset.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./script/m_common.js" defer></script>
   <script src="./script/m_em.js" defer></script>
   <link rel="stylesheet" href="./css/swiper.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -19,24 +21,31 @@
 <body>
 <header>
     <div id='h_wrap'>
-      <div class="m_bar">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class='h_nav'>
-        
+      <div class="h_top">
+        <div class="m_bar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <h1>
           <a href='index.html' title='메인페이지로 바로가기'>
             <img src='./img/main_logo.png' alt="메인로고">
           </a>
         </h1>
-        <nav>
-          <ul class='lnb'>
-            <a href='m_login.html' title='로그인하기'>로그인</a>&emsp;
-            <a href='m_join.html' title='회원가입하기'>회원가입</a>
-          </ul>
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+      <div class='h_nav'>
+        <ul class='lnb'>
+              <li>
+                <a href='m_login.html' title='로그인하기'>로그인</a>&emsp;
+              </li>
+              <li>
+                <a href='m_join.html' title='회원가입하기'>회원가입</a>
+              </li>
+        </ul>
+        
 
+        <nav>
           <ul class='gnb'>
             <li>
               <a href='#' title='게임'>게임<i class="fa-solid fa-sort-down"></i></a>
@@ -82,7 +91,10 @@
                 </ul>
             </li>
             <li>
-              <a href='#' title='문의'>문의<i class="fa-solid fa-sort-down"></i></a>
+              <a href='#' title='문의'>
+                문의
+                <i class="fa-solid fa-sort-down"></i>
+              </a>
               <ul class='sub'>
                 <li><a href='#' title='FAQ'>FAQ</a></li>
                 <li><a href='#' title='문의하기'>문의하기</a></li>
@@ -90,17 +102,9 @@
             </li>
           </ul>
 
-        
         </nav>
       </div>
-      
-      <h1>
-        <a href='index.html' title='메인페이지로 바로가기'>
-          <img src='./img/main_logo.png' alt="메인로고"/>
-        </a>
-      </h1>
 
-      <i class="fa-solid fa-circle-user"></i>
 
     </div>
   </header>

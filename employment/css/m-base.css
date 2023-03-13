@@ -13,11 +13,11 @@
   /* 프리텐다드 적용 */
   --f-style : 'Pretendard';
   /* 폰트 사이즈 */
-  --f-size01: 0.875em;
-  --f-size02: 1em;
-  --f-size03: 1.125em;
-  --f-size04: 1.5em;
-  --f-size05: 1.75em; 
+  --f-size01: 0.875rem;
+  --f-size02: 1rem;
+  --f-size03: 1.125rem;
+  --f-size04: 1.5rem;
+  --f-size05: 1.75rem; 
 }
 
 /* body 사이즈 */

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./css/em_list.css">
   <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
   <script src="../script/common.js" defer></script>
+  <script src="./script/em_list.js" defer></script>
   
 
   <!-- 임시저장은 로컬스토리지 구현 생각해보기 -->
@@ -214,7 +215,7 @@
               while($row = mysqli_fetch_row($em_list)){
                 $id = $row[0];
 
-                echo "<a href='../form/em_form.php?id=" . $id . "' title='지원서 작성하기' class='emb_btn-applibtn'>지원서 작성하기</a>";
+                echo "<a href='../form/em_form.php?id=" . $id . "' title='지원서 작성하기' class='emb_btn-applibtn' id='apply'>지원서 작성하기</a>";
               }
             ?>
         </div>

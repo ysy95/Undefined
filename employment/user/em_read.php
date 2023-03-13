@@ -28,6 +28,10 @@
     $userSQL = "SELECT * FROM user_data WHERE user_id = '$user_id'";
     $userinfo = mysqli_query($conn, $userSQL);
 
+    if($job_id == null || $job_id == " "){
+      echo "<script>alert('지원한 채용이 없습니다.'); location.href='../em.php';</script>";
+    }
+
     while($row = mysqli_fetch_assoc($userinfo)) {
       $job_id = $row['job_id'];
       $name = $row['user_name'];
@@ -45,9 +49,7 @@
       $intro = $row['user_intro'];
   }
 
-  if($job_id == null || $job_id == " "){
-    echo "<script>alert('지원한 채용이 없습니다.'); location.href='../em.php';</script>";
-  }
+
 
   ?>
 

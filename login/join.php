@@ -6,7 +6,6 @@ include('../employment/db.php');
 
 $ID = $_POST['ID'] ?? '';
 $PW = $_POST['PW'] ?? '';
-$PWChk = $_POST['PWChk'] ?? '';
 $Email = $_POST['Email'] ?? '';
 $markerting = $_POST['marketing'] ?? '0';
 
@@ -15,14 +14,10 @@ $stmt->bind_param("s", $ID);
 $stmt->execute();
 $checkRes = $stmt->get_result();
 if(mysqli_fetch_assoc($checkRes) > 0){
-  echo '<p>중복되어 있는 ID입니다. 로그인 해 주세요. <br> <a href="login.html" title="로그인">로그인</a></p>';
+  echo "<script>alert('이미 존재하는 아이디입니다.');</script>";
+  echo "<script>history.back();</script>";
   exit;
 };
-
-if($PW !== $PWChk){
-  echo '<script> alert("비밀번호가 일치하지 않습니다! 다시 입력해주세요!") </script>';
-  exit;
-}
 
 $hashed_password = password_hash($PW, PASSWORD_DEFAULT);
 $stmt = $conn->prepare("INSERT INTO user_data SET

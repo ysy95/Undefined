@@ -334,7 +334,7 @@
     
     <div class="f_bottom">
       <p>
-        <a href="../index.html" title="pc버전바로가기" class="pc_btn">PC버전 바로가기</a>
+        <a href="./em_form.php?move_pc_screen=1" title="pc버전바로가기" class="pc_btn">PC버전 바로가기</a>
       </p>
     </div>
     <div class="f_fixed">&nbsp;</div>

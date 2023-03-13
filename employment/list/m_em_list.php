@@ -36,11 +36,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>넷마블 모바일 채용지원</title>
   <link rel="stylesheet" href="../css/base.css" type="text/css">
   <link rel="stylesheet" href="../css/m_common.css" type="text/css">
   <link rel="stylesheet" href="../css/reset.css" type="text/css">
   <link rel="stylesheet" href="./css/m_em_list.css">
+  <script src="./script/em_list.js" defer></script>
 </head>
 <body>
   <header>
@@ -123,7 +124,7 @@
     
     <div class="f_bottom">
       <p>
-        <a href="../index.html" title="pc버전바로가기" class="pc_btn">PC버전 바로가기</a>
+        <a href="./em_list.php?move_pc_screen=1" title="pc버전바로가기" class="pc_btn">PC버전 바로가기</a>
       </p>
     </div>
     <div class="f_fixed">&nbsp;</div>

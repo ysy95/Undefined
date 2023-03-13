@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../employment/css/m_common.css" type="text/css">
   <link rel="stylesheet" href="./css/reset.css" type="text/css">
   <link rel="stylesheet" href="./css/m_login.css" type="text/css">
+  <script src="./script/login.js" defer></script>
 </head>
 <body>
 
@@ -19,9 +20,9 @@
         <fieldset class="login-wrap">
           <legend>로그인</legend>
           <p class="login-p01">즐거운 게임 세상 넷마블!</p>
-          
-          <input type="text" name="ID" placeholder="아이디" class="login-id" onfocus=""><br>
-          <input type="password" name="PW" placeholder="패스워드" class="login-pw">
+          <input type="text" name="ID" id="ID" placeholder="아이디" class="login-id" onfocus=""><br>
+          <input type="password" name="PW" id="PW" placeholder="패스워드" class="login-pw">
+          <p class="error">&nbsp;</p>
           <input type="submit" value="로그인" class="login-btn">
           <p class="login-p02">이미 계정이 있으신가요?&emsp; <a href="#" title="아이디비밀번호찾기">아이디/비밀번호 찾기</a></p>
         </fieldset>

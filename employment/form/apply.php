@@ -53,10 +53,10 @@ if ($stmt === false) {
 $stmt->bind_param("ssssssssssss", $name, $img, $email, $phone, $address, $opt01, $opt02, $opt03, $intro, $now ,$job_id, $ID);
 $stmt->execute();
 $result = $stmt->get_result();
-// echo '<script> alert("지원이 완료되었습니다.");';
-// echo 'if (navigator.userAgent.match(/iPhone|iPad|Android|BlackBerry|IEMobile|Opera Mini/i)){';
-// echo 'location.href = "../user/m_em_read.php"';
-// echo '} else {';
-// echo 'location.href = "../user/em_read.php"}</script>';
+echo '<script> alert("지원이 완료되었습니다.");';
+echo 'if (navigator.userAgent.match(/iPhone|iPad|Android|BlackBerry|IEMobile|Opera Mini/i)){';
+echo 'location.href = "../user/m_em_read.php"';
+echo '} else {';
+echo 'location.href = "../user/em_read.php"}</script>';
 ?>
 

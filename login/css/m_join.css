@@ -80,12 +80,30 @@ input[type=checkbox], .join-wrap label{
   align-items: center;
 }
 .modal_item{
-  overflow-y: scroll;
   width: 90%; height: 90%;
   background: #fff;
   border-radius: 16px;
   box-sizing: border-box;
   padding: 10px;
+}
+.modal_text{
+  width: 100%;
+  height: 93%;
+  transform: translateY(7%);
+  overflow-y: scroll;
+}
+
+.modal_close{
+  width: 20px;
+  height: 20px;
+  padding : 20px;
+  position: absolute;
+  right : 10px;
+  top: 25px;
+  border-radius: 20px;
+}
+.modal_text::-webkit-scrollbar {
+  display: none;
 }
 .modal_notice{
   width: 100%;
@@ -110,6 +128,7 @@ input[type=checkbox], .join-wrap label{
   display: none;
 }
 .error{
+  display: none;
   width: 100%;
   height: 40px;
   line-height: 40px;

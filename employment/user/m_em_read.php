@@ -7,14 +7,20 @@ session_start();
 if(isset($_SESSION['UserID'])){
   $user_id = $_SESSION['UserID'];
 }else{
-  echo "<script>alert('로그인 후 이용해주세요.'); location.href='../login/login.html';</script>";
+  echo "<script>alert('로그인 후 이용해주세요.'); location.href='../../login/login.html';</script>";
 }
+
 
 $user_sql = "SELECT * FROM user_data WHERE user_id = '$user_id'";
 $user_list = mysqli_query($conn, $user_sql);
 $data = mysqli_fetch_assoc($user_list);
 
 $job_id = $data['job_id'];
+
+if($job_id == null || $job_id == " "){
+  echo "<script>alert('지원한 채용이 없습니다.'); location.href='../m_em.php';</script>";
+}
+
 $job_sql = "SELECT * FROM job_data WHERE job_id = $job_id";
 $job_list = mysqli_query($conn, $job_sql);
 $job_data = mysqli_fetch_array($job_list);
@@ -36,9 +42,7 @@ if($job_date == '채용시까지' || $job_date == '2023년'){
   $job_badge2 = '3';
 }
 
-if($job_id == null || $job_id == " "){
-  echo "<script>alert('지원한 채용이 없습니다.'); location.href='../m_em.php';</script>";
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -129,6 +133,7 @@ if($job_id == null || $job_id == " "){
               <div class="appform-opt1">
                 <label class="appform_data-label">보훈대상 유무</label>
                 <?php
+                $opt1 = $data['user_opt1'];
                 if($opt1 == 1){
                     echo "<span class='em-info on'>대상</span>";
                     echo "<span class='em-info off'>비대상</span>";
@@ -142,6 +147,7 @@ if($job_id == null || $job_id == " "){
             <div class="appform-opt2">
               <label class="appform_data-label">추천인 유무</label>
               <?php
+                $opt2 = $data['user_opt2'];
                 if($opt2 == 1){
                     echo "<span class='em-info on'>대상</span>";
                     echo "<span class='em-info off'>비대상</span> <br>";
@@ -203,7 +209,7 @@ if($job_id == null || $job_id == " "){
     
     <div class="f_bottom">
       <p>
-        <a href="../index.html" title="pc버전바로가기" class="pc_btn">PC버전 바로가기</a>
+        <a href="./em_read.php?move_pc_screen=1" title="pc버전바로가기" class="pc_btn">PC버전 바로가기</a>
       </p>
     </div>
     <div class="f_fixed">&nbsp;</div>
