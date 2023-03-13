@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!-- 제이쿼리 UI 라이브러리 -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <style>
+    body{margin: 100px 100px;}
+    li {
+      background-color: aquamarine;
+      display: block;
+      width: 500px; height: 500px;
+      border: 3px solid red;
+      position: absolute;
+      opacity: .8;
+    }
+    ul {
+      display: flex;
+      position: relative;
+      width: 1200px;
+      height: 500px;
+      border: 3px solid #333;
+    }
+    .slide1 {
+      left: 50%;
+      transform: translateX(-42%);
+    }
+    .slide2 {
+      left: 100%;
+      transform: translateX(-100%);
+    }
+    .slide3 {
+      left: 0%;
+    }
+
+
+    .right, .left {
+      border: 3px solid #333;
+      background: #fff;
+      cursor: pointer;
+      padding: 10px;
+      position: absolute;
+      top: 50%;
+      z-index: 10000;
+    }
+    .left {
+      left: 0px;
+    }
+    .right {
+      right: 0px;
+    }
+
+    .on {
+      background-color: aqua;
+      z-index: 100;
+      scale: 1.2;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+
+  $(function(){
+
+    let left = $('.left');
+    let right = $('.right');
+
+    $('ul li:last-child').insertBefore('ul li:first-child');
+
+  });
+
+  </script>
+
+
+  <ul>
+    <li class="slide1 on">1111111111111</li>
+    <li class="slide2">2222222222222</li>
+    <li class="slide3">3333333333333</li>
+
+    <span class="right">다음</span>
+    <span class="left">이전</span>
+  </ul>
+
+  
+</body>
+</html>

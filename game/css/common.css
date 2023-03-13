@@ -1,0 +1,172 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 9999;
+    line-height: 80px;
+}
+.h_wrapper {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    border-bottom: solid 1px #d9d9d9;
+    background: #fff;
+    transition: 0.3s;
+}
+.h_wrapper:hover {
+    height: 320px;
+}
+#h_wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    top: 0;
+}
+#h_wrap h1 {
+    width: 170px;
+    transform: translateY(10px);
+}
+#h_wrap h1 img {
+    width: 100%;
+}
+
+#h_wrap > .h_right > nav > .gnb {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 720px;
+    font-weight: 500;
+}
+#h_wrap > .h_right > nav > .gnb li {
+    text-align: center;
+    width: 120px;
+}
+.gnb,
+.lnb {
+    display: flex;
+    justify-content: center;
+
+}
+
+.lnb {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+}
+.h-top-bg {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    border-bottom: solid 1px #d9d9d9;
+}
+
+/* 서브 서식 */
+#h_wrap > .h_right > nav .gnb li > .sub {
+    height: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 50px;
+    transition: 0.3s;
+}
+
+.sub a{
+    display: block;
+    width: 100%; height: 100%;
+    font-family: var(--f-style);
+}
+
+/* 푸터영역 */
+
+footer {
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+}
+footer *{
+    font-family: var(--f-style);
+}
+#f_wrap {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.f_top {
+    width: 100%;
+    height: 60px;
+    background-color: var(--m-color02);
+}
+.f_nav {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+}
+.f_nav a {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 60px;
+    padding: 0px 15px 0px 0px
+}
+.f_nav li:not(:last-of-type)::after{
+    content: '|';
+    margin-right: 15px;
+    color: #fff;
+    font-size: 12px;
+    transform: translateY(-5px);
+}
+
+.f_bottom {
+    width: 100%;
+    background-color: #222;
+    padding-bottom: 30px;
+}
+.f_bottom dl {
+    position: relative;
+    color: #aaa;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.f_bottom > dl dd > label,
+.f_bottom dt {
+    display: none;
+}
+.f_nav strong, .f_bottom dd strong{
+    font-weight: 700;
+}
+.f_bottom > dl dd:first-of-type img {
+    width: 170px;
+    margin: 30px 0 20px;
+}
+.f_bottom > dl dd > select {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #000;
+    color: #aaa;
+    width: 185px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border-color: #111;
+}
+.f_bottom dl dd > address {
+    margin-top: 20px;
+    left: 0;
+    font-style: normal;
+
+}
