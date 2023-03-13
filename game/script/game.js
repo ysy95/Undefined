@@ -76,6 +76,22 @@ $(function () {
   });
 
 
+  // 오토 슬라이드 구현 //
+  let count = 0;
+  setInterval(()=>{
+    if(count > 2){
+        count = 0;
+    } else {
+      count++;
+      console.log(count);
+    }
+
+    $('.newgame-banner li').removeClass('newgame-banner-on');
+    $('.newgame-banner li').eq(count-1).addClass('newgame-banner-on');
+    $('#newgame').css({ "background-image": "url('./img/gamebanner_bg_0" + count-1 + ".jpg')" });
+    
+  },2000)
+
 
 
   ////////////////// 추천 게임 //////////////////////
