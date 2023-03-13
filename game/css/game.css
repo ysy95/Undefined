@@ -1,0 +1,490 @@
+@charset "utf-8";
+
+/* 페이지 내비게이션 */
+#page_nav{
+  width: 100%; height: 140px;
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+}
+.page_nav-box{
+  position: absolute;
+  width: 1200px; height: 60px;
+  bottom:0px; left: 50%; transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page_nav-now{
+  font-weight: 700;
+  color: #333;
+}
+.page_nav-nav{
+  font-weight: 700;
+  font-size: var(--f-size02);
+}
+.page_nav-nav span{
+  color : #666;
+  font-weight: 500;
+}
+.page_nav-nav img{
+  height: 13px;
+  transform: translateY(1px);
+  padding: 0px 10px;
+}
+
+
+
+/* ///// 공통서식 ///// */
+
+.display-none {
+  display: none !important;
+}
+
+/* 게임 뱃지 */
+.game-badge {
+  padding: 8px 20px;
+  /* width: 160px; height: 45px; */
+  background: var(--m-color01);
+  color: var(--m-color02);
+  font-size: var(--f-size04);
+  font-weight: bold;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+}
+.game-title {
+  font-size: var(--f-size05);
+  color: #111;
+  font-weight: 500;
+  margin: 15px 0 30px 0;
+}
+
+/* 바로가기 버튼 */
+.game-btn {
+  display: block;
+  width: 300px; height: 55px;
+  line-height: 55px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--m-color02);
+  font-family: var(--f-style);
+  background: var(--m-color01);
+  transition: 0.4s;
+}
+.game-btn:hover {
+  color: var(--m-color01);
+  background: var(--m-color02);
+}
+
+
+
+
+/* NEW GAME 영역 */
+#newgame {
+  width: 100%; height: 780px;
+  background-image: url('../img/gamebanner_bg_00.jpg');
+  margin-bottom: 80px;
+  transition: 1s;
+}
+.newgame-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.newgame-in-wrap {
+  position: relative;
+}
+.newgame-banner {
+  position: relative;
+}
+.newgame-banner li {
+  display: flex;
+  position: absolute; left: 0px; top: 0px;
+  display: none;
+}
+.newgame-banner-l {
+  width: 735px; height: 465px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.newgame-banner-l video {
+  width: 735px; height: 465px;
+  object-fit: cover;
+}
+.newgame-video-btn {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.newgame-video-btn:hover {
+  filter: opacity(.7);
+}
+.newgame-banner-r {
+  width: 414px; height: 465px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.newgame-figure > img {
+  height: 120px;
+}
+.newgame-figure  > p {
+  font-family: var(--f-style);
+  line-height: 160%;
+  margin: 20px 0;
+}
+.newgame-banner-on {
+  display: flex !important;
+}
+
+/* 게임목록 (분리) */
+.newgame-banner-list {
+  position: absolute; top: 340px; right: 0px;
+  display: flex;
+  gap: 12px;
+}
+.newgame-banner-list li {
+  width: 130px; height: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.newgame-banner-list li:first-child {
+  background-image: url('../img/gamebanner_list_01.jpg');
+}
+.newgame-banner-list li:nth-child(2) {
+  background-image: url('../img/gamebanner_list_02.jpg');
+}
+.newgame-banner-list li:last-child {
+  background-image: url('../img/gamebanner_list_03.jpg');
+}
+.newgame-banner-list li > div {
+  background: rgba(255, 255, 255, .7);
+  width:100%; height: 10px;
+  position: absolute; left: 0px; bottom: 0px;
+  display: none;
+}
+.newgame-banner-list li > div > span {
+  display: block;
+  background: var(--m-color01);
+  width: 10%; height: 10px;
+  position: absolute; left: 0px; bottom: 0px;
+  z-index: 10;
+}
+.gage-on {
+  display: block !important;
+}
+
+/* 모달창 서식 */
+.modal_bg{
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,.8);
+  position: fixed; top:0px; left:0px;
+  z-index: 9999;
+}
+.modal_video{
+  text-align: center;
+  width: 1000px; height: 562px;
+  position: relative;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -60%);
+}
+.fa-times{
+  cursor: pointer;
+  transform: translateX(-50%);
+  transform: translateY(35%);
+  font-size: 40px;
+  border-radius: 50%;
+  padding: 16px 25px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+.fa-times:hover {
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 50px;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* PLAY NOW 영역 */
+#playnow {
+  padding: 10px 0;
+}
+.playnow-wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.playnow-banner {
+  width: 100%; height: 535px;
+  display: flex;
+  margin: 80px auto;
+  position: relative;
+}
+.playnow-banner li {
+  width: 531px; height: 535px;
+  opacity: 0.4;
+  position: absolute;
+}
+.playnow-banner li:first-of-type {
+  left: 0%;
+  transition: 1s;
+}
+.playnow-banner li:nth-of-type(2) {
+  left: 50%;
+  transform: translateX(-41.5%);
+  transition: 1s;
+}
+.playnow-banner li:last-of-type {
+  left: 100%;
+  transform: translateX(-100%);
+  transition: 1s;
+}
+.playnow-bg.bg-01 {
+  background-image: url('../img/playnow_bg_01.jpg');
+}
+.playnow-bg.bg-02 {
+  background-image: url('../img/playnow_bg_02.jpg');
+}
+.playnow-bg.bg-03 {
+  background-image: url('../img/playnow_bg_03.jpg');
+}
+.playnow-bg {
+  width: 531px; height: 432px;
+  border-radius: 25px 25px 0px 0px;
+}
+.playnow-txt {
+  width: 531px; height: 103px;
+  background: #F2F2F2;
+  border-radius: 0px 0px 25px 25px;
+}
+.playnow-figure {
+  margin: 0 auto;
+  padding: 18px 0;
+  width: 488px; height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.playnow-figure-wrap {
+  display: flex;
+}
+.playnow-figure-wrap > div {
+  margin-left: 15px;
+}
+.playnow-figure-wrap > div > p:first-child {
+  font-family: var(--f-style);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--m-color06);
+}
+.playnow-figure-wrap > div > p:last-child {
+  font-family: var(--f-style);
+  font-size: 14px;
+  line-height: 140%;
+  color: #777;
+  margin-top: 5px;
+}
+.playnow-figure > a > img {
+  width: 65px; height: 65px;
+  transition: 0.4s;
+}
+.playnow-figure > a:hover > img {
+  filter: opacity(.7);
+}
+.playnow-btn {
+  width: 95px; height: 95px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+  top: 35%;
+  transition: 0.3s;
+}
+.playnow-btn.b-left {
+  left: 160px;
+}
+.playnow-btn.b-right {
+  right: 160px;
+}
+.playnow-btn:hover {
+  filter: brightness(.95);
+}
+.playnow-on {
+  scale: 1.2;
+  opacity: 1 !important;
+  z-index: 99;
+  /* position: absolute; left: 25%; */
+  /* transform: translateX(-42.5%); */
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
+}
+
+
+
+
+/* GAME LIST 영역 */
+#gamelist {
+  padding: 10px;
+}
+.gamelist-wrap {
+  width: 1200px;
+  margin: 80px auto;
+}
+.gamelist-top {
+  height: 115px;
+  display: flex;
+  justify-content: space-between;
+}
+.gamelist-tab {
+  display: flex;
+  gap: 15px;
+  margin-top: 60px;
+}
+.gamelist-tab li{
+  width: 114px;
+  height: 40px;
+  border-radius: 40px;
+  background: #F4F4F4;
+  color: #888;
+  line-height: 40px;
+  text-align: center;
+  font-family: var(--f-style);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.gamelist-tab li:hover{
+  background: #ddd;
+}
+.gamelist-tab-on {
+  background: var(--m-color03) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.gamelist-list {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gamelist-list.on{
+  display: flex;
+}
+.gamelist-list:last-of-type {
+  justify-content: left;
+  gap: 20px;
+}
+
+.gamelist-list li {
+  width: 285px; height: 460px;
+  margin-top: 50px;
+  position: relative;
+}
+.gamelist-list > li > div > div {
+  width: 285px; height: 380px;
+  background-size: cover;
+  border-radius: 7px;
+  box-shadow: 1px 2px 5px rgb(0 0 0 / 30%);
+  cursor: pointer;
+}
+.gamelist-img.img01 {
+  background-image: url('../img/gamelist_img_01.jpg');
+}
+.gamelist-img.img02 {
+  background-image: url('../img/gamelist_img_02.jpg');
+}
+.gamelist-img.img03 {
+  background-image: url('../img/gamelist_img_03.jpg');
+}
+.gamelist-img.img04 {
+  background-image: url('../img/gamelist_img_04.jpg');
+}
+.gamelist-img.img05 {
+  background-image: url('../img/gamelist_img_05.jpg');
+}
+.gamelist-img.img06 {
+  background-image: url('../img/gamelist_img_06.jpg');
+}
+.gamelist-img.img07 {
+  background-image: url('../img/gamelist_img_07.jpg');
+}
+.gamelist-img.img08 {
+  background-image: url('../img/gamelist_img_08.jpg');
+}
+.gamelist-img.img09 {
+  background-image: url('../img/gamelist_img_09.jpg');
+}
+.gamelist-img.img10 {
+  background-image: url('../img/gamelist_img_10.jpg');
+}
+.gamelist-img.img11 {
+  background-image: url('../img/gamelist_img_11.jpg');
+}
+.gamelist-img.img12 {
+  background-image: url('../img/gamelist_img_12.jpg');
+}
+.gamelist-margin {
+  margin-bottom: 80px;
+}
+.gamelist-gameinfo figure {
+  display: flex;
+  margin-top: 20px;
+}
+.gamelist-gameinfo figure figcaption {
+  margin: auto 10px;
+}
+.gamelist-gameinfo figure figcaption p {
+  font-family: var(--f-style);
+}
+.gamelist-gameinfo figure figcaption p:first-child {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+}
+.gamelist-gameinfo figure figcaption p:last-child {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #767676;
+}
+.gamelist-gameinfo-hover {
+  position: absolute; top: 0px; left: 0px;
+  width: 100%; height: 380px;
+  border-radius: 7px;
+  background: rgba(79, 50, 32, .8);
+  padding: 50px 0;
+  display: none;
+}
+.gamelist-gameinfo-hover.on {
+  display: block !important;
+}
+.gamelist-gameinfo-hover > a {
+  display: block;
+  width:fit-content;
+  margin: 5px auto;
+  text-align: center;
+  font-size: 22px;
+  font-family: var(--f-style);
+  font-weight: bold;
+  color: #fff;
+}
+.gamelist-gameinfo-hover > a:first-child > img {
+  width: 180px;
+}
+.gamelist-gameinfo-hover > a:nth-child(2) {
+  margin: 25px auto;
+}
+
+.gamelist-gameinfo-hover > a > i.fas {
+  margin-left: 7px;
+  font-size: 18px;
+}
+.gamelist-wrap > .game-btn {
+  margin: 80px auto;
+}

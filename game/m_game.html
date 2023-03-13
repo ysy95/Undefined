@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>넷마블 Mobile - 게임소개</title>
+
+  <!-- 기본서식 -->
+  <link rel="stylesheet" href="./css/m_base.css" type="text/css">
+  <!-- <link rel="stylesheet" href="./css/m_common.css" type="text/css"> -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <!-- 게임페이지 서식 -->
+  <link rel="stylesheet" href="./css/m_game.css" type="text/css">
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  <!-- 스크립트 서식 -->
+  <script src="./script/m_game.js" defer></script>
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <!-- 제이쿼리 UI 라이브러리 -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+</head>
+
+<body>
+  <!-- 헤더영역 -->
+  <header>
+  </header>
+
+
+  <!-- 메인영역 -->
+  <main>
+
+    <!-- 페이지 내비게이션 -->
+    <section id="page_nav">
+      <div class="page_nav-item">
+        <span class="page_nav-prav">home</span>
+        <img src="./img/right-nav.svg" alt="다음" class="page_nav-right">
+        <span class="page_nav-now">게임</span>
+      </div>
+    </section>
+
+    <!-- 신작게임 -->
+    <section id="newgame-bg"></section>
+    <section id="newgame">
+      <h2 class="display-none">넷마블 화제의 신작게임</h2>
+      <article class="newgame-wrap">
+        <span class="game-badge">New Game</span>
+        <h2 class="game-title">넷마블 화제의 신작게임</h2>
+        <div class="newgame-in-wrap">
+          <h3 class="newgame-h3 display-none">신작게임 배너</h3>
+          <ul class="newgame-banner">
+
+            <li>
+              <div class="newgame-banner-l">
+                <video src="./img/2wolds_Trim.mp4" autoplay loop muted></video>
+                <img src="./img/videoplay_btn.png" alt="동영상보기 버튼" class="newgame-video-btn">
+              </div>
+              <div class="newgame-banner-r">
+                <div class="newgame-figure">
+                  <img src="./img/2worlds_logo.png" alt="제2의나라 로고">
+                  <p>
+                    스튜디오 지브리와의 합작, 감성모험 RPG!<br>
+                    마음속 깊이 간직했던 세계로 당신을 초대합니다.
+                  </p>
+                  <a href="https://2worlds.netmarble.com/ko" target="_blank" title="제2의나라 공식사이트 바로가기" class="game-btn">공식사이트 바로가기</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="display-none">
+              <div class="newgame-banner-l">
+                <video src="./img/Mergekuyaisland_Trim.mp4" autoplay loop muted></video>
+                <img src="./img/videoplay_btn.png" alt="동영상보기 버튼" class="newgame-video-btn">
+              </div>
+              <div class="newgame-banner-r">
+                <div class="newgame-figure">
+                  <img src="./img/Mergekuyaisland_logo.png" alt="머지쿵야아일랜드 로고">
+                  <p>
+                    더할수록 커지는 나만의 섬!<br>
+                    귀여운 쿵야들과 함께 오염된 섬을 정화시켜주세요!
+                  </p>
+                  <a href="https://mergekuyaisland.netmarble.com/ko" target="_blank" title="머지쿵야아일랜드 공식사이트 바로가기" class="game-btn">공식사이트 바로가기</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="display-none">
+              <div class="newgame-banner-l">
+                <video src="./img/Skr_Trim.mp4" autoplay loop muted></video>
+                <img src="./img/videoplay_btn.png" alt="동영상보기 버튼" class="newgame-video-btn">
+              </div>
+              <div class="newgame-banner-r">
+                <div class="newgame-figure">
+                  <img src="./img/Skr_logo.png" alt="세븐나이츠레볼루션 로고">
+                  <p>
+                    영웅이 깨어나는 순간, 위대한 모험이 시작된다.<br>
+                    영웅의 힘을 계승한 자여, 세상을 구원하라!
+                  </p>
+                  <a href="https://skr.netmarble.com/" target="_blank" title="세븐나이츠레볼루션 공식사이트 바로가기" class="game-btn">공식사이트 바로가기</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="newgame-banner-list">
+            <li><div><span></span></div></li>
+            <li><div class="display-none"><span></span></div></li>
+            <li><div class="display-none"><span></span></div></li>
+          </ul>
+
+        </div>
+      </article>
+    </section>
+
+
+    <!-- 추천 게임 -->
+    <section id="playnow">
+      <h2 class="display-none">넷마블 금주의 추천게임</h2>
+      <article class="playnow-wrap">
+      <span class="game-badge">Play Now</span>
+      <h2 class="game-title">넷마블 금주의 추천게임</h2>
+      
+        <ul class="playnow-banner">
+          <li class="playnow-on">
+            <div class="playnow-bg"></div>
+            <div class="playnow-txt">
+              <div class="playnow-figure">
+                <div class="playnow-figure-wrap">
+                  <img src="./img/icon_2wolds.png" alt="제2의나라 아이콘">
+                  <div>
+                    <p>제2의 나라: Cross Worlds</p>
+                    <p>마음속 깊이 간직했던 세계
+                      <br>『제2의 나라: Cross Worlds』로 당신을 초대합니다.</p>
+                  </div>
+                </div>
+                <a href="https://2worlds.netmarble.com/ko" target="_blank" title="제2의나라 공식사이트 바로가기" ><img src="./img/play_btn.png" alt="바로가기 버튼이미지"></a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="playnow-bg"></div>
+            <div class="playnow-txt">
+              <div class="playnow-figure">
+                <div class="playnow-figure-wrap">
+                  <img src="./img/icon_Mergekuyaisland.png" alt="머지쿵야아일랜드 아이콘">
+                  <div>
+                    <p>머지 쿵야 아일랜드</p>
+                    <p>더할수록 커지는 나만의 섬!
+                      <br>귀여운 쿵야들과 함께 오염된 섬을 정화시켜주세요!</p>
+                  </div>
+                </div>
+                <a href="https://mergekuyaisland.netmarble.com/ko" target="_blank" title="머지쿵야아일랜드 공식사이트 바로가기"><img src="./img/play_btn.png" alt="바로가기 버튼이미지"></a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="playnow-bg"></div>
+            <div class="playnow-txt">
+              <div class="playnow-figure">
+                <div class="playnow-figure-wrap">
+                  <img src="./img/icon_Skr.png" alt="세븐나이츠레볼루션 아이콘">
+                  <div>
+                    <p>세븐나이츠 레볼루션</p>
+                    <p>영웅이 깨어나는 순간, 위대한 모험이 시작된다.
+                      <br> 영웅의 힘을 계승한 자여, 세상을 구원하라!</p>
+                  </div>
+                </div>
+                <a href="https://skr.netmarble.com/" target="_blank" title="세븐나이츠레볼루션 공식사이트 바로가기"><img src="./img/play_btn.png" alt="바로가기 버튼이미지"></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      
+      <img src="./img/m_playnow_btn_left.png" alt="왼쪽 슬라이드 버튼" class="playnow-btn b-left">
+      <img src="./img/m_playnow_btn_right.png" alt="오른쪽 슬라이드 버튼" class="playnow-btn b-right">
+    </article>
+    </section>
+
+
+  <!-- 게임리스트 -->
+    <section id="gamelist">
+      <h2 class="display-none">넷마블 게임리스트</h2>
+      <article class="gamelist-wrap">
+        <div class="gamelist-top">
+          <div>
+            <span class="game-badge">Game List</span>
+            <h2 class="game-title">즐거운 게임세상 넷마블!</h2>
+          </div>
+          <div>
+            <ul class="gamelist-tab">
+              <li class="gamelist-tab-on">PC</li>
+              <li>모바일</li>
+              <li>콘솔</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PC 탭메뉴 -->
+        <ul class="gamelist-list on">
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img01"></div>
+              <figure>
+                <img src="./img/gamelist01.png" alt="샬롯의테이블 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">샬롯의 테이블</p>
+                  <p class="gamelist-type">퍼즐</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/tab?tab=popular&page=1" title="샬롯의테이블 게임설명 바로가기"><img src="./img/hover_gamelist01.png" alt="샬롯의테이블 로고"></a>
+              <a href="https://playcharlottestable.netmarble.com/ko" target="_blank" title="샬롯의테이블 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.tab&pli=1" target="_blank" title="샬롯의테이블 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/app/id1594117615" target="_blank" title="샬롯의테이블 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img02"></div>
+              <figure>
+                <img src="./img/gamelist02.png" alt="세븐나이츠 레볼루션 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">세븐나이츠 레볼루션</p>
+                  <p class="gamelist-type">MMORPG</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/skrv?tab=popular&page=1" target="_blank"  title="세븐나이츠 레볼루션 게임설명 바로가기"><img src="./img/hover_gamelist02.png" alt="세븐나이츠 레볼루션 로고"></a>
+              <a href="https://skr.netmarble.com/" target="_blank" title="세븐나이츠 레볼루션 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.skrv" target="_blank" title="세븐나이츠 레볼루션 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/kr/app/id1488570532?l=kr" target="_blank" title="세븐나이츠 레볼루션 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img03"></div>
+              <figure>
+                <img src="./img/gamelist03.png" alt="머지쿵야아일랜드 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">머지쿵야 아일랜드</p>
+                  <p class="gamelist-type">캐주얼</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/mkgb?tab=popular&page=1" target="_blank" title="머지쿵야아일랜드 게임설명 바로가기"><img src="./img/hover_gamelist03.png" alt="머지쿵야아일랜드 로고"></a>
+              <a href="https://mergekuyaisland.netmarble.com/ko" target="_blank" title="머지쿵야아일랜드 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.mkglobal" target="_blank" title="머지쿵야아일랜드 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/app/id1625027068" target="_blank" title="머지쿵야아일랜드 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img04"></div>
+              <figure>
+                <img src="./img/gamelist04.png" alt="제2의나라 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">제 2의나라: Cross Worlds</p>
+                  <p class="gamelist-type">MMORPG</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/enn?tab=popular&page=1" target="_blank" title="제2의나라 게임설명 바로가기"><img src="./img/hover_gamelist04.png" alt="제2의나라 로고"></a>
+              <a href="https://2worlds.netmarble.com/ko/" target="_blank" title="제2의나라 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.enn" target="_blank" title="제2의나라 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/kr/app/id1488423517" target="_blank" title="제2의나라 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img05"></div>
+              <figure>
+                <img src="./img/gamelist05.png" alt="블레이드&소울 레볼루션 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">블레이드&소울 레볼루션</p>
+                  <p class="gamelist-type">MMORPG</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/bnsmkr?tab=popular&page=1" target="_blank" title="블레이드&소울 레볼루션 게임설명 바로가기"><img src="./img/hover_gamelist05.png" alt="블레이드&소울 레볼루션 로고"></a>
+              <a href="https://bns.netmarble.com/" target="_blank" title="블레이드&소울 레볼루션 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.bnsmkr" target="_blank" title="블레이드&소울 레볼루션 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/kr/app/id1220720235" target="_blank" title="블레이드&소울 레볼루션 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img06"></div>
+              <figure>
+                <img src="./img/gamelist06.png" alt="리니지2 레볼루션 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">리니지2 레볼루션</p>
+                  <p class="gamelist-type">MMORPG</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/lineageII?tab=popular&page=1" target="_blank" title="리니지2 레볼루션 게임설명 바로가기"><img src="./img/hover_gamelist06.png" alt="리니지2 레볼루션 로고"></a>
+              <a href="http://l2.netmarble.net/" target="_blank" title="리니지2 레볼루션 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.lineageII" target="_blank" title="리니지2 레볼루션 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/kr/app/linijiiilebollusyeon/id1090814275" target="_blank" title="리니지2 레볼루션 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img07"></div>
+              <figure>
+                <img src="./img/gamelist07.png" alt="A3 스틸얼라이브 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">A3 스틸얼라이브</p>
+                  <p class="gamelist-type">MMORPG</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/survival?tab=popular&page=1" target="_blank" title="A3 스틸얼라이브 게임설명 바로가기"><img src="./img/hover_gamelist07.png" alt="A3 스틸얼라이브 로고"></a>
+              <a href="https://a3.netmarble.com/" target="_blank" title="A3 스틸얼라이브 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.survival" target="_blank" title="A3 스틸얼라이브 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/kr/app/id1417738826" target="_blank" title="A3 스틸얼라이브 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img08"></div>
+              <figure>
+                <img src="./img/gamelist08.png" alt="일곱개의 대죄 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">일곱개의 대죄</p>
+                  <p class="gamelist-type">RPG</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/nanakr?tab=popular&page=1" target="_blank" title="일곱개의 대죄 게임설명 바로가기"><img src="./img/hover_gamelist08.png" alt="일곱개의 대죄 로고"></a>
+              <a href="https://7ds.netmarble.com/" target="_blank" title="일곱개의 대죄 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.nanakr" target="_blank" title="일곱개의 대죄 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/kr/app/id1449552940" target="_blank" title="일곱개의 대죄 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+        </ul>
+
+
+        <!-- 모바일 탭메뉴 -->
+        <ul class="gamelist-list">
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img05"></div>
+              <figure>
+                <img src="./img/gamelist05.png" alt="블레이드&소울 레볼루션 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">블레이드&소울 레볼루션</p>
+                  <p class="gamelist-type">MMORPG</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/bnsmkr?tab=popular&page=1" target="_blank" title="블레이드&소울 레볼루션 게임설명 바로가기"><img src="./img/hover_gamelist05.png" alt="블레이드&소울 레볼루션 로고"></a>
+              <a href="https://bns.netmarble.com/" target="_blank" title="블레이드&소울 레볼루션 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.bnsmkr" target="_blank" title="블레이드&소울 레볼루션 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/kr/app/id1220720235" target="_blank" title="블레이드&소울 레볼루션 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img06"></div>
+              <figure>
+                <img src="./img/gamelist06.png" alt="리니지2 레볼루션 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">리니지2 레볼루션</p>
+                  <p class="gamelist-type">MMORPG</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/lineageII?tab=popular&page=1" target="_blank" title="리니지2 레볼루션 게임설명 바로가기"><img src="./img/hover_gamelist06.png" alt="리니지2 레볼루션 로고"></a>
+              <a href="http://l2.netmarble.net/" target="_blank" title="리니지2 레볼루션 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.lineageII" target="_blank" title="리니지2 레볼루션 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/kr/app/linijiiilebollusyeon/id1090814275" target="_blank" title="리니지2 레볼루션 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img07"></div>
+              <figure>
+                <img src="./img/gamelist07.png" alt="A3 스틸얼라이브 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">A3 스틸얼라이브</p>
+                  <p class="gamelist-type">MMORPG</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/survival?tab=popular&page=1" target="_blank" title="A3 스틸얼라이브 게임설명 바로가기"><img src="./img/hover_gamelist07.png" alt="A3 스틸얼라이브 로고"></a>
+              <a href="https://a3.netmarble.com/" target="_blank" title="A3 스틸얼라이브 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.survival" target="_blank" title="A3 스틸얼라이브 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/kr/app/id1417738826" target="_blank" title="A3 스틸얼라이브 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img08"></div>
+              <figure>
+                <img src="./img/gamelist08.png" alt="일곱개의 대죄 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">일곱개의 대죄</p>
+                  <p class="gamelist-type">RPG</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/nanakr?tab=popular&page=1" target="_blank" title="일곱개의 대죄 게임설명 바로가기"><img src="./img/hover_gamelist08.png" alt="일곱개의 대죄 로고"></a>
+              <a href="https://7ds.netmarble.com/" target="_blank" title="일곱개의 대죄 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.nanakr" target="_blank" title="일곱개의 대죄 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/kr/app/id1449552940" target="_blank" title="일곱개의 대죄 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+        </ul>
+
+        <!-- 콘솔 탭메뉴 -->
+        <ul class="gamelist-list">
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img01"></div>
+              <figure>
+                <img src="./img/gamelist01.png" alt="샬롯의테이블 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">샬롯의 테이블</p>
+                  <p class="gamelist-type">퍼즐</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/tab?tab=popular&page=1" title="샬롯의테이블 게임설명 바로가기"><img src="./img/hover_gamelist01.png" alt="샬롯의테이블 로고"></a>
+              <a href="https://playcharlottestable.netmarble.com/ko" target="_blank" title="샬롯의테이블 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.tab&pli=1" target="_blank" title="샬롯의테이블 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/app/id1594117615" target="_blank" title="샬롯의테이블 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img02"></div>
+              <figure>
+                <img src="./img/gamelist02.png" alt="세븐나이츠 레볼루션 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">세븐나이츠 레볼루션</p>
+                  <p class="gamelist-type">MMORPG</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/skrv?tab=popular&page=1" target="_blank"  title="세븐나이츠 레볼루션 게임설명 바로가기"><img src="./img/hover_gamelist02.png" alt="세븐나이츠 레볼루션 로고"></a>
+              <a href="https://skr.netmarble.com/" target="_blank" title="세븐나이츠 레볼루션 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.skrv" target="_blank" title="세븐나이츠 레볼루션 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/kr/app/id1488570532?l=kr" target="_blank" title="세븐나이츠 레볼루션 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="gamelist-gameinfo">
+              <div class="gamelist-img img03"></div>
+              <figure>
+                <img src="./img/gamelist03.png" alt="머지쿵야아일랜드 아이콘">
+                <figcaption>
+                  <p class="gamelist-title">머지쿵야 아일랜드</p>
+                  <p class="gamelist-type">캐주얼</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gamelist-gameinfo-hover display-none">
+              <a href="https://www.netmarble.net/mobile/mkgb?tab=popular&page=1" target="_blank" title="머지쿵야아일랜드 게임설명 바로가기"><img src="./img/hover_gamelist03.png" alt="머지쿵야아일랜드 로고"></a>
+              <a href="https://mergekuyaisland.netmarble.com/ko" target="_blank" title="머지쿵야아일랜드 공식사이트 바로가기">공식사이트<i class="fas fa-angle-right"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.netmarble.mkglobal" target="_blank" title="머지쿵야아일랜드 구글플레이 바로가기"><img src="./img/btn_playstore.png" alt="구글플레이 바로가기"></a>
+              <a href="https://apps.apple.com/app/id1625027068" target="_blank" title="머지쿵야아일랜드 앱스토어 바로가기"><img src="./img/btn_appstore.png" alt="앱스토어 바로가기"></a>
+            </div>
+          </li>
+
+        </ul>
+
+
+        <!-- 더보기 영역 & 버튼 -->
+        <div class="gamelist-list-add"></div>
+        <a href="#" title="게임 더보기" class="game-btn">게임 더보기</a>
+
+      </article>
+    </section>
+
+  </main>
+  
+
+  <!-- 푸터영역 -->
+  <footer>
+  </footer>
+</body>
+</html>

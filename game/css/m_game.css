@@ -1,0 +1,413 @@
+@charset "utf-8";
+
+/* 페이지 내비게이션 */
+#page_nav {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background: var(--m-color01);
+}
+.page_nav-item{
+  width: 100%;
+  position: absolute;
+  left:50%; transform: translateX(-50%);
+  top: 15px;
+  height: 40px;
+}
+.page_nav-prav{
+  font-size: var(--f-size01);
+  color: #888;
+}
+.page_nav-right{
+  height: 10px;
+  padding: 0px 10px;
+}
+.page_nav-now{
+  font-size: var(--f-size01);
+}
+
+/* ///// 공통서식 ///// */
+.display-none {
+  display: none !important;
+}
+
+/* 게임 뱃지 */
+.game-badge {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background: var(--m-color01);
+  color: var(--m-color02);
+  font-size: var(--f-size02);
+  font-weight: bold;
+  text-align: center;
+}
+.game-title {
+  font-size: var(--f-size05);
+  color: #111;
+  font-weight: 600;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* 바로가기 버튼 */
+.game-btn {
+  display: block;
+  width: 100%; height: 50px;
+  line-height: 55px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--m-color02);
+  font-family: var(--f-style);
+  background: var(--m-color01);
+  transition: 0.4s;
+}
+
+/* NEW GAME 영역 */
+
+#newgame-bg {
+  width: 100%; height: 60px;
+  background: #fff;
+  text-align: center;
+  border-radius: 25px 25px 0px 0px;
+  box-shadow: 0px -1px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-50px);
+}
+#newgame {
+  width: 100%;
+  background: #fff;
+  transform: translateY(-80px);
+  z-index: 10;
+  padding: 0 14px;
+  padding-top: 10px;
+}
+.newgame-wrap {
+  margin: 0 auto;
+  text-align: center;
+}
+.newgame-in-wrap {
+  position: relative;
+}
+.newgame-banner-l {
+  width: 100%; height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.newgame-banner-l video {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  vertical-align: top;
+}
+.newgame-video-btn {
+  width: 100px; height: 100px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.newgame-banner-r {
+  width: 100%;
+}
+.newgame-figure > img {
+  height: 90px;
+}
+.newgame-figure  > p {
+  font-family: var(--f-style);
+  font-size: var(--f-size01);
+  line-height: 160%;
+  margin: 15px 0;
+}
+
+/* 게임목록 (분리) */
+.newgame-banner-list {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+.newgame-banner-list li {
+  width: 33%; height: 90px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newgame-banner-list li:first-child {
+  background-image: url('../img/gamebanner_list_01.jpg');
+}
+.newgame-banner-list li:nth-child(2) {
+  background-image: url('../img/gamebanner_list_02.jpg');
+}
+.newgame-banner-list li:last-child {
+  background-image: url('../img/gamebanner_list_03.jpg');
+}
+.newgame-banner-list li > div {
+  background: rgba(255, 255, 255, .7);
+  width:100%; height: 10px;
+  position: absolute; left: 0px; bottom: 0px;
+}
+.newgame-banner-list li > div > span {
+  display: block;
+  background: var(--m-color01);
+  width:10px; height: 10px;
+  position: absolute; left: 0px; bottom: 0px;
+  z-index: 10;
+}
+
+/* PLAY NOW 영역 */
+#playnow {
+  padding: 0px 14px;
+  padding-bottom: 100px;
+}
+.playnow-wrap {
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.playnow-banner {
+  width: 100%; height: 300px;
+}
+.playnow-banner li {
+  width: 100%;
+  display: none;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
+}
+.playnow-banner li:first-child .playnow-bg {
+  background-image: url('../img/playnow_bg_01.jpg');
+}
+.playnow-banner li:nth-child(2) .playnow-bg {
+  background-image: url('../img/playnow_bg_02.jpg');
+}
+.playnow-banner li:last-child .playnow-bg {
+  background-image: url('../img/playnow_bg_03.jpg');
+}
+.playnow-bg {
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 83%;
+}
+.playnow-txt {
+  width: 100%;
+  text-align: left;
+  background: #F2F2F2;
+  border-radius: 0px 0px 25px 25px;
+}
+.playnow-figure {
+  margin: 0 auto;
+  padding: 14px 12px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.playnow-figure-wrap {
+  display: flex;
+}
+.playnow-figure-wrap > img {
+  width: 55px; height: 55px;
+}
+.playnow-figure-wrap > div {
+  margin-left: 10px;
+}
+.playnow-figure-wrap > div > p:first-child {
+  font-family: var(--f-style);
+  font-weight: 700;
+  font-size: var(--f-size02);
+  color: var(--m-color06);
+}
+.playnow-figure-wrap > div > p:last-child {
+  font-family: var(--f-style);
+  font-size: 0.8125em;
+  line-height: 140%;
+  color: #777;
+  margin-top: 3px;
+}
+.playnow-figure > a {
+  position: absolute;
+  right: 14px; top: 0px;
+  transform: translateY(-40%);
+}
+.playnow-figure > a > img {
+  width: 50px; height: 50px;
+}
+.playnow-btn {
+  position: absolute;
+  z-index: 150;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.15));
+}
+.playnow-btn.b-left {
+  top: 60%; left: 10px;
+}
+.playnow-btn.b-right {
+  top: 60%; right: 10px;
+}
+.playnow-on {
+  display: block !important;
+}
+
+
+/* GAME LIST 영역 */
+#gamelist {
+  padding: 0 14px;
+}
+.gamelist-top {
+  text-align: center;
+  padding-top: 50px;
+}
+.gamelist-wrap {
+  margin: 0 auto;
+}
+.gamelist-tab {
+  display: flex;
+  gap: 15px;
+}
+.gamelist-tab li{
+  width: 33%;
+  height: 40px;
+  border-radius: 40px;
+  background: #F4F4F4;
+  color: #888;
+  line-height: 40px;
+  text-align: center;
+  font-family: var(--f-style);
+  cursor: pointer;
+}
+.gamelist-tab-on {
+  background: var(--m-color03) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.gamelist-list {
+  display: none;
+  flex-wrap: wrap;
+}
+.gamelist-list.on{
+  display: flex;
+  justify-content: left;
+  gap: 12px;
+}
+/* .gamelist-list:last-of-type {
+  justify-content: left;
+  gap: 20px;
+} */
+
+.gamelist-list li {
+  width: 47%; height: 230px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.gamelist-list > li > div > div {
+  width: 100%; height: 230px;
+  background-size: cover;
+  border-radius: 7px;
+  box-shadow: 1px 2px 5px rgb(0 0 0 / 30%);
+}
+.gamelist-img.img01 {
+  background-image: url('../img/gamelist_img_01.jpg');
+}
+.gamelist-img.img02 {
+  background-image: url('../img/gamelist_img_02.jpg');
+}
+.gamelist-img.img03 {
+  background-image: url('../img/gamelist_img_03.jpg');
+}
+.gamelist-img.img04 {
+  background-image: url('../img/gamelist_img_04.jpg');
+}
+.gamelist-img.img05 {
+  background-image: url('../img/gamelist_img_05.jpg');
+}
+.gamelist-img.img06 {
+  background-image: url('../img/gamelist_img_06.jpg');
+}
+.gamelist-img.img07 {
+  background-image: url('../img/gamelist_img_07.jpg');
+}
+.gamelist-img.img08 {
+  background-image: url('../img/gamelist_img_08.jpg');
+}
+.gamelist-img.img09 {
+  background-image: url('../img/gamelist_img_09.jpg');
+}
+.gamelist-img.img10 {
+  background-image: url('../img/gamelist_img_10.jpg');
+}
+.gamelist-img.img11 {
+  background-image: url('../img/gamelist_img_11.jpg');
+}
+.gamelist-img.img12 {
+  background-image: url('../img/gamelist_img_12.jpg');
+}
+.gamelist-margin {
+  margin-bottom: 80px;
+}
+.gamelist-gameinfo figure {
+  display: flex;
+  margin-top: 12px;
+}
+.gamelist-gameinfo figure > img {
+  width: 35px; height: 35px;
+}
+.gamelist-gameinfo figure figcaption {
+  margin: auto 10px;
+}
+.gamelist-gameinfo figure figcaption p {
+  font-family: var(--f-style);
+}
+.gamelist-gameinfo figure figcaption p:first-child {
+  font-weight: 600;
+  font-size: var(--f-size01);
+  color: #333;
+}
+.gamelist-gameinfo figure figcaption p:last-child {
+  font-size: 0.75em;
+  margin-top: 5px;
+  color: #767676;
+}
+
+/* 마우스오버(모바일 - 클릭) */
+.gamelist-gameinfo-hover {
+  position: absolute; top: 0px; left: 0px;
+  width: 100%; height: 380px;
+  border-radius: 7px;
+  background: rgba(79, 50, 32, .8);
+  padding: 50px 0;
+  display: none;
+}
+.gamelist-gameinfo-hover.on {
+  display: block !important;
+}
+.gamelist-gameinfo-hover > a {
+  display: block;
+  width:fit-content;
+  margin: 5px auto;
+  text-align: center;
+  font-size: 22px;
+  font-family: var(--f-style);
+  font-weight: bold;
+  color: #fff;
+}
+.gamelist-gameinfo-hover > a:first-child > img {
+  width: 180px;
+}
+.gamelist-gameinfo-hover > a:nth-child(2) {
+  margin: 25px auto;
+}
+
+.gamelist-gameinfo-hover > a > i.fas {
+  margin-left: 7px;
+  font-size: 18px;
+}
+.gamelist-wrap > .game-btn {
+  margin: 80px auto;
+}
