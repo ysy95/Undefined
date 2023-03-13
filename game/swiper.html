@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      margin: 100px auto;
+      width: 390px;
+      height: 300px;
+    }
+
+    swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    
+
+  </style>
+</head>
+
+<body>
+
+  <swiper-container init="false" class="swiper mySwiper2 playnow-banner">
+
+    <swiper-slide class="playnow-on">
+      <div class="playnow-bg"></div>
+            <div class="playnow-txt">
+              <div class="playnow-figure">
+                <div class="playnow-figure-wrap">
+                  <img src="./img/icon_2wolds.png" alt="제2의나라 아이콘">
+                  <div>
+                    <p>제2의 나라: Cross Worlds</p>
+                    <p>마음속 깊이 간직했던 세계
+                      <br>『제2의 나라: Cross Worlds』로 당신을 초대합니다.</p>
+                  </div>
+                </div>
+                <a href="https://2worlds.netmarble.com/ko" target="_blank" title="제2의나라 공식사이트 바로가기" ><img src="./img/play_btn.png" alt="바로가기 버튼이미지"></a>
+              </div>
+            </div>
+    </swiper-slide>
+
+    <swiper-slide class="playnow-on">
+      <div class="playnow-bg"></div>
+            <div class="playnow-txt">
+              <div class="playnow-figure">
+                <div class="playnow-figure-wrap">
+                  <img src="./img/icon_Mergekuyaisland.png" alt="머지쿵야아일랜드 아이콘">
+                  <div>
+                    <p>머지 쿵야 아일랜드</p>
+                    <p>더할수록 커지는 나만의 섬!
+                      <br>귀여운 쿵야들과 함께 오염된 섬을 정화시켜주세요!</p>
+                  </div>
+                </div>
+                <a href="https://mergekuyaisland.netmarble.com/ko" target="_blank" title="머지쿵야아일랜드 공식사이트 바로가기"><img src="./img/play_btn.png" alt="바로가기 버튼이미지"></a>
+              </div>
+            </div>
+    </swiper-slide>
+
+    <swiper-slide class="playnow-on">
+      <div class="playnow-bg"></div>
+      <div class="playnow-txt">
+        <div class="playnow-figure">
+          <div class="playnow-figure-wrap">
+            <img src="./img/icon_Skr.png" alt="세븐나이츠레볼루션 아이콘">
+            <div>
+              <p>세븐나이츠 레볼루션</p>
+              <p>영웅이 깨어나는 순간, 위대한 모험이 시작된다.
+                <br> 영웅의 힘을 계승한 자여, 세상을 구원하라!</p>
+            </div>
+          </div>
+          <a href="https://skr.netmarble.com/" target="_blank" title="세븐나이츠레볼루션 공식사이트 바로가기"><img src="./img/play_btn.png" alt="바로가기 버튼이미지"></a>
+        </div>
+      </div>
+    </swiper-slide>
+
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+
+  <script>
+    var swiper2El = document.querySelector(".mySwiper2");
+    Object.assign(swiper2El, {
+      grabCursor: true,
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: ["-150%", 0, -500],
+        },
+        next: {
+          shadow: true,
+          translate: ["150%", 0, -500],
+        },
+      },
+      loop : true,
+      autoplay: {
+          delay: 3000, // 시간 설정
+          disableOnInteraction: false, // false-스와이프 후 자동 재생
+        },
+    });
+    swiper2El.initialize()
+  </script>
+</body>
+
+</html>
