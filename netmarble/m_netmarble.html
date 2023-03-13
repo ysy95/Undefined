@@ -8,19 +8,114 @@
 
 
   <link rel="stylesheet" href="./css/base.css" type="text/css">
-  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <link rel="stylesheet" href="./css/m_common.css" type="text/css">
   <link rel="stylesheet" href="./css/reset.css" type="text/css">
   <link rel="stylesheet" href="./css/m_netmarble.css" type="text/css">
 
 
   <!-- 폰트어썸 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+<!-- 제이쿼리 라이브러리  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- 모바일 스크립트 -->
+<script src="./script/m_netmarble.js" defer></script>
   
 
 </head>
 <body>
+  <!-- 모바일 헤더 -->
+  <header>
+    <div id='h_wrap'>
+      <div class="m_bar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class='h_nav'>
+        
+        <h1>
+          <a href='index.html' title='메인페이지로 바로가기'>
+            <img src='./img/main_logo.png' alt="메인로고">
+          </a>
+        </h1>
+        <nav>
+          <ul class='lnb'>
+            <a href='m_login.html' title='로그인하기'>로그인</a>&emsp;
+            <a href='m_join.html' title='회원가입하기'>회원가입</a>
+          </ul>
 
-  <!-- 메인영역 -->
+          <ul class='gnb'>
+            <li>
+              <a href='#' title='게임'>게임<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='#' title='PC'>PC</a></li>
+                  <li><a href='#' title='모바일'>모바일</a></li>
+                  <li><a href='#' title=''></a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='넷마블'>넷마블<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='#' title='넷마블 컴퍼니'>넷마블 컴퍼니</a></li>
+                  <li><a href='#' title='연혁'>연혁</a></li>
+                  <li><a href='#' title='넷마블 둘러보기'>넷마블 둘러보기</a></li>
+                  <li><a href='#' title='정도 경영'>넷마블 스토어</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='NEWS'>NEWS<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='#' title='보도자료'>보도자료</a></li>
+                  <li><a href='#' title='넷마블 소식'>넷마블 소식</a></li>
+                  <li><a href='#' title='공지사항'>공지사항</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='투자정보'>투자정보<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='#' title='주가'>주가</a></li>
+                  <li><a href='#' title='기업 재무재표'>기업 재무재표</a></li>
+                  <li><a href='#' title='IR 자료'>IR 자료</a></li>
+                  <li><a href='#' title='공시'>공시</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='인재채용'>인재채용<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='#' title='인사제도'>인사제도</a></li>
+                  <li><a href='#' title='채용 공고'>채용 공고</a></li>
+                  <li><a href='#' title='채용 조회'>채용 조회</a></li>
+                  <li><a href='#' title='채용 문의'>채용 문의</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='문의'>문의<i class="fa-solid fa-sort-down"></i></a>
+              <ul class='sub'>
+                <li><a href='#' title='FAQ'>FAQ</a></li>
+                <li><a href='#' title='문의하기'>문의하기</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        
+        </nav>
+      </div>
+      
+      <h1>
+        <a href='index.html' title='메인페이지로 바로가기'>
+          <img src='./img/main_logo.png' alt="메인로고"/>
+        </a>
+      </h1>
+
+      <i class="fa-solid fa-circle-user"></i>
+
+    </div>
+  </header>
+
+  <!-- 모바일 메인영역 -->
   <main>
 
     <!-- 넷마블 컴퍼니 섹션 시작 -->
@@ -539,7 +634,7 @@
         <ul class="n_manage-tab flexable">
 
           <!-- 오시는 길 li -->
-          <li class="manage-t_btn on" 
+          <li class="road on" 
           role="tab"
           aria-controls="tbt_01"
           aria-selected="true"
@@ -550,7 +645,7 @@
               </li>
               
               <!-- 편의 시설 li -->
-          <li class="manage-t_btn"
+          <li class="road"
           role="tab"
           aria-controls="tbt_02"
           aria-selected="false"
@@ -603,15 +698,15 @@
   
                 <div class="conv-tab_wrap02">
                   <ul class="conv-tab flexable">
-                    <li class="conv-tab_img"><img src="./img/conv_01.png" alt=""></li>
-                    <li class="conv-tab_img"><img src="./img/conv_02.png" alt=""></li>
-                    <li class="conv-tab_img"><img src="./img/conv_03.png" alt=""></li>
-                    <li class="conv-tab_img"><img src="./img/conv_04.png" alt=""></li>
-                    <li class="conv-tab_img"><img src="./img/conv_05.png" alt=""></li>
-                    <li class="conv-tab_img"><img src="./img/conv_06.png" alt=""></li>
-                    <li class="conv-tab_img"><img src="./img/conv_07.png" alt=""></li>
-                    <li class="conv-tab_img"><img src="./img/conv_08.png" alt=""></li>
-                    <li class="conv-tab_img"><img src="./img/conv_09.png" alt=""></li>
+                    <li class="conv-tab_img"><img src="./img/conv_01.png" alt=""><div class="conv-img_bord on"></div></li>
+                    <li class="conv-tab_img"><img src="./img/conv_02.png" alt=""><div class="conv-img_bord"></div></li>
+                    <li class="conv-tab_img"><img src="./img/conv_03.png" alt=""><div class="conv-img_bord"></div></li>
+                    <li class="conv-tab_img"><img src="./img/conv_04.png" alt=""><div class="conv-img_bord"></div></li>
+                    <li class="conv-tab_img"><img src="./img/conv_05.png" alt=""><div class="conv-img_bord"></div></li>
+                    <li class="conv-tab_img"><img src="./img/conv_06.png" alt=""><div class="conv-img_bord"></div></li>
+                    <li class="conv-tab_img"><img src="./img/conv_07.png" alt=""><div class="conv-img_bord"></div></li>
+                    <li class="conv-tab_img"><img src="./img/conv_08.png" alt=""><div class="conv-img_bord"></div></li>
+                    <li class="conv-tab_img"><img src="./img/conv_09.png" alt=""><div class="conv-img_bord"></div></li>
                   </ul>
                 </div>
   
@@ -750,44 +845,42 @@
   </main>
 
   <!-- 푸터영역 -->
-  <footer class="hide">
-    <div id='f_wrap'>
-      <article class='f_top'>
-        <ul class="f_nav">
-          <li><a href="#" title="회사소개">회사소개</a>&#124;</li>
-          <li><a href="#" title="광고/제휴문의">광고/제휴문의</a>&#124;</li>
-          <li><a href="#" title="약관보기">약관보기</a>&#124;</li>
-          <li><a href="#" title="위치정보이용약관">위치정보이용약관</a>&#124;</li>
-          <li><a href="#" title="개인정보처리방침">개인정보처리방침</a>&#124;</li>
-          <li><a href="#" title="청소년보호정책">청소년보호정책</a>&#124;</li>
-          <li><a href="#" title="전자우편">전자우편</a>&#124;</li>
-          <li><a href="#" title="사업자정보공개사이트">사업자정보공개사이트</a>&#124;</li>
-          <li><a href="#" title="사이트맵">사이트맵</a></li>
-        </ul>
-      </article>
+  <footer>
+    <div class="f_top">
+      <select name="Family Site" id="family">
+        <option value="">Family Site</option>
+        <option value="http://netmarble.com">넷마블</option>
+        <option value="https://ch.netmarble.com/Index">채널 넷마블</option>
+        <option value="https://company.netmarble.com">넷마블 컴퍼니</option>
+      </select>
+    </div>
 
-      <div  class='f_bottom'>
-        <dl>
-          <dt>푸터영역</dt>
-          <dd>
-            <img src="./img/main_logo2.png" alt="메인로고">
-            <label >Family_site</label>
-            <select>
-              <option value="">Family_site</option>
-              <option value="">넷마블</option>
-              <option value="">넷마블 패밀리</option>
-              <option value="">넷마블 컴퍼니</option>
-            </select>
-          </dd>
-          <dd><strong>넷마블(주)</strong> 사업자번호 : 000-00-00000 통신판매업신고번호 : 제 2014-서울구로-0000호 각자 대표집행임원: 권영식, 도기욱 호스팅서비스 사업자 : 넷마블(주)</dd>
-          <dd>서울특별시 구로구 디지털로26기 38, G-Tower 넷마블 &#124; PC고객센터 : 0000-0000 / 모바일 고객센터 : 0000-0000 / 제2의나라 고객센터 : 0000-0000 / </dd>
-          <dd>블레이드&소울 레볼루션 고객센터 : 0000-0000 / 리니지2 레볼루션 고객센터 : 0000-0000 / FAX : 02-0000-0000</dd>
-          <dd>
-            <address>Copyright &copy; Netmarble Corp. All Rights Reserved. </address>
-          </dd>
-        </dl>
-      </div>
-      </div>
-    </footer>
+    <div class="f_middle">
+      <h2><img src="./img/main_logo2.png" alt="넷마블"></h2>  
+      
+        <div class="f_nav">
+          <p><a href="#none" title="회사소개">회사소개</a><a href="#none" title="광고/제휴문의">광고/제휴문의</a><a href="#none" title="약관보기">약관보기</a><a href="#none" title="위치정보이용약관">위치정보이용약관</a></p>
+          <p><a href="#none" title="개인정보처리방침"><strong>개인정보처리방침</strong></a><a href="#none" title="청소년보호정책">청소년보호정책</a><a href="#none" title="전자우편">전자우편</a></p>
+          <p><a href="#none" title="사업자정보공개사이트"><strong>사업자정보공개사이트</strong></a><a href="#none" title="사이트맵">사이트맵</a></p>
+        </div>  
+
+      <dl>
+        <dt>푸터정보</dt>
+        <dd><span>(주)넷마블</span> <span>서울특별시 구로구 디지털로26길 38, G-Tower 넷마블</span></dd>
+        <dd><span>PC고객센터 : 0000-0000</span> <span>모바일 고객센터 : 0000-0000</span></dd>
+        <dd><span>FAX : 02-0000-0000</span> <span>사업자번호 : 000-00-00000</span></dd>
+        <dd><span>통신판매업 신고번호 : 제 2014-서울구로-0000호</span></dd>
+        <dd><span>각자대표집행임원 : 권영식, 도기욱</span> <span>호스팅서비스사업자 : 넷마블(주)</span></dd>
+        <dd><span>(주)넷마블</span> <span>서울특별시 구로구 디지털로26길 38, G-Tower 넷마블</span></dd>
+      </dl>
+      <address>Copyright &copy; Netmarble Corp. All Rights Reserved.</address>
+    </div>
+    
+    <div class="f_bottom">
+      <p>
+        <a href="./em.php?move_pc_screen=1" title="pc버전바로가기" class="pc_btn">PC버전 바로가기</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
