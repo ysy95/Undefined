@@ -187,7 +187,7 @@
         <h3>지원내용 작성</h3>
             <div class="form-grid">
               <div class="appform-profile">
-                <img src="../form/profileimg/<?php echo $img ?> " alt="사진미리보기" class="profile-sample">
+                <img src="./profileimg/<?php echo $img ?> " alt="사진미리보기" class="profile-sample">
                 <div class="profile-wrap">
                   <label class="appform_data-label">사진</label>
                 </div>
@@ -254,7 +254,7 @@
           <div class="appform-btnwrap">
             <button type="reset" class="appform-resetbtn">지원 취소하기</button>
             <div>
-              <a href="../form/em_form.php?id=<?php echo $job_id?>" title="지원서 수정하기" class="appform-submitbtn">지원서 수정</a>  
+              <a href="../form/em_form.php?id=<?php echo $job_id?>" title="지원서 수정하기" class="appform-submitbtn">지원서 접수</a>  
             </div>
           </div>
           

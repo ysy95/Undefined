@@ -2,9 +2,9 @@
 
 //데이터베이스 계정 설정
 $mysql_host = 'localhost';
-$mysql_user = 'soyedpork27';
-$mysql_password='ehsdbr204!';
-$mysql_db = 'soyedpork27';
+$mysql_user = 'root';
+$mysql_password='' ?? '';
+$mysql_db = 'netmarble';
 
 //데이터베이스 계정 연결하기
 $conn = mysqli_connect($mysql_host, $mysql_user, $mysql_password, $mysql_db);
