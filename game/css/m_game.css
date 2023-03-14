@@ -4,27 +4,29 @@
 #page_nav {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 150px;
   text-align: center;
-  background: var(--m-color01);
+  background-color: var(--m-color01);
 }
 .page_nav-item{
-  width: 100%;
-  position: absolute;
-  left:50%; transform: translateX(-50%);
-  top: 15px;
-  height: 40px;
+width: 100%;
+position: absolute;
+left:50%; transform: translateX(-50%);
+bottom: 50px;
+height: 40px;
+line-height: 40px;
 }
 .page_nav-prav{
-  font-size: var(--f-size01);
-  color: #888;
+font-size: var(--f-size01);
+color: #888;
 }
 .page_nav-right{
-  height: 10px;
-  padding: 0px 10px;
+height: 10px;
+padding: 0px 10px;
 }
 .page_nav-now{
-  font-size: var(--f-size01);
+font-size: var(--f-size01);
+display: inline;
 }
 
 /* ///// 공통서식 ///// */
@@ -176,21 +178,25 @@
 /* 스와이퍼슬라이드 */
 /* PLAY NOW 영역 */
 #playnow {
-  padding: 0px 14px;
+  /* padding: 0px 14px; */
   padding-bottom: 70px;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 12px;
 }
 .playnow-wrap {
   margin: 0 auto;
   position: relative;
   padding-bottom: 10px;
   text-align: center;
+  padding: 0px 14px;
 }
 .playnow-banner {
   width: 390px; height: 500px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .2));
 }
 .playnow-banner-li {
   width: 100%;
-  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
 }
 .playnow-banner-li.s01 .playnow-bg {
   background-image: url('../img/playnow_bg_01.jpg');
@@ -265,6 +271,7 @@
 }
 .mySwiper {
   overflow: visible !important;
+  position: relative;
 }
 .swiper-button-prev:after {
   display: none;
@@ -273,18 +280,18 @@
   display: none;
 }
 .swiper-button-prev {
-  width: 45px !important; height: 45px !important;
-  background-image: url("../img/playnow_btn_left.png");
+  width: 38px !important; height: 50px !important;
+  background-image: url("../img/m_playnow_btn_left.png");
   background-size: cover;
-  left: -10px !important; top: 50% !important;
-  transform: translateY(-50%);
+  left: 15px !important; top: 53% !important;
+  /* transform: translateY(-50%); */
 }
 .swiper-button-next {
-  width: 45px !important; height: 45px !important;
-  background-image: url("../img/playnow_btn_right.png");
+  width: 38px !important; height: 50px !important;
+  background-image: url("../img/m_playnow_btn_right.png");
   background-size: cover;
-  right: -10px !important; top: 50% !important;
-  transform: translateY(-50%);
+  right: 15px !important; top: 53% !important;
+  /* transform: translateY(-50%); */
 }
 
 

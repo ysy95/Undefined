@@ -53,14 +53,17 @@ header {
 .lnb {
     display: flex;
     justify-content: center;
-
-}
-
-.lnb {
     position: absolute;
     right: 0;
     top: 0;
     font-size: 14px;
+}
+.lnb li{
+    display: inline-block;
+    width: 50px;
+}
+.lnb li:last-of-type {
+    margin-left: 10px;
 }
 .h-top-bg {
     position: absolute;
