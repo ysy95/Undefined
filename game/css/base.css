@@ -17,7 +17,12 @@
   --f-size02: 16px;
   --f-size03: 18px;
   --f-size04: 24px;
-  --f-size05: 34px;
+  --f-size05: 32px;
+}
+
+/* body 사이즈 */
+body{
+  font-size: 16px;
 }
 
 /* Select box 스타일 초기화 */ 

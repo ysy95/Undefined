@@ -37,7 +37,8 @@
 /* ///// 공통서식 ///// */
 
 .display-none {
-  display: none !important;
+  /* display: none !important; */
+  opacity: 0;
 }
 
 /* 게임 뱃지 */
@@ -84,6 +85,7 @@
 #newgame {
   width: 100%; height: 780px;
   background-image: url('../img/gamebanner_bg_00.jpg');
+  background-size: cover;
   margin-bottom: 80px;
   transition: 1s;
 }
@@ -100,7 +102,14 @@
 }
 .newgame-banner li {
   position: absolute; left: 0px; top: 0px;
-  display: none;
+  display: flex;
+  transition: .5s;
+  opacity: 0;
+  transform: translateX(-50px);
+}
+.newgame-banner-on {
+  transform: translateX(0px) !important;
+  opacity: 1 !important;
 }
 .newgame-banner-l {
   width: 735px; height: 465px;
@@ -115,12 +124,13 @@
 .newgame-video-btn {
   position: absolute;
   top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   cursor: pointer;
   transition: 0.4s;
 }
 .newgame-video-btn:hover {
   filter: opacity(.7);
+  transform: translate(-50%, -50%) scale(1.1) !important;
 }
 .newgame-banner-r {
   width: 414px; height: 465px;
@@ -134,9 +144,6 @@
   font-family: var(--f-style);
   line-height: 160%;
   margin: 20px 0;
-}
-.newgame-banner-on {
-  display: flex !important;
 }
 
 /* 게임목록 (분리) */
@@ -223,17 +230,25 @@ iframe {
 .playnow-wrap {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 .playnow-banner {
   width: 100%; height: 535px;
   display: flex;
   margin: 80px auto;
-  position: relative;
 }
 .playnow-banner li {
   width: 531px; height: 535px;
+  transform: scale(1);
   opacity: 0.4;
   position: absolute;
+}
+.playnow-on {
+  /* scale: 1.2; */
+  transform: scale(1.2) translateX(-42%) !important;
+  opacity: 1 !important;
+  z-index: 99;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
 }
 .playnow-banner li:first-of-type {
   left: 0%;
@@ -305,7 +320,7 @@ iframe {
   cursor: pointer;
   position: absolute;
   z-index: 999;
-  top: 35%;
+  top: 50%;
   transition: 0.3s;
 }
 .playnow-btn.b-left {
@@ -317,14 +332,6 @@ iframe {
 .playnow-btn:hover {
   filter: brightness(.95);
 }
-.playnow-on {
-  scale: 1.2;
-  opacity: 1 !important;
-  z-index: 99;
-  /* position: absolute; left: 25%; */
-  /* transform: translateX(-42.5%); */
-  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
-}
 
 
 
@@ -335,7 +342,9 @@ iframe {
 }
 .gamelist-wrap {
   width: 1200px;
-  margin: 80px auto;
+  margin: 0px auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 .gamelist-top {
   height: 115px;
@@ -390,7 +399,7 @@ iframe {
   width: 285px; height: 380px;
   background-size: cover;
   border-radius: 7px;
-  box-shadow: 1px 2px 5px rgb(0 0 0 / 30%);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .3);
   cursor: pointer;
 }
 .gamelist-img.img01 {
@@ -458,10 +467,15 @@ iframe {
   border-radius: 7px;
   background: rgba(79, 50, 32, .8);
   padding: 50px 0;
-  display: none;
+  /* display: none; */
+  transition: 0.5s;
+  transform: rotateY(270deg);
+  opacity: 0;
 }
 .gamelist-gameinfo-hover.on {
-  display: block !important;
+  /* display: block !important; */
+  transform: rotateY(360deg) !important;
+  opacity: 1 !important;
 }
 .gamelist-gameinfo-hover > a {
   display: block;
