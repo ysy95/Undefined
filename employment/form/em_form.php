@@ -139,7 +139,11 @@
     <section id="page_nav">
       <div class="page_nav--box">
         <h2 class="page_nav--now">인재채용</h2>
-        <p class="page_nav--nav"><span>home</span> <img src="../img/right-nav.svg" alt="다음"> 인재채용</p>  
+        <p class="page_nav--nav"><span>home</span>
+        <img src="../img/right-nav.svg" alt="다음"> 
+        <span>인재채용</span>
+        <img src="../img/right-nav.svg" alt="다음"> 
+        채용지원</p>  
       </div>
     </section>
 

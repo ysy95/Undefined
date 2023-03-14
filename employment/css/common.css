@@ -58,8 +58,12 @@ header {
     top: 0;
     font-size: 14px;
 }
-.lnb li:first-of-type {
-    margin-right: 10px;
+.lnb li{
+    display: inline-block;
+    width: 50px;
+}
+.lnb li:last-of-type {
+    margin-left: 10px;
 }
 .h-top-bg {
     position: absolute;

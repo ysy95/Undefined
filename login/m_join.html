@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="./css/reset.css" type="text/css">
   <link rel="stylesheet" href="./css/m_join.css" type="text/css">
   <script src="./script/join.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../employment/script/m_common.js" defer></script>
 </head>
 <body>
 
@@ -82,9 +85,96 @@
           </p>
       </div>
     </div>
-
   </div>
 
+  
+  <header>
+    <div id='h_wrap'>
+      <div class="h_top">
+        <div class="m_bar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h1>
+          <a href='index.html' title='메인페이지로 바로가기'>
+            <img src='./img/main_logo.png' alt="메인로고">
+          </a>
+        </h1>
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+      <div class='h_nav'>
+        <ul class='lnb'>
+              <li>
+                <a href='../m_login.html' title='로그인하기'>로그인</a>&emsp;
+              </li>
+              <li>
+                <a href='../m_join.html' title='회원가입하기'>회원가입</a>
+              </li>
+        </ul>
+        <nav>
+          <ul class='gnb'>
+            <li>
+              <a href='#none' title='게임'>게임<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='../game/m_game.html' title='게임'>게임</a></li>
+                  <li><a href='#' title='PC'>PC</a></li>
+                  <li><a href='#' title='모바일'>모바일</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='넷마블'>넷마블<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='../netmarble/m_netmarble.html' title='넷마블 컴퍼니'>넷마블</a></li>
+                  <li><a href='#' title='넷마블 컴퍼니'>넷마블 컴퍼니</a></li>
+                  <li><a href='#' title='연혁'>연혁</a></li>
+                  <li><a href='#' title='넷마블 둘러보기'>넷마블 둘러보기</a></li>
+                  <li><a href='#' title='정도 경영'>넷마블 스토어</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='NEWS'>NEWS<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='#' title='보도자료'>보도자료</a></li>
+                  <li><a href='#' title='넷마블 소식'>넷마블 소식</a></li>
+                  <li><a href='#' title='공지사항'>공지사항</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='투자정보'>투자정보<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='#' title='주가'>주가</a></li>
+                  <li><a href='#' title='기업 재무재표'>기업 재무재표</a></li>
+                  <li><a href='#' title='IR 자료'>IR 자료</a></li>
+                  <li><a href='#' title='공시'>공시</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#none' title='인재채용'>인재채용<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='../employment/m_em.php' title='인사제도'>인재채용</a></li>
+                  <li><a href='#' title='인사제도'>인사제도</a></li>
+                  <li><a href='#' title='채용 공고'>채용 공고</a></li>
+                  <li><a href='../employment/user/m_em_read.php' title='채용 조회'>채용 조회</a></li>
+                  <li><a href='#' title='채용 문의'>채용 문의</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='문의'>
+                문의
+                <i class="fa-solid fa-sort-down"></i>
+              </a>
+              <ul class='sub'>
+                <li><a href='#' title='FAQ'>FAQ</a></li>
+                <li><a href='#' title='문의하기'>문의하기</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
   <main>
     <article id="join">
       <img src="./img/main_character.png" alt="메인캐릭터 크크">

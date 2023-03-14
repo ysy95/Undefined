@@ -72,7 +72,9 @@
   <link rel="stylesheet" href="../css/m_common.css" type="text/css">
   <link rel="stylesheet" href="../css/reset.css" type="text/css">
   <link rel="stylesheet" href="./css/m_em_form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="../script/m_common.js" defer></script>
   <script src="./script/m_em_form.js" defer></script>
   <title>넷마블 모바일 채용지원</title>
 </head>
@@ -80,36 +82,42 @@
   <!-- header -->
   <header>
     <div id='h_wrap'>
-      <div class="m_bar">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class='h_nav'>
-        
+      <div class="h_top">
+        <div class="m_bar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <h1>
           <a href='index.html' title='메인페이지로 바로가기'>
-            <img src='../img/main_logo.png' alt="메인로고"/>
+            <img src='../img/main_logo.png' alt="메인로고">
           </a>
         </h1>
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+      <div class='h_nav'>
+        <ul class='lnb'>
+              <li>
+                <a href='../m_login.html' title='로그인하기'>로그인</a>&emsp;
+              </li>
+              <li>
+                <a href='../m_join.html' title='회원가입하기'>회원가입</a>
+              </li>
+        </ul>
         <nav>
-          <ul class='lnb'>
-            <a href='m_login.html' title='로그인하기'>로그인</a>&emsp;
-            <a href='m_join.html' title='회원가입하기'>회원가입</a>
-          </ul>
-
           <ul class='gnb'>
             <li>
-              <a href='#' title='게임'>게임<i class="fa-solid fa-sort-down"></i></a>
+              <a href='#none' title='게임'>게임<i class="fa-solid fa-sort-down"></i></a>
                 <ul class='sub'>
+                  <li><a href='../game/m_game.html' title='게임'>게임</a></li>
                   <li><a href='#' title='PC'>PC</a></li>
                   <li><a href='#' title='모바일'>모바일</a></li>
-                  <li><a href='#' title=''></a></li>
                 </ul>
             </li>
             <li>
               <a href='#' title='넷마블'>넷마블<i class="fa-solid fa-sort-down"></i></a>
                 <ul class='sub'>
+                  <li><a href='../netmarble/m_netmarble.html' title='넷마블 컴퍼니'>넷마블</a></li>
                   <li><a href='#' title='넷마블 컴퍼니'>넷마블 컴퍼니</a></li>
                   <li><a href='#' title='연혁'>연혁</a></li>
                   <li><a href='#' title='넷마블 둘러보기'>넷마블 둘러보기</a></li>
@@ -134,35 +142,28 @@
                 </ul>
             </li>
             <li>
-              <a href='#' title='인재채용'>인재채용<i class="fa-solid fa-sort-down"></i></a>
+              <a href='#none' title='인재채용'>인재채용<i class="fa-solid fa-sort-down"></i></a>
                 <ul class='sub'>
+                  <li><a href='../m_em.php' title='인사제도'>인재채용</a></li>
                   <li><a href='#' title='인사제도'>인사제도</a></li>
                   <li><a href='#' title='채용 공고'>채용 공고</a></li>
-                  <li><a href='#' title='채용 조회'>채용 조회</a></li>
+                  <li><a href='../user/m_em_read.php' title='채용 조회'>채용 조회</a></li>
                   <li><a href='#' title='채용 문의'>채용 문의</a></li>
                 </ul>
             </li>
             <li>
-              <a href='#' title='문의'>문의<i class="fa-solid fa-sort-down"></i></a>
+              <a href='#' title='문의'>
+                문의
+                <i class="fa-solid fa-sort-down"></i>
+              </a>
               <ul class='sub'>
                 <li><a href='#' title='FAQ'>FAQ</a></li>
                 <li><a href='#' title='문의하기'>문의하기</a></li>
               </ul>
             </li>
           </ul>
-
-        
         </nav>
       </div>
-      
-      <h1>
-        <a href='index.html' title='메인페이지로 바로가기'>
-          <img src='../img/main_logo.png' alt="메인로고"/>
-        </a>
-      </h1>
-
-      <i class="fa-solid fa-circle-user"></i>
-
     </div>
   </header>
 
@@ -174,7 +175,7 @@
         <img src="../img/right-nav.svg" alt="다음" class="page_nav-right">
         <span class="page_nav-prav">인재채용</span>
         <img src="../img/right-nav.svg" alt="다음" class="page_nav-right">
-        <h2 class="page_nav-now">채용공고</h2>
+        <h2 class="page_nav-now">채용지원</h2>
       </div>
     </section>
     <section id="emb_h">

@@ -22,15 +22,11 @@
     if(isset($_SESSION['UserID'])){
       $user_id = $_SESSION['UserID'];
     }else{
-      echo "<script>alert('로그인 후 이용해주세요.'); location.href='../login/login.html';</script>";
+      echo "<script>alert('로그인 후 이용해주세요.'); location.href='../../login/login.html';</script>";
     }
 
     $userSQL = "SELECT * FROM user_data WHERE user_id = '$user_id'";
     $userinfo = mysqli_query($conn, $userSQL);
-
-    if($job_id == null || $job_id == " "){
-      echo "<script>alert('지원한 채용이 없습니다.'); location.href='../em.php';</script>";
-    }
 
     while($row = mysqli_fetch_assoc($userinfo)) {
       $job_id = $row['job_id'];
@@ -47,6 +43,10 @@
       $opt2 = $row['user_opt2'];
       $opt3 = $row['user_opt'];
       $intro = $row['user_intro'];
+  }
+
+  if($job_id == null || $job_id == " "){
+    echo "<script>alert('지원한 채용이 없습니다.'); location.href='../em.php';</script>";
   }
 
 
@@ -134,9 +134,13 @@
   <!-- 메인영역 -->
   <main>
     <section id="page_nav">
-      <div class="page_nav--box">
-        <h2 class="page_nav--now">인재채용</h2>
-        <p class="page_nav--nav"><span>home</span> <img src="../img/right-nav.svg" alt="다음"> 인재채용</p>  
+      <div class="page_nav-box">
+      <h2 class="page_nav-now">인재채용</h2>
+        <p class="page_nav-nav"><span>home</span>
+        <img src="../img/right-nav.svg" alt="다음"> 
+        <span>인재채용</span>
+        <img src="../img/right-nav.svg" alt="다음"> 
+        채용조회</p>  
       </div>
     </section>
 

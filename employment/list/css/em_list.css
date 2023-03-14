@@ -6,7 +6,7 @@
   border-bottom: 1px solid #d9d9d9;
   position: relative;
 }
-.page_nav--box{
+.page_nav-box{
   position: absolute;
   width: 1200px; height: 60px;
   bottom:0px; left: 50%; transform: translateX(-50%);
@@ -14,19 +14,20 @@
   justify-content: space-between;
   align-items: center;
 }
-.page_nav--now{
+.page_nav-now{
   font-weight: 700;
   color: #333;
+  display: inline;
 }
-.page_nav--nav{
+.page_nav-nav{
   font-weight: 700;
   font-size: var(--f-size02);
 }
-.page_nav--nav span{
+.page_nav-nav span{
   color : #666;
   font-weight: 500;
 }
-.page_nav--nav img{
+.page_nav-nav img{
   height: 13px;
   transform: translateY(1px);
   padding: 0px 10px;

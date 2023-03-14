@@ -76,7 +76,7 @@ h1 img{
   position: relative;
 }
 .h_nav nav{
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .gnb{
   width: 100%;
@@ -99,8 +99,8 @@ h1 img{
   display: block;
   width: 100%;
   text-align: left;
-  font-size: var(--f-size03);
-  line-height: 60px;
+  font-size: var(--f-size02);
+  line-height: 48px;
   text-decoration: none;
   margin: 0 auto;
 }
@@ -124,20 +124,27 @@ h1 img{
   display: none;
   font-size: var(--f-size01);
   text-align: left;
-  line-height: 40px;
+  line-height: 48px;
 }
 .sub a{
   font-family: var(--f-style);
+  width: 100%; height: 100%;
+  display: inline-block;
+  border-top: 1px solid #d7d7d7;
 }
 .lnb{
+  display: flex;
+  padding: 0px 1rem;
+  box-sizing: border-box;
+  justify-content: space-between;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .lnb li{
   display: inline-block;
   width : 44.5%; 
-  height: 60px;
-  line-height: 60px;
+  height: 45px;
+  line-height: 45px;
   background: var(--m-color01);
   text-align: center;
   border-radius: 10px;
