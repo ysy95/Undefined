@@ -1,8 +1,8 @@
 
 $(function(){
     game_index = 0;
-  $('.newgame-banner-list > li').eq(game_index).find('div').css('width', '0%');
-  $('.newgame-banner-list > li').eq(game_index).find('div').animate({
+  $('.newgame-banner-list > li').eq(game_index).find('span').css('width', '0%');
+  $('.newgame-banner-list > li').eq(game_index).find('span').animate({
     width: '100%'}, 6000);
 
   let timer = setInterval(function () {
@@ -78,7 +78,8 @@ $(function(){
     let modal1 = `
       <div class="modal_bg">
         <div class="modal_video">
-          <iframe src="https://www.youtube.com/embed/prAMtt3YM48?autoplay=1" title="머지쿵야아일랜드 게임소개 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/WCdMQ2i1OkQ?autoplay=1" title="세븐나이츠레볼루션 게임소개 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          
           <i class="fas fa-times"></i>
         </div>
       </div>
@@ -87,13 +88,13 @@ $(function(){
     let modal2 = `
       <div class="modal_bg">
         <div class="modal_video">
-          <iframe src="https://www.youtube.com/embed/WCdMQ2i1OkQ?autoplay=1" title="세븐나이츠레볼루션 게임소개 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/prAMtt3YM48?autoplay=1" title="머지쿵야아일랜드 게임소개 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <i class="fas fa-times"></i>
         </div>
       </div>
       `;
     let modal3 = `
-    <div class='modal'>
+    <div class='modal_bg'>
     <div class='modal_video'>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/h5fhJs9JiKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <i class="fas fa-times"></i>
@@ -109,6 +110,8 @@ $(function(){
         $('body').append(modal1);
       } else if (m === 2) {
         $('body').append(modal2);
+      }else if (m === 3) {
+        $('body').append(modal3);
       };
   
       // 닫기나 빈 배경을 클릭하면 모달창 숨기기
