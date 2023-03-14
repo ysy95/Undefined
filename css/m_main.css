@@ -12,7 +12,7 @@ article h3{
 }
 #m_game{
   padding-top: 4rem;
-  background-image: url('../img/main_background1.png');
+  background-image: url('../img/gamebanner_bg_00.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -21,6 +21,7 @@ article h3{
   position: relative;
 }
 #m_game video{
+  overflow: hidden;
   width:358px;
   position: relative;
   left: 50%; top:2rem;

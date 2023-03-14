@@ -1,106 +1,129 @@
 
-var windowFocusHere = true;
-
-// 다른 탭으로 이동했을 때
-// $(window).on("blur", function() {
-//     windowFocusHere = false;
-// });
-
-// // 다시 해당 윈도우(브라우저로 돌아왔을 때)
-// $(window).on("focus", function() {
-//     windowFocusHere = true;
-// });
-
-
-function Slider1__init() {
-    $('.slider-1 .btn-stop').click(function() {
-        var $slider = $(this).closest('.slider-1');
-        $slider.attr('data-slider-1-autoplay-status', 'N');
-    });
-    
-    $('.slider-1 .btn-play').click(function() {
-        var $slider = $(this).closest('.slider-1');
-        $slider.attr('data-slider-1-autoplay-status', 'Y');
-    });
-    
-    Slider1__update();
-}
-
-var Slider1__updateLastTimestamp = 0;
-
-function Slider1__moveNext($slider) {
-    var $current = $slider.find(' .progress-bar > div');
-    var $post = $current.next();
-    
-    if ( $post.length == 0 ) {
-        $post = $slider.find(' .progress-bar > :first-child');
-    }
-    
-    $current.removeClass('active');
-    $post.addClass('active');
-}
-
-function Slider1__update(timestamp) {
-    if ( !timestamp ) {
-        timestamp = 0;
-    }
-    
-    var delta = timestamp - Slider1__updateLastTimestamp;
-    
-    $('.slider-1').each(function(index, node) {
-        var $slider = $(this);
-        
-        var $progressBarGage = $slider.find('.nav-bar .progress-bar > div');
-        
-        var autoplayTimeout = parseInt($slider.attr('data-slider-1-autoplay-timeout'));
-        var autoplayCurrent = parseInt($slider.attr('data-slider-1-autoplay-current'));
-        
-        // 만약 Y면 true 값이 들어감
-        var autoplayStatus = $slider.attr('data-slider-1-autoplay-status') !== 'N';
-        
-        if ( autoplayStatus && windowFocusHere ) {
-            autoplayCurrent += delta;
-        
-            if ( autoplayCurrent > autoplayTimeout ) {
-                Slider1__moveNext($slider);
-                
-                autoplayCurrent = 0;
-            }
-            
-            // 게이지 퍼센트 바
-            var percent = autoplayCurrent / autoplayTimeout * 100;
-            
-            $progressBarGage.css('width', percent + '%');
-            
-            // 0이된 값을 다시 넣어줘서 다시 재생시키기
-            $slider.attr('data-slider-1-autoplay-current', autoplayCurrent);
-        }
-    });
-    
-    Slider1__updateLastTimestamp = timestamp;
-    
-    // 실행 시켜주세요 대신에 간격을 주세요.
-    requestAnimationFrame(Slider1__update);
-}
-
-Slider1__init();
-
-
-
-// 영상 슬라이드
-let n = 1;//초기값
-const img_list = document.querySelectorAll('.lnb > li');
-
-img_list.forEach((el, index) => {
-    el.onclick=()=>{
-        document.getElementById('Bigvideo').src='./img/*'+'.mp4';
-    }
-});
-
-
-
-//모바일 슬라이드
 $(function(){
+    game_index = 0;
+  $('.newgame-banner-list > li').eq(game_index).find('div').css('width', '0%');
+  $('.newgame-banner-list > li').eq(game_index).find('div').animate({
+    width: '100%'}, 6000);
+
+  let timer = setInterval(function () {
+    game_index++;
+    if (game_index > 3) {
+      game_index = 0;
+    }
+    $('.newgame-banner li').addClass('display-none').removeClass('newgame-banner-on');
+    $('.newgame-banner-l video').get(game_index).currentTime = 0;
+    $('.newgame-banner li').eq(game_index).removeClass('display-none').addClass('newgame-banner-on');
+    $('#newgame').css('background-image', `url(../img/gamebanner_bg_0${game_index}.jpg)`);
+    $('.newgame-banner-list > li').find('div').removeClass('gage-on');
+    $('.newgame-banner-list > li').eq(game_index).find('div').addClass('gage-on');
+    $('.newgame-banner-list > li').eq(game_index).find('span').css('width', '0%');
+    $('.newgame-banner-list > li').eq(game_index).find('span').stop().animate({
+      width: '100%'}, 6000);
+  }, 6000);
+
+  
+
+  $('.newgame-banner-list > li').click(function(){
+    clearInterval(timer);
+    let game_index = $('.newgame-banner-list > li').index(this);
+    $('.newgame-banner li').addClass('display-none').removeClass('newgame-banner-on');
+    $('.newgame-banner-l video').get(game_index).currentTime = 0;
+    $('.newgame-banner li').eq(game_index).removeClass('display-none').addClass('newgame-banner-on');
+    $('#newgame').css('background-image', `url(../img/gamebanner_bg_0${game_index}.jpg)`);
+    $('.newgame-banner-list > li').find('div').removeClass('gage-on');
+    $('.newgame-banner-list > li').eq(game_index).find('div').addClass('gage-on');
+    $('.newgame-banner-list > li').eq(game_index).find('span').css('width', '0%');
+    $('.newgame-banner-list > li').eq(game_index).find('span').stop().animate({
+      width: '100%'}, 6000);
+    timer = setInterval(function () {
+      game_index++;
+      if (game_index > 2) {
+        game_index = 0;
+      }
+      console.log(game_index);
+      $('.newgame-banner li').addClass('display-none').removeClass('newgame-banner-on');
+      $('.newgame-banner-l video').get(game_index).currentTime = 0;
+      $('.newgame-banner li').eq(game_index).removeClass('display-none').addClass('newgame-banner-on');
+      $('#newgame').css('background-image', `url(../img/gamebanner_bg_0${game_index}.jpg)`);
+      $('.newgame-banner-list > li').find('div').removeClass('gage-on');
+      $('.newgame-banner-list > li').eq(game_index).find('div').addClass('gage-on');
+      $('.newgame-banner-list > li').eq(game_index).find('span').css('width', '0%');
+      $('.newgame-banner-list > li').eq(game_index).find('span').stop().animate({
+        width: '100%'}, 6000);
+    }, 6000);
+  });
 
 
+
+
+
+
+  // 모달창 스크립트 //
+  let play_btn = $('.newgame-video-btn');
+
+  play_btn.click(function () {
+
+    let m = play_btn.index(this);
+    console.log(m);
+
+    let modal0 = `
+      <div class="modal_bg">
+        <div class="modal_video">
+          <iframe src="https://www.youtube.com/embed/0xo6sCThrtM?autoplay=1" title="제2의나라 게임소개 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      `;
+
+    let modal1 = `
+      <div class="modal_bg">
+        <div class="modal_video">
+          <iframe src="https://www.youtube.com/embed/prAMtt3YM48?autoplay=1" title="머지쿵야아일랜드 게임소개 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      `;
+
+    let modal2 = `
+      <div class="modal_bg">
+        <div class="modal_video">
+          <iframe src="https://www.youtube.com/embed/WCdMQ2i1OkQ?autoplay=1" title="세븐나이츠레볼루션 게임소개 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      `;
+    let modal3 = `
+    <div class='modal'>
+    <div class='modal_video'>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h5fhJs9JiKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <i class="fas fa-times"></i>
+    </div>
+    </div>
+    `;
+
+
+    // 해당 인덱스의 슬라이드의 모달이 나오게 if문 작성
+    if (m === 0) {
+        $('body').append(modal0);
+      } else if (m === 1) {
+        $('body').append(modal1);
+      } else if (m === 2) {
+        $('body').append(modal2);
+      };
+  
+      // 닫기나 빈 배경을 클릭하면 모달창 숨기기
+      $('.modal_video i.fa-times').click(function () {
+        $('.modal_bg').fadeOut();
+        $('.modal_video').remove();
+      });
+  
+      $('.modal_bg').click(function () {
+        $('.modal_bg').fadeOut();
+        $('.modal_video').remove();
+      });
+  
+    });
 });
+
+
+

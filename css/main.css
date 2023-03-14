@@ -1,95 +1,200 @@
 @charset "utf-8";
 a{text-decoration: none;}
-#game{
-  position: relative;
-  margin-top:80px;
-  background-image: url('../img/main_background1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-bottom: 60px;
-
-}
-#game h2, .game--video h2{
+.display-none{
   display: none;
 }
-.game--wrap{
-  display: flex;
-  width: 1200px;
-  overflow: hidden;
-  margin: 0 auto;
-  justify-content: space-between;
 
+#newgame {
+  width: 100%; height: 780px;
+  background-image: url('../img/gamebanner_bg_00.jpg');
+  transition: 1s;
+  background-size: cover;
+  padding-bottom: 40px;
 }
-.game--video{
+.newgame-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+.newgame-in-wrap {
+  position: relative;
+}
+.newgame-banner {
+  transform: translateY(40px);
+}
+.newgame-banner li {
   display: flex;
-  width: 700px;
-  height: 418px;
-  margin-top: 50px;
-  border-radius: 25px;
-  position: relative
-}
-.game--video li{
   position: absolute;
+  display: none;
 }
-.game--video video{
-  width: 700px;
+.newgame-banner-l {
+  width: 700px; height: 418px;
+  border-radius: 25px;
+  overflow: hidden;
+  transform: translateY(40px);
+}
+.newgame-banner-l video {
+  width: 735px; height: 465px;
   object-fit: cover;
 }
-.game--video img{
-  transform: translate(290px, -280px);
+.newgame-video-btn {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.newgame-video-btn:hover {
+  filter: opacity(.7);
+}
+.newgame-banner-r {
+  width: 414px; height: 465px;
+  margin:30px 0px 0px 50px;
+}
+.newgame-banner li:first-of-type .newgame-banner-r {
+  margin-top: 40px;
+}
+.newgame-banner :nth-of-type(2) .newgame-banner-r{
+  margin-top: 30px;
+}
+.newgame-banner li:nth-of-type(3) .newgame-banner-r{
+  transform: translateY(-15px);
+}
+.newgame-banner li:last-of-type .newgame-banner-r{
+  transform: translateY(-30px);
 }
 
-.game--list{
+.newgame-figure{
+  text-align: center;
+  transform: translateY(50px);
+  
+}
+.newgame-figure img {
+  width: 240px;
+
+}
+.newgame-figure  p {
+  font-family: var(--f-style);
+  margin: 30px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.newgame-banner-on {
+  display: flex !important;
+}
+.game-btn{
+  transform: translateY(20px);
+  margin: 0 auto;
+  display: block;
+  width:300px;
+  height: 55px;
+  color: var(--m-color02);
+  background-color: var(--m-color01);
+  transition: .4s;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 5px;
+
+}
+.game-btn:hover{
+  color: var(--m-color01);
+  background-color: var(--m-color02);
+}
+
+/* 게임목록 (분리) */
+.newgame-banner-list {
+  position: absolute; 
+  top: 540px; right: 0px;
+  display: flex;
+  gap: 12px;
+}
+.newgame-banner-list li {
+  width: 130px; height: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.newgame-banner-list li > figure figcaption div > span {
+  display: block;
+  background: var(--m-color02);
+  width: 10%; height: 40px;
+  position: absolute; left: 0px; bottom: 0px;
+  z-index: -10;
+}
+.gage-on {
+  display: block !important;
+}
+.nav-bar{
+  z-index: 20;
+}
+/* 모달창 서식 */
+.modal_bg{
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,.8);
+  position: fixed; top:0px; left:0px;
+  z-index: 9999;
+}
+.modal_video{
+  text-align: center;
+  width: 1000px; height: 562px;
+  position: relative;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -60%);
+}
+.fa-times{
+  cursor: pointer;
+  transform: translateX(-50%);
+  transform: translateY(35%);
+  font-size: 40px;
+  border-radius: 50%;
+  padding: 16px 25px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+.fa-times:hover {
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 50px;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 게임 목록 */
+.newgame-banner-list{
   width: 1200px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   position: relative;
 }
-.game--list li{
+.newgame-banner-list li{
   position: relative;
   width:280px;
   height: 170px;
 }
-.game--list li img{
+.newgame-banner-list li img{
   width: 100%;
 }
-.game--list li span{
-  /* position: absolute;
-  bottom: 0px;*/
+.newgame-banner-list li figure figcaption{
+  position: absolute;
+  bottom: 0px;
   width:100%; 
-  background-color: rgba(0, 0, 0, .7);
+  height: 40px;
+  background-color: rgba(79, 50, 32,0.5);
   color: #fff;
   text-align: center;
+  line-height: 40px;
+  z-index: 9999;
 }
 
-
-/* 사이트 링크 */
-.game--site{
-  width:410px;
-  height: 317px;
-  transform: translateY(110px);
-  text-align: center;
-}
-.game--site img{
-  width:408px;
-}
-.game--site p{
-  color: var(--m-color06);
-  font-size: var(--f-size03);
-  margin-top: 25px;
-}
-.game--site a{
-  transform: translateY(50px);
-  margin: 0 auto;
-  display: block;
-  width:306px;height: 55px;
-  background-color:var(--m-color01);
-  line-height: 55px;
-  border-radius: 5px;
-  color: var(--m-color02);
-  font-weight: 600;
-}
 
 
 
@@ -227,11 +332,11 @@ a{text-decoration: none;}
 }
 .stock--price{
   width: 100%;
-  margin-top: 50px;
+  margin-top: 60px;
   background-image: url('https://ssl.pstatic.net/imgfinance/chart/item/area/day/251270.png?sidcode=1678519688067');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position:bottom center;
 }
 .stock--real{
   width:380px;height: 370px;
@@ -248,14 +353,23 @@ a{text-decoration: none;}
   margin:0px 0px 30px 30px;
   line-height: 40px;
 }
+.p01{transform: translateX(30px);}
 .stock--real p span{
   color: #f00;
+}
+.span01{
+  color:#333!important;
+  font-size: var(--f-size03);
 }
 .stock--info{
   width: 380px;
   height: 240px;
   background-color: #f5f5f5;
   border-radius: 25px;
+}
+.stock--info ul{
+  margin: 0 auto;
+  transform: translateY(25px);
 }
 #stock img{
   width: 308px;
