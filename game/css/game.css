@@ -99,7 +99,6 @@
   position: relative;
 }
 .newgame-banner li {
-  display: flex;
   position: absolute; left: 0px; top: 0px;
   display: none;
 }
