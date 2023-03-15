@@ -109,6 +109,9 @@ footer *{
     height: 60px;
     background-color: var(--m-color02);
 }
+.f_top h2{
+    display: none;
+}
 .f_nav {
     width: 1200px;
     margin: 0 auto;
@@ -144,7 +147,7 @@ footer *{
     font-size: 14px;
 }
 .f_bottom > dl dd > label,
-.f_bottom dl dt {
+.f_bottom > dl dt {
     display: none;
 }
 .f_nav strong, .f_bottom dd strong{
