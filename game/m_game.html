@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>넷마블 Mobile - 게임소개</title>
+  <meta name="description" content="넷마블 게임 페이지">
+  <title>넷마블 Mobile - 게임</title>
 
   <!-- 기본서식 -->
   <link rel="stylesheet" href="./css/reset.css" type="text/css">
@@ -21,9 +22,31 @@
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <!-- 제이쿼리 UI 라이브러리 -->
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!-- 스와이퍼 스크립트 -->
+  <script src="./script/swiper.js" defer></script>
   <!-- Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+  <!-- 파비콘 -->
+  <link rel="apple-touch-icon" sizes="57x57" href="http://soyedpork27.dothome.co.kr/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://soyedpork27.dothome.co.kr/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://soyedpork27.dothome.co.kr/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://soyedpork27.dothome.co.kr/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://soyedpork27.dothome.co.kr/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://soyedpork27.dothome.co.kr/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://soyedpork27.dothome.co.kr/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://soyedpork27.dothome.co.kr/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://soyedpork27.dothome.co.kr/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="http://soyedpork27.dothome.co.kr/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="http://soyedpork27.dothome.co.kr/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="http://soyedpork27.dothome.co.kr/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="http://soyedpork27.dothome.co.kr/favicon/favicon-16x16.png">
+  <link rel="manifest" href="http://soyedpork27.dothome.co.kr/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="http://soyedpork27.dothome.co.kr/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -37,7 +60,7 @@
           <span></span>
         </div>
         <h1>
-          <a href='index.html' title='메인페이지로 바로가기'>
+          <a href='../index.html' title='메인페이지로 바로가기'>
             <img src='./img/main_logo.png' alt="메인로고">
           </a>
         </h1>
@@ -46,10 +69,10 @@
       <div class='h_nav'>
         <ul class='lnb'>
               <li>
-                <a href='../m_login.html' title='로그인하기'>로그인</a>&emsp;
+                <a href='../login/m_login.html' title='로그인하기'>로그인</a>&emsp;
               </li>
               <li>
-                <a href='../m_join.html' title='회원가입하기'>회원가입</a>
+                <a href='../login/m_join.html' title='회원가입하기'>회원가입</a>
               </li>
         </ul>
         <nav>
@@ -57,56 +80,56 @@
             <li>
               <a href='#none' title='게임'>게임<i class="fa-solid fa-sort-down"></i></a>
                 <ul class='sub'>
-                  <li><a href='../game/m_game.html' title='게임'>게임</a></li>
-                  <li><a href='#' title='PC'>PC</a></li>
-                  <li><a href='#' title='모바일'>모바일</a></li>
+                  <li><a href='./m_game.html' title='게임 한눈에 보기'>한눈에 보기</a></li>
+                  <li><a href='#none' title='PC'>PC</a></li>
+                  <li><a href='#none' title='모바일'>모바일</a></li>
                 </ul>
             </li>
             <li>
-              <a href='#' title='넷마블'>넷마블<i class="fa-solid fa-sort-down"></i></a>
+              <a href='#none' title='넷마블'>넷마블<i class="fa-solid fa-sort-down"></i></a>
                 <ul class='sub'>
-                  <li><a href='../netmarble/m_netmarble.html' title='넷마블 컴퍼니'>넷마블</a></li>
-                  <li><a href='#' title='넷마블 컴퍼니'>넷마블 컴퍼니</a></li>
-                  <li><a href='#' title='연혁'>연혁</a></li>
-                  <li><a href='#' title='넷마블 둘러보기'>넷마블 둘러보기</a></li>
-                  <li><a href='#' title='정도 경영'>넷마블 스토어</a></li>
+                  <li><a href='../netmarble/m_netmarble.html' title='넷마블 컴퍼니 한눈에 보기'>한눈에 보기</a></li>
+                  <li><a href='#none' title='넷마블 컴퍼니'>넷마블 컴퍼니</a></li>
+                  <li><a href='#none' title='연혁'>연혁</a></li>
+                  <li><a href='#none' title='넷마블 둘러보기'>넷마블 둘러보기</a></li>
+                  <li><a href='#none' title='정도 경영'>넷마블 스토어</a></li>
                 </ul>
             </li>
             <li>
-              <a href='#' title='NEWS'>NEWS<i class="fa-solid fa-sort-down"></i></a>
+              <a href='#none' title='NEWS'>NEWS<i class="fa-solid fa-sort-down"></i></a>
                 <ul class='sub'>
-                  <li><a href='#' title='보도자료'>보도자료</a></li>
-                  <li><a href='#' title='넷마블 소식'>넷마블 소식</a></li>
-                  <li><a href='#' title='공지사항'>공지사항</a></li>
+                  <li><a href='#none' title='보도자료'>보도자료</a></li>
+                  <li><a href='#none' title='넷마블 소식'>넷마블 소식</a></li>
+                  <li><a href='#none' title='공지사항'>공지사항</a></li>
                 </ul>
             </li>
             <li>
-              <a href='#' title='투자정보'>투자정보<i class="fa-solid fa-sort-down"></i></a>
+              <a href='#none' title='투자정보'>투자정보<i class="fa-solid fa-sort-down"></i></a>
                 <ul class='sub'>
-                  <li><a href='#' title='주가'>주가</a></li>
-                  <li><a href='#' title='기업 재무재표'>기업 재무재표</a></li>
-                  <li><a href='#' title='IR 자료'>IR 자료</a></li>
-                  <li><a href='#' title='공시'>공시</a></li>
+                  <li><a href='#none' title='주가'>주가</a></li>
+                  <li><a href='#none' title='기업 재무재표'>기업 재무재표</a></li>
+                  <li><a href='#none' title='IR 자료'>IR 자료</a></li>
+                  <li><a href='#none' title='공시'>공시</a></li>
                 </ul>
             </li>
             <li>
               <a href='#none' title='인재채용'>인재채용<i class="fa-solid fa-sort-down"></i></a>
                 <ul class='sub'>
-                  <li><a href='./m_em.php' title='인사제도'>인재채용</a></li>
-                  <li><a href='#' title='인사제도'>인사제도</a></li>
-                  <li><a href='#' title='채용 공고'>채용 공고</a></li>
-                  <li><a href='#' title='채용 조회'>채용 조회</a></li>
-                  <li><a href='#' title='채용 문의'>채용 문의</a></li>
+                  <li><a href='../employment/m_em.php' title='인사제도 한눈에 보기'>한눈에 보기</a></li>
+                  <li><a href='#none' title='인사제도'>인사제도</a></li>
+                  <li><a href='#none' title='채용 공고'>채용 공고</a></li>
+                  <li><a href='../employment/user/m_em_read.php' title='채용 조회'>채용 조회</a></li>
+                  <li><a href='#none' title='채용 문의'>채용 문의</a></li>
                 </ul>
             </li>
             <li>
-              <a href='#' title='문의'>
+              <a href='#none' title='문의'>
                 문의
                 <i class="fa-solid fa-sort-down"></i>
               </a>
               <ul class='sub'>
-                <li><a href='#' title='FAQ'>FAQ</a></li>
-                <li><a href='#' title='문의하기'>문의하기</a></li>
+                <li><a href='#none' title='FAQ'>FAQ</a></li>
+                <li><a href='#none' title='문의하기'>문의하기</a></li>
               </ul>
             </li>
           </ul>
@@ -280,27 +303,6 @@
 
     </article>
   </section>
-
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 50,
-      loop: true,
-      // pagination: {
-      //   el: ".swiper-pagination",
-      //   clickable: true,
-      // },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
 
 
   <!-- 게임리스트 -->
@@ -624,7 +626,8 @@
 
         <!-- 더보기 영역 & 버튼 -->
         <div class="gamelist-list-add"></div>
-        <a href="#" title="게임 더보기" class="game-btn">게임 더보기</a>
+        
+        <a href="#none" title="게임 더보기" class="game-btn">게임 더보기</a>
 
       </article>
     </section>
@@ -634,6 +637,11 @@
 
   <!-- 푸터영역 -->
   <footer>
+
+    <div class="f_topbtn">
+      <a href="#" title="상단으로 돌아가기"><img src="./img/top_btn.png" alt="상단으로 돌아가기"></a>
+    </div>
+
     <div class="f_top">
       <select name="Family Site" id="family">
         <option value="">Family Site</option>
@@ -646,8 +654,8 @@
       <h2><img src="../img/main_logo2.png" alt="넷마블"></h2>  
       
         <div class="f_nav">
-          <p><a href="#none" title="회사소개">회사소개</a><a href="#none" title="광고/제휴문의">광고/제휴문의</a><a href="#none" title="약관보기">약관보기</a><a href="#none" title="위치정보이용약관">위치정보이용약관</a></p>
-          <p><a href="#none" title="개인정보처리방침"><strong>개인정보처리방침</strong></a><a href="#none" title="청소년보호정책">청소년보호정책</a><a href="#none" title="전자우편">전자우편</a></p>
+          <p><a href="#nonenone" title="회사소개">회사소개</a><a href="#nonenone" title="광고/제휴문의">광고/제휴문의</a><a href="#nonenone" title="약관보기">약관보기</a><a href="#nonenone" title="위치정보이용약관">위치정보이용약관</a></p>
+          <p><a href="#nonenone" title="개인정보처리방침"><strong>개인정보처리방침</strong></a><a href="#nonenone" title="청소년보호정책">청소년보호정책</a><a href="#nonenone" title="전자우편">전자우편</a></p>
           <p><a href="#none" title="사업자정보공개사이트"><strong>사업자정보공개사이트</strong></a><a href="#none" title="사이트맵">사이트맵</a></p>
         </div>  
 
@@ -665,7 +673,7 @@
     
     <div class="f_bottom">
       <p>
-        <a href="../index.html" title="pc버전바로가기" class="pc_btn">PC버전 바로가기</a>
+        <a href="./game.html?move_pc_screen=1" title="pc버전바로가기" class="pc_btn">PC버전 바로가기</a>
       </p>
     </div>
   </footer>

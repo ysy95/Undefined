@@ -253,5 +253,17 @@ footer{
   line-height: 45px;
   border-radius: 5px;
   background-color: #000;
-  
+}
+.f_topbtn{
+  position: fixed;
+  display: block;
+  width : 70px;
+  height : 70px;
+  border-radius : 50%;
+  background: var(--m-color02);
+  color: var(--m-color05);
+  right: 1rem;
+  bottom: 5rem;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.2));
+  z-index: 600;
 }
