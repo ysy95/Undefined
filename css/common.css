@@ -144,7 +144,7 @@ footer *{
     font-size: 14px;
 }
 .f_bottom > dl dd > label,
-.f_bottom dt {
+.f_bottom dl dt {
     display: none;
 }
 .f_nav strong, .f_bottom dd strong{
