@@ -1,0 +1,479 @@
+@charset "utf-8";
+a{text-decoration: none;}
+.display-none{
+  display: none;
+}
+
+#newgame {
+  width: 100%; height: 780px;
+  background-image: url('../img/gamebanner_bg_00.jpg');
+  transition: 1s;
+  background-size: cover;
+  padding-bottom: 40px;
+}
+.newgame-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+.newgame-in-wrap {
+  position: relative;
+}
+.newgame-banner {
+  transform: translateY(40px);
+}
+.newgame-banner li {
+  display: flex;
+  position: absolute;
+  display: none;
+}
+.newgame-banner-l {
+  width: 700px; height: 418px;
+  border-radius: 25px;
+  overflow: hidden;
+  transform: translateY(40px);
+}
+.newgame-banner-l video {
+  width: 735px; height: 465px;
+  object-fit: cover;
+}
+.newgame-video-btn {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.newgame-video-btn:hover {
+  filter: opacity(.7);
+}
+.newgame-banner-r {
+  width: 414px; height: 465px;
+  margin:30px 0px 0px 50px;
+}
+.newgame-banner li:first-of-type .newgame-banner-r {
+  margin-top: 40px;
+}
+.newgame-banner :nth-of-type(2) .newgame-banner-r{
+  margin-top: 30px;
+}
+.newgame-banner li:nth-of-type(3) .newgame-banner-r{
+  transform: translateY(-15px);
+}
+.newgame-banner li:last-of-type .newgame-banner-r{
+  transform: translateY(-30px);
+}
+
+.newgame-figure{
+  text-align: center;
+  transform: translateY(50px);
+  
+}
+.newgame-figure img {
+  width: 240px;
+
+}
+.newgame-figure  p {
+  font-family: var(--f-style);
+  margin: 30px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.newgame-banner-on {
+  display: flex !important;
+}
+.game-btn{
+  transform: translateY(20px);
+  margin: 0 auto;
+  display: block;
+  width:300px;
+  height: 55px;
+  color: var(--m-color02);
+  background-color: var(--m-color01);
+  transition: .4s;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 5px;
+
+}
+.game-btn:hover{
+  color: var(--m-color01);
+  background-color: var(--m-color02);
+}
+
+/* 게임목록 (분리) */
+.newgame-banner-list {
+  position: absolute; 
+  top: 540px; right: 0px;
+  display: flex;
+  gap: 12px;
+}
+.newgame-banner-list li {
+  width: 130px; height: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.newgame-banner-list li > figure figcaption div > span {
+  display: block;
+  background: var(--m-color02);
+  height: 40px;
+  position: absolute; left: 0px; bottom: 0px;
+  z-index: -10;
+}
+.gage-on {
+  display: block !important;
+  background-color: rgba(79, 50, 32,0.5) !important;
+}
+.nav-bar{
+  z-index: 20;
+}
+/* 모달창 서식 */
+.modal_bg{
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,.8);
+  position: fixed; top:0px; left:0px;
+  z-index: 9999;
+}
+.modal_video{
+  text-align: center;
+  width: 1000px; height: 562px;
+  position: relative;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -60%);
+}
+.fa-times{
+  cursor: pointer;
+  transform: translateX(-50%);
+  transform: translateY(35%);
+  font-size: 40px;
+  border-radius: 50%;
+  padding: 16px 25px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+.fa-times:hover {
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 50px;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 게임 목록 */
+.newgame-banner-list{
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+}
+.newgame-banner-list li{
+  position: relative;
+  width:280px;
+  height: 170px;
+  background-size: contain;
+
+}
+
+.newgame-banner-list li:first-child {
+  background-image: url('../img/game01.png');
+}
+.newgame-banner-list li:nth-child(2) {
+  background-image: url('../img/game02.png');
+}
+.newgame-banner-list li:nth-child(3) {
+  background-image: url('../img/game03.png');
+}
+.newgame-banner-list li:last-child {
+  background-image: url('../img/game04.png');
+}
+.newgame-banner-list li img{
+  width: 100%;
+}
+.newgame-banner-list li > div{
+  position: absolute;
+  bottom: 0px;left: 0px;
+  width:100%; 
+  height: 40px;
+  background-color: var(--m-color02);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  z-index: 999;
+
+}
+
+.newgame-banner-list li > div > span{
+  display: block;
+  background-color: var(--m-color02);
+  width: 10%; height: 40px;
+  position: absolute; left: 0px;
+  bottom: 0px;
+  z-index: -10;
+}
+
+
+
+
+/* 넷마블 서식 */
+
+#netmarble{
+  position: relative;
+  padding: 50px 0px;
+  background-color: var(--m-color01);
+}
+.n_title{
+  display: none;
+}
+#netmarble article{
+  border-radius: 25px;
+  box-shadow: 1px 1px 5px #888;
+}
+.netmarble--wrap{
+  width: 1200px;
+  margin: 50px auto;
+}
+#netmarble--story, #netmarble--news{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: var(--m-color02);
+  width: 580px;height: 540px;
+  background-color: var(--m-color05);
+  box-sizing: border-box;
+}
+#netmarble article h2{
+  padding-top: 35px;
+  font-size: var(--f-size05);
+}
+#netmarble--story p{
+  line-height: 30px;
+  margin: 20px 0px;
+}
+#netmarble--story a{
+  border: solid 1px var(--m-color02);
+  border-radius: 25px;
+  display: block;
+  width: 190px;height: 42px;
+  line-height: 40px;
+  margin: 0 auto;
+}
+#netmarble--story img{
+  transform: translateY(20px);
+  width: 460px;
+}
+
+/* 넷마블 소식 */
+#netmarble--news{
+  transform: translate(40px, -43px);
+}
+.netmarble--news--top {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  width: 465px;
+}
+.netmarble--news--top img{
+  width: 245px;
+}
+.netmarble--news--text{
+  width: 185px;
+  text-align: left;
+  line-height: 10px;
+  margin-top: 10px;
+}
+.netmarble--news--text span, .netmarble--news--bottom li span{
+  background-color: var(--m-color01);
+  padding: 3px 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: var(--f-size01);
+  color: var(--m-color02);
+}
+.netmarble--news--text h3{
+  margin-top: 30px;
+  line-height: 30px;}
+
+  .netmarble--news--bottom{
+    border-top: solid 1px #d9d9d9;
+    width: 450px;
+    margin: 0 auto;
+  }
+  .netmarble--news--bottom li{
+    line-height: 50px;
+    text-align: left;
+    color:var(--m-color06);
+    font-size: var(--f-size01);
+    border-bottom: solid 1px #d9d9d9;
+  }
+  .netmarble--news--bottom li:last-child a{
+    border:solid 1px var(--m-color02);
+    display: block;
+    width: 190px;height: 42px;
+    line-height: 42px;
+    margin: 20px auto;
+    color: var(--m-color02);
+    font-weight: 550;
+    border-radius: 25px;
+    text-align: center;
+  }
+  .netmarble--news--bottom li:last-child{
+    border-bottom: none;
+  }
+  .netmarble--news--bottom li a span{
+    margin-right: 15px;
+  }
+
+/* 넷마블 주가 */
+#stock{
+  height: 540px;
+  background-color: var(--m-color05);
+  position: relative;
+}
+#stock h2{
+  height: 42px; width: 605px;
+  transform: translateY(-80px);
+  font-size: var(--f-size05);
+  color: var(--m-color02);
+  
+}
+.stock--wrap{
+  width:1020px;
+  display: flex;
+  margin: 0 auto;
+  gap: 60px;
+  transform: translateY(70px);
+
+}
+.stock--price{
+  width: 100%;
+  margin-top: 60px;
+  background-image: url('https://ssl.pstatic.net/imgfinance/chart/item/area/day/251270.png?sidcode=1678519688067');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:bottom center;
+}
+.stock--real{
+  width:380px;height: 370px;
+}
+.stock--real h3{
+  font-size: var(--f-size04);
+  text-align:center;
+  width: 50%;
+}
+.stock--real p{
+  display: inline-block;
+  font-size: var(--f-size04);
+  font-weight: 600;
+  margin:0px 0px 30px 30px;
+  line-height: 40px;
+}
+.p01{transform: translateX(30px);}
+.stock--real p span{
+  color: #f00;
+}
+.span01{
+  color:#333!important;
+  font-size: var(--f-size03);
+}
+.stock--info{
+  width: 380px;
+  height: 240px;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+}
+.stock--info ul{
+  margin: 0 auto;
+  transform: translateY(25px);
+}
+#stock img{
+  width: 308px;
+  height: 300px;
+  transform: translate(-180px, 270px);
+}
+
+
+
+/* 채용공고 서식 */
+#employment{
+  position: relative;
+  padding: 50px 0px 70px 0px;
+}
+.employment--wrap{
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+} 
+#employment article{
+  border-radius: 10px;
+  width: 570px;height: 336px;
+  position: relative;
+  box-sizing: border-box;
+
+}
+#employment article h2{
+  margin: 35px 0px 20px 30px;
+  font-size: var(--f-size05);
+}
+#employment article p{
+  margin-left: 30px;
+  line-height: 30px;
+  font-size: var(--f-size02);
+}
+#employment article a{
+  margin:40px 0px 0px 30px;
+  border-radius: 25px;
+  text-align: center;
+  display: block;
+  width:190px; height: 45px;
+  line-height: 45px;
+}
+#employment article img{
+  position: absolute;
+  width: 40%;
+}
+#employment article:first-of-type img{
+  right: 20px;bottom: 0px;
+  width: 45%;
+}
+#employment article:nth-of-type(2) img{
+  right: 0px;bottom: 0px;
+}
+#employment article:nth-of-type(3) img{
+  right: 20px;bottom: 0px;
+}
+#employment article:last-of-type img{
+  right: -100px;top: 130px;
+  width:70%;
+}
+#employment--news, #employment--notice{
+  background-color: var(--m-color01);
+  color: var(--m-color02);
+}
+#employment--news a, #employment--notice a{
+  border: solid 1px var(--m-color02);
+  color: var(--m-color02);
+
+}
+#employment--faq, #employment--welfare{
+  background-color: var(--m-color02);
+  color: var(--m-color05);
+}
+#employment--faq a, #employment--welfare a{
+  border: solid 1px var(--m-color05);
+  color: var(--m-color05);
+
+}

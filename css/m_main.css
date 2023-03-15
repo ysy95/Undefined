@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+article{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+article h2{
+  display: none;
+}
+article h3{
+  color: var(--m-color02);
+}
+#m_game{
+  padding-top: 5rem;
+  background-image: url('../img/gamebanner_bg_00.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+}
+.gameTitle{
+  display: none;
+}
+.m_game--video{
+    position: relative;
+}
+#m_game video{
+  text-align: center;
+  overflow: hidden;
+  width:calc(100% - 32px);
+  margin: 3.5rem 1rem 0rem 1rem;
+  border-radius: 1.5rem;
+}
+.m_game--video img{
+  width: 25%;
+  position: absolute;
+  top:60%;left: 50%;
+  transform: translate(-50%,-60%);
+}
+
+.m_game--slide{
+  width:100%;
+  height: 42rem;
+  margin:0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.m_game--wrap{
+  width: 400%;
+  display: flex;
+  position: absolute;
+  left: 0%;
+
+  transition: .3s;
+}
+.m_game--slide li{
+  width: calc(100% - 32px);
+
+}
+
+
+
+.m_game--site{
+
+  border-radius: 30px;
+  width: 100%;height: 30rem;
+  background-color: #fff;
+  padding:4rem 0rem 12rem 0rem;
+  text-align: center;
+  margin: 5rem 0rem 5rem 0rem;
+  position: relative;
+}
+
+.m_game--site p{
+  margin-top: 1.6rem;
+ 
+}
+/* .m_game--wrap > li:not(:first-of-type){
+  width: 100%;
+  height: 300px;
+  margin-left: 20px;
+  
+} */
+
+.m_game--wrap > li:first-of-type >  .m_game--site img{width: 15rem;}
+.m_game--wrap > li:nth-of-type(2) >  .m_game--site img{width: 12rem;}
+.m_game--wrap > li:nth-of-type(3) >  .m_game--site img{width: 12rem;}
+.m_game--wrap > li:nth-of-type(3) >  .m_game--site img,
+.m_game--wrap > li:nth-of-type(3) >  .m_game--site p
+{
+  transform: translateY(-2rem);} 
+.m_game--wrap > li:last-of-type > .m_game--site img{
+  width: 10rem;
+  transform: translateY(-2.2rem);
+}
+.m_game--wrap > li:last-of-type > .m_game--site p{
+  transform: translateY(-2.2rem);
+}
+
+
+.app_btn{
+  display: flex;
+  gap: 1rem;
+  width:16rem;
+  margin: 0 auto;
+  transform: translateY(30px);
+}
+.app_btn a{
+  border-radius: 0.3rem;
+  display: block;
+  line-height: 1.875rem;
+  text-align: center;
+  width: 7.5rem;height:1.875rem;
+  border: solid 1px var(--m-color02);
+  color: var(--m-color02);
+
+}
+#prev-btn, #next-btn{
+  width: 3rem;
+  cursor: pointer;
+  position: absolute;
+  bottom:18%;
+  left: 90%;
+}
+#prev-btn{
+  left:0%;
+}
+
+/* 넷마블 */
+#m_netmarble{
+  background-color: var(--m-color01);
+  padding: 50px 0px;
+}
+#m_netmarble h2{display: none;}
+#m_netmarble article{
+  background-color: #fff;
+  border-radius: 0.9rem;
+  margin: 0rem 1rem 1rem 1rem;
+  text-align: center;
+  box-sizing: border-box;
+  
+}
+#m_netmarble h3{
+  font-size: var(--f-size04);
+  padding:1.8rem 0rem;
+}
+#m_netmarble--story img{
+  width:19rem;
+  transform: translateY(0.2rem);
+}
+#m_netmarble p{
+  line-height: 30px;
+}
+#m_netmarble--story a{
+
+  display: block;
+  width:18rem; height: 3rem;
+  border: solid 1px var(--m-color02);
+  border-radius: 5px;
+  line-height: 3rem;
+  margin: 20px auto;
+}
+
+/* 넷마블 소식 */
+#m_netmarble--news{
+  padding-bottom: 1.5rem;
+}
+.m_netmarble--news--wrap{
+  display: flex;
+  justify-content: space-around;
+}
+.m_netmarble--news--wrap img{
+  width:10.3rem;
+}
+.m_netmarble--news--wrap p{
+  width: 9.2rem;
+  text-align: left;
+  font-size: 0.8rem;
+  color: var(--m-color02);
+  font-weight: 600;
+}
+.m_netmarble--news--wrap span:first-child{
+  background-color: var(--m-color01);
+  padding:0.25rem 0.5rem;
+}
+.m_netmarble--news--wrap span:last-child{
+  font-weight: normal;
+  color: #888;
+}
+.m_netmarble--news--list{
+  margin:30px auto;
+  border-top: solid 1px #d9d9d9;
+  width: 92%;
+}
+
+.m_netmarble--news--list li{
+  padding: 0.6rem 0rem;
+  font-size: 0.7rem;
+  border-bottom: solid 1px #d9d9d9;
+}
+.date{
+  color:#888;
+}
+.game{
+  background-color: var(--m-color01);
+  border-radius: 0.2rem;
+  padding: 0.2rem  0.5rem;
+  font-weight: 600;
+}
+
+#m_netmarble--news .news_btn{
+  border: solid 1px var(--m-color02);
+  display: block;
+  width: 20rem; height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 0.2rem;
+  margin: 0 auto;
+  color: var(--m-color02);
+}
+
+
+/* 넷마블 주가 */
+
+.m_netmarble--stock--top{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.m_netmarble--stock--top p{
+  color:#f00;
+  font-weight: bold;
+}
+.m_netmarble--stock--bottom{
+  background-color: #f5f5f5;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3rem 1rem 1rem 1rem;
+  box-sizing: border-box;
+}
+.m_netmarble--stock--bottom li{
+  width: 45%;
+  padding-bottom: 10%;
+}
+
+
+
+/* 채용 서식 */
+.m_employment--wrap{
+  margin: 3.125rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+.m_employment--wrap li{
+  width: 10.8rem; height: 10.8rem;
+  padding: 0.9rem 0rem 0rem 0.9rem;
+  border-radius: 1rem;
+  width: 45%;
+  margin-bottom: 0.8rem;
+  overflow: hidden;
+
+
+}
+.m_employment--news, .m_employment--notice{
+  background-color: var(--m-color01);
+}
+.color01{color: var(--m-color02);}
+.m_employment--faq, .m_employment--welfare{
+  background-color: var(--m-color02);
+  color:var(--m-color05);
+} 
+.m_employment--welfare, .m_employment--notice{
+  height: 14.3rem;
+}
+.color02{color: var(--m-color05);}
+.m_employment--wrap h3{
+  font-size: var(--f-size04);
+  margin-bottom: 1rem;
+}
+
+
+.m_employment--wrap p{
+  font-weight: normal;
+  line-height: 1.6rem;
+}
+
+.m_employment--news img{
+  transform: translateX(4rem);
+  width:5.5rem;
+}
+.m_employment--faq img{
+  width: 5.6rem;
+  transform: translate(4.5rem, 0.2rem);
+}
+.m_employment--welfare img{
+  width: 5rem;
+  transform: translate(4.5rem, -0.2rem);
+}
+.m_employment--notice img{
+  width: 9rem;
+  transform: translate(1.5rem, -0.8rem);
+}

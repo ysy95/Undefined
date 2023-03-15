@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import url('https://webfontworld.github.io/netmarble/Netmarble.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+:root{
+  /* 컬러 변수 */
+  --m-color01 : #FFD800;
+  --m-color02 : #4F3220;
+  --m-color03 : #C56F3E;
+  --m-color04 : #B69462;
+  --m-color05 : #fff;
+  --m-color06 : #333;
+  /* 프리텐다드 적용 */
+  --f-style : 'Pretendard';
+  /* 폰트 사이즈 */
+  --f-size01: 0.875rem;
+  --f-size02: 1rem;
+  --f-size03: 1.125rem;
+  --f-size04: 1.5rem;
+  --f-size05: 1.75rem;
+}
+
+/* body 사이즈 */
+html, body{
+  font-size: 16px;
+}
+
+/* Select box 스타일 초기화 */ 
+select {
+  -webkit-appearance: none;
+    -moz-appearance: none;
+          appearance: none;
+}
+
+a{text-decoration: none;color:#333;}
+ul,ol,li{
+  list-style: none;
+}
+body *{
+  font-family: 'Netmarble';
+}

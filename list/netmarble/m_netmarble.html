@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>넷마블 페이지 모바일</title>
+
+
+  <link rel="stylesheet" href="./css/base.css" type="text/css">
+  <link rel="stylesheet" href="./css/m_common.css" type="text/css">
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <link rel="stylesheet" href="./css/m_netmarble.css" type="text/css">
+
+
+  <!-- 폰트어썸 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+<!-- 제이쿼리 라이브러리  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- 모바일 스크립트 -->
+<script src="./script/m_netmarble.js" defer></script>
+  
+
+</head>
+<body>
+  <!-- 모바일 헤더 -->
+  <header>
+    <div id='h_wrap'>
+      <div class="m_bar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class='h_nav'>
+        
+        <h1>
+          <a href='index.html' title='메인페이지로 바로가기'>
+            <img src='./img/main_logo.png' alt="메인로고">
+          </a>
+        </h1>
+        <nav>
+          <ul class='lnb'>
+            <a href='m_login.html' title='로그인하기'>로그인</a>&emsp;
+            <a href='m_join.html' title='회원가입하기'>회원가입</a>
+          </ul>
+
+          <ul class='gnb'>
+            <li>
+              <a href='#' title='게임'>게임<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='#' title='PC'>PC</a></li>
+                  <li><a href='#' title='모바일'>모바일</a></li>
+                  <li><a href='#' title=''></a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='넷마블'>넷마블<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='#' title='넷마블 컴퍼니'>넷마블 컴퍼니</a></li>
+                  <li><a href='#' title='연혁'>연혁</a></li>
+                  <li><a href='#' title='넷마블 둘러보기'>넷마블 둘러보기</a></li>
+                  <li><a href='#' title='정도 경영'>넷마블 스토어</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='NEWS'>NEWS<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='#' title='보도자료'>보도자료</a></li>
+                  <li><a href='#' title='넷마블 소식'>넷마블 소식</a></li>
+                  <li><a href='#' title='공지사항'>공지사항</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='투자정보'>투자정보<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='#' title='주가'>주가</a></li>
+                  <li><a href='#' title='기업 재무재표'>기업 재무재표</a></li>
+                  <li><a href='#' title='IR 자료'>IR 자료</a></li>
+                  <li><a href='#' title='공시'>공시</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='인재채용'>인재채용<i class="fa-solid fa-sort-down"></i></a>
+                <ul class='sub'>
+                  <li><a href='#' title='인사제도'>인사제도</a></li>
+                  <li><a href='#' title='채용 공고'>채용 공고</a></li>
+                  <li><a href='#' title='채용 조회'>채용 조회</a></li>
+                  <li><a href='#' title='채용 문의'>채용 문의</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href='#' title='문의'>문의<i class="fa-solid fa-sort-down"></i></a>
+              <ul class='sub'>
+                <li><a href='#' title='FAQ'>FAQ</a></li>
+                <li><a href='#' title='문의하기'>문의하기</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        
+        </nav>
+      </div>
+      
+      <h1>
+        <a href='index.html' title='메인페이지로 바로가기'>
+          <img src='./img/main_logo.png' alt="메인로고"/>
+        </a>
+      </h1>
+
+      <i class="fa-solid fa-circle-user"></i>
+
+    </div>
+  </header>
+
+  <!-- 모바일 메인영역 -->
+  <main>
+
+    <!-- 넷마블 컴퍼니 섹션 시작 -->
+    <section id="n_company" class="first-section">
+      <h2 class="hide">넷마블 컴퍼니</h2>
+      <article class="n_company--n_art ctntarea">
+
+        <div class="ctntarea-title">
+            <h3 class="sect-title">넷마블 컴퍼니</h3>
+            <span class="sect-sub_title gray">Netmarble Company</span>
+        </div>
+
+        <p class="n_art--slogan"><span class="n_bold n_col01">치열한 열정, 끊임 없는 도전, 끝없는 변화 의지</span>로<br>대한민국, 아시아를 넘어 세계로 나아가고 있습니다.<br>최고의 온라인 게임 퍼블리셔 넷마블과<br>우수한 개발력을 보유한 게임 개발 스튜디오들이<br>하나 되어 글로벌 게임 컴퍼니로 도약합니다.</p>
+
+        <img src="./img/company_bg.png" alt="넷마블 컴퍼니 배경" class="comp_bg">
+
+        <p class="sub_title under-sub_title">국내 주요 개발사</p>
+
+        <ul class="n_art-ul01 n_art-ul flexable">
+          <li class="ul-company"><a href="#none" title="넷마블 바로가기"><p class="cpny_title">넷마블</p><span class="cpny_more">소개보기&#62;</span></a></li>
+          <li class="ul-company"><a href="#none" title=""><p class="cpny_title">넷마블 몬스터</p><span class="cpny_more">소개보기&#62;</span></a></li>
+        </ul>
+
+        <p class="sub_title">글로벌 네트워크</p>
+        <ul class="n_art-ul02 n_art-ul flexable">
+          <li class="ul-company"><a href="#none" title=""></a></li>
+          <li class="ul-company"><a href="#none" title=""></a></li>
+        </ul>
+
+        <!-- 개발사 전체보기 버튼 -->
+        <a href="#none" title="개발사 전체보기" class="n_company-btn btn01">개발사 전체보기</a>
+
+      </article>
+    </section>
+    <!-- 넷마블 컴퍼니 섹션 끝 -->
+
+    <!-- 연혁 섹션 시작 -->
+    <section id="n_history" class="over-section">
+
+      <h2 class="hide">연혁</h2>
+
+      <!-- 연혁 콘텐츠 영역 시작 -->
+      <article class="n_history-n_art ctntarea">
+
+        <!-- 연혁 타이틀 영역 시작 -->
+        <div class="ctntarea-title flexable">
+          <div class="title--box">
+            <h3 class="sect-title">연혁</h3>
+          </div>
+
+        </div>
+        <!-- 연혁 타이틀 영역 끝 -->
+
+        <!-- 연혁 탭 버튼 시작 -->
+        <select name="history_option" id="history_option">
+          <option value="2025 - 2021">2025 &#45; 2021</option>
+          <option value="2020 - 2016">2020 &#45; 2016</option>
+          <option value="2015 - 2011">2015 &#45; 2011</option>
+          <option value="2010 - 2006">2010 &#45; 2006</option>
+          <option value="2005 - 2000">2005 &#45; 2000</option>
+        </select>
+        <!-- 연혁 탭 버튼 끝 -->
+
+        <!-- 연혁 탭 콘텐츠 시작 -->
+        <div class="n_history-t_box">
+
+          <!-- 2025 - 2021 -->
+          <ul class="t_box-t_ctnt" id="t_ctnt01">
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2022</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">12</dt><dd class="h-desc"><p>&lt;머지 쿵야 아일랜드&gt;, 구글플레이 ‘올해를 빛낸 게임’ 우수상 수상</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">11</dt><dd class="h-desc"><p>2022 대한민국 게임대상서 우수상·기술창작상 2개부문 수상</p><p>&#40;우수상 &#45; 머지 쿵야 아일랜드, 기술창작상&#40;그래픽 부문&#41; &#45; 세븐나이츠 레볼루션&#41;</p>
+                    <p>&lt;킹 오브 파이터 아레나&gt;, 글로벌 출시</p></dd>
+                  </dl>
+                  
+                  <dl class="flexable">
+                    <dt class="h-month">07</dt><dd class="h-desc"><p>&lt;세븐나이츠 레볼루션&gt;, 국내 출시&#40;구글·애플 앱스토어 인기 1위, 애플 앱스토어 매출 1위 달성&#41;</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">06</dt><dd class="h-desc"><p>&lt;머지 쿵야 아일랜드&gt;, 글로벌 출시</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">05</dt><dd class="h-desc"><p>&lt;제2의 나라: Cross Worlds&gt;, 글로벌 출시&#40;한국, 일본 등 기존 출시 지역 제외&#41;</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">04</dt><dd class="h-desc"><p>넷마블, 7년 연속 글로벌 모바일 퍼블리셔 TOP 10 선정 &#40;data.ai&#41;</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">03</dt><dd class="h-desc"><p>&lt;넷마블 프로야구 2022&gt;, 국내 출시</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl class="t-y_wrap">
+                <dt class="h-year">2021</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">11</dt><dd class="h-desc"><p>&lt;제2의나라&gt;, 2021 대한민국 게임대상 기술창작상 사운드부문 수상</p><p>모바일 수집형 MMORPG &lt;세븐나이츠2&gt; 전세계 172개 지역 출시</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">09</dt><dd class="h-desc"><p>넷마블, 세계 3위 소셜 카지노 게임사 '스핀엑스&#40;SpinX&#41;' 인수</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">08</dt><dd class="h-desc"><p>모바일 오픈 월드 MMORPG &lt;마블 퓨처 레볼루션&gt; 전세계 240여 개국 출시</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">06</dt><dd class="h-desc"><p>모바일 MMORPG &lt;제2의 나라&gt; 한국ㆍ일본ㆍ대만ㆍ홍콩ㆍ마카오 5개 지역 출시</p><p>뷰티&헬스 플랫폼 '넷마블힐러비' 법인 설립</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">03</dt><dd class="h-desc"><p>신사옥 넷마블 지타워&#40;G-Tower&#41; 입주</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">02</dt><dd class="h-desc"><p>2021년 글로벌 모바일 퍼블리셔 8위. 국내 최초 6년 연속 TOP 10 기록 &#40;앱애니&#41;</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+          </ul>
+
+          <!-- 2020 - 2016 -->
+          <ul class="t_box-t_ctnt hide" id="t_ctnt02">
+            <!-- 2020 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2020</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">11</dt><dd class="h-desc"><p>모바일 수집형 MMORPG '세븐나이츠2' 국내 출시</p></dd>
+                  </dl>
+
+                  <dl class="flexable">
+                    <dt class="h-month">10</dt><dd class="h-desc"><p>넷마블 문화재단, 게임업계 최초 '대한민국 장애인 문화 예술 대상' 공로상 수상</p></dd>
+                  </dl>
+                  
+                  <dl class="flexable">
+                    <dt class="h-month">03</dt><dd class="h-desc"><p>모바일 RPG '일곱 개의 대죄: GRAND CROSS' 글로벌 출시</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">02</dt><dd class="h-desc"><p>실물 구독 경제 1위 기업 코웨이 인수</p></dd>
+                  </dl>
+                  
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2019 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2019</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">11</dt><dd class="h-desc"><p>북미 자회사 잼시티&#40;Jam City, INC.&#41; '디즈니 겨울왕국 어드벤처' 글로벌 출시</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">10</dt><dd class="h-desc"><p>넷마블, 포괄임금제 폐지</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">03</dt><dd class="h-desc"><p>넷마블 문화재단, 게임업계 최초 '넷마블 장애인 선수단' 창단</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2018 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2018</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">12</dt><dd class="h-desc"><p>모바일 MMORPG '블레이드 &#38;소울 레볼루션' 국내 정식 출시</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">05</dt><dd class="h-desc"><p>&#40;주&#41;빅히트 엔터테인먼트 지분 투자</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">03</dt><dd class="h-desc"><p>임직원 워라벨 향상 위한 '선택적 근로제' 시행</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">01</dt><dd class="h-desc"><p>넷마블, 2017년 글로벌 모바일 퍼블리셔 3위 기록 넷마블 문화재단 출범</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2017 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2017</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">08</dt><dd class="h-desc"><p>'리니지2 레볼루션' 일본 앱스토어 최고매출 1위 달성</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">05</dt><dd class="h-desc"><p>넷마블게임즈 유가증권시장(KOSPI) 상장</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">02</dt><dd class="h-desc"><p>美 카밤 밴쿠버 스튜디오 인수</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2016 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2016</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">06</dt><dd class="h-desc"><p>세븐나이츠, 한국 모바일게임 사상 최초 일본 매출 TOP3 진입</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+          </ul>
+
+          <!-- 2015 - 2011 -->
+          <ul class="t_box-t_ctnt hide" id="t_ctnt03">
+
+            <!-- 2015 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2015</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">11</dt><dd class="h-desc"><p>레이븐 대한민국 게임대상 수상&#40;6관왕&#41;</p></dd>
+                  </dl>
+
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2014 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2014</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">10</dt><dd class="h-desc"><p>넷마블게임즈&#40;주&#41; 설립 &#40;CJ넷마블&#40;주&#41;과 CJ게임즈&#40;주&#41;합병&#41;</p><dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">09</dt><dd class="h-desc"><p>세븐나이츠 매출 순위 1위 기록</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">06</dt><dd class="h-desc"><p>넷마블 모바일게임 1억 다운로드 돌파</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2013 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2013</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">07</dt><dd class="h-desc"><p>모두의마블 매출 순위 1위, 최단기간 천만 다운로드 달성</p><dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">05</dt><dd class="h-desc"><p>마구마구 2013 매출 순위 1위 기록</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2012 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2012</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">04</dt><dd class="h-desc"><p>태국법인 설립&#40;Stand Best&#41;</p><dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2011 -->
+            <li>
+              <dl class="t-y_wrap">
+                <dt class="h-year">2011</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">03</dt><dd class="h-desc"><p>CJ E&#38;M&#40;주&#41;으로 통합 합병</p><dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">01</dt><dd class="h-desc"><p>모바일 전문 개발사 블루페퍼 지분투자</p><dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+          </ul>
+
+          <!-- 2010 - 2006 -->
+          <ul class="t_box-t_ctnt hide" id="t_ctnt04">
+
+            <!-- 2010 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2010</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">05</dt><dd class="h-desc"><p>넷마블 가입자 3천만 명 돌파</p></dd>
+                  </dl>
+
+                  <dl class="flexable">
+                    <dt class="h-month">03</dt><dd class="h-desc"><p>미디어웹 인수, 자회사로 편입</p></dd>
+                  </dl>
+                  
+                  <dl class="flexable">
+                    <dt class="h-month">7</dt><dd class="h-desc"><p>&lt;세븐나이츠 레볼루션&gt;, 국내 출시&#40;구글·애플 앱스토어 인기 1위, 애플 앱스토어 매출 1위 달성&#41;</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">6</dt><dd class="h-desc"><p>&lt;머지 쿵야 아일랜드&gt;, 글로벌 출시</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">5</dt><dd class="h-desc"><p>&lt;제2의 나라: Cross Worlds&gt;, 글로벌 출시&#40;한국, 일본 등 기존 출시 지역 제외&#41;</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">4</dt><dd class="h-desc"><p>넷마블, 7년 연속 글로벌 모바일 퍼블리셔 TOP 10 선정 &#40;data.ai&#41;</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">3</dt><dd class="h-desc"><p>&lt;넷마블 프로야구 2022&gt;, 국내 출시</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2009 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2009</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">03</dt><dd class="h-desc"><p>국내 프로야구 공식 스폰서 &lt;2009&#45;2010 CJ 마구마구 프로야구&gt;</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2008 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2008</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">11</dt><dd class="h-desc"><p>서든어택 국내 PC온라인 게임 사상 최장기 1위 달성 &#40;게임트릭스 106주 연속 1위&#41;</p></dd>
+                  </dl>
+
+                  <dl class="flexable">
+                    <dt class="h-month">03</dt><dd class="h-desc"><p>국가 고객 만족도 웹보드게임 부문 2년 연속 1위 수상</p></dd>
+                  </dl>
+
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2007 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2007</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">11</dt><dd class="h-desc"><p>대한민국 게임대상 '쿵야 어드벤처' 3개 부문 수상 &#40;온라인게임부문 우수상 등&#41;</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2006 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2006</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">01</dt><dd class="h-desc"><p>서든어택 동시 접속자 25만 명, 넷마블 동시 접속자 43만 명 돌파</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+          </ul>
+
+
+          <!-- 2005 - 2000 -->
+          <ul class="t_box-t_ctnt hide" id="t_ctnt05">
+
+            <!-- 2005 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2005</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">12</dt><dd class="h-desc"><p>올해의 인터넷 기업 대상 &#40;정보통신부 장관상&#41; &#40;한국인터넷기업협회&#41;</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">09</dt><dd class="h-desc"><p>넷마블앤파크&#40;前 애니파크&#41;, 자회사로 편입</p></dd>
+                  </dl>
+                  
+                  <dl class="flexable">
+                    <dt class="h-month">04</dt><dd class="h-desc"><p>국내 최초 3D 모바일 게임 서비스 KTF 지팡(GPANG) 출시</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2004 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2004</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">12</dt><dd class="h-desc"><p>대한민국 게임대상 &lt;야채부락리&gt; 2개 부문 수상 &#40;교육용 게임 부문&#41;</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">11</dt><dd class="h-desc"><p>넷마블 가입자 2천만 명 돌파</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">09</dt><dd class="h-desc"><p>&#40;주&#41;플레너스 인수 및 상호 변경 &#40;최초의 모회사 역 M&#38;A&#41;</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2003 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2003</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">12</dt><dd class="h-desc"><p>대한민국 게임대상 &lt;야채부락리&gt; 2개 부문 수상&#40;교육용 게임 부문&#41;</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">11</dt><dd class="h-desc"><p>넷마블 가입자 2천만명 돌파</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+
+            <!-- 2002 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2002</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">04</dt><dd class="h-desc"><p>캐치마인드 유료화 &#45; 최초의 게임 부문 유료화 모델 도입</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">01</dt><dd class="h-desc"><p>넷마블 가입자 1천만 명 돌파</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2001 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2001</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">05</dt><dd class="h-desc"><p>업계 최초 학교대항전 개최</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">01</dt><dd class="h-desc"><p>업계 최초 온라인 퍼블리싱 사업 개시 &#40;라그하임&#41;</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 2000 -->
+            <li> 
+              <dl class="t-y_wrap">
+                <dt class="h-year">2000</dt>
+                <dd class="h-right">
+                  <dl class="flexable">
+                    <dt class="h-month">11</dt><dd class="h-desc"><p>최초의 게임 포털 '넷마블' 서비스 시작</p></dd>
+                  </dl>
+                  <dl class="flexable">
+                    <dt class="h-month">03</dt><dd class="h-desc"><p>&#40;주&#41;넷마블 설립</p></dd>
+                  </dl>
+                </dd>
+              </dl>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- 연혁 탭 콘텐츠 끝 -->
+
+        <!-- 연혁 바로가기 버튼 -->
+        <a href="#none" title="연혁 바로가기" class="history-btn btn01">연혁 바로가기</a>
+        
+        
+      </article>
+      <!-- 연혁 콘텐츠 영역 끝 -->
+
+    </section>
+    <!-- 연혁 섹션 끝 -->
+
+
+    <!-- 넷마블 둘러보기 섹션 시작 -->
+    <section id="n_around" class="">
+      <h2 class="hide">넷마블 둘러보기</h2>
+      <article class="n_around-n_art ctntarea">
+        <h3 class="sect-title">넷마블 둘러보기</h3>
+        <!-- <h4 class="sub_title">오시는 길</h4> -->
+
+        <ul class="n_manage-tab flexable">
+
+          <!-- 오시는 길 li -->
+          <li class="manage-t_btn on" 
+          role="tab"
+          aria-controls="tbt_01"
+          aria-selected="true"
+          >
+            <span class="m_t_btn-text">
+              오시는 길
+            </span>
+              </li>
+              
+              <!-- 편의 시설 li -->
+          <li class="manage-t_btn"
+          role="tab"
+          aria-controls="tbt_02"
+          aria-selected="false"
+          tabindex="-1"
+          >
+          <span class="m_t_btn-text">
+            편의 시설
+          </span>
+          </li>
+        </ul>
+
+        <!-- 1번 -->
+        <div class="around-road" id="tbt_01">
+            <figure class="around-l_fig around-fig">
+              <img src="./img/map.png" alt="지도 이미지" class="around-img">
+              <figcaption>
+                <strong>서울특별시 구로구 디지털로26길 38, <span class="point">G&#45;Tower 넷마블</span></strong>
+                <p>평일 10&#58;00 &#45; 19&#58;00 점심시간 12&#58;30 &#45; 13&#58;30 &#40;토, 일, 공휴일 휴무&#41;</p>
+              </figcaption>
+            </figure>
+  
+  
+            <ul class="inquiry">
+              <li class="inq-list">
+                <dl class="flexable">
+                  <dt>대표전화</dt><dd class="flexable"><span>02&#45;2271&#45;7114</span><span class="inq_btn">제휴 문의</span></dd>
+                </dl>
+              </li>
+              <li class="inq-list">
+                <dl class="flexable">
+                  <dt>IR 문의</dt><dd class="flexable"><span>1588&#45;5180</span><span class="inq_btn">이메일 문의</span></dd>
+                </dl>
+              </li>
+              <li class="inq-list">
+                <dl class="flexable">
+                  <dt>고객센터</dt><dd class="flexable"><span>1588&#45;5180</span><span class="inq_btn">온라인 고객센터</span></dd>
+                </dl>
+              </li>
+              
+            </ul>
+        </div>
+
+        <!-- 2번 -->
+        <div class="around-convenience hide" id="tbt_02">
+            <figure class="around-r_fig around-fig">
+              <img src="./img/conv_01.png" alt="지도 이미지" class="around-img around-big_img">
+  
+              <div class="conv-tab_wrap flexable">
+                <img src="./img/arr_left.png" alt="왼쪽 버튼 이미지" class="arr_btn arr_btn_l">
+  
+                <div class="conv-tab_wrap02">
+                  <ul class="conv-tab flexable">
+                    <li class="conv-tab_img"><img src="./img/conv_01.png" alt=""></li>
+                    <li class="conv-tab_img"><img src="./img/conv_02.png" alt=""></li>
+                    <li class="conv-tab_img"><img src="./img/conv_03.png" alt=""></li>
+                    <li class="conv-tab_img"><img src="./img/conv_04.png" alt=""></li>
+                    <li class="conv-tab_img"><img src="./img/conv_05.png" alt=""></li>
+                    <li class="conv-tab_img"><img src="./img/conv_06.png" alt=""></li>
+                    <li class="conv-tab_img"><img src="./img/conv_07.png" alt=""></li>
+                    <li class="conv-tab_img"><img src="./img/conv_08.png" alt=""></li>
+                    <li class="conv-tab_img"><img src="./img/conv_09.png" alt=""></li>
+                  </ul>
+                </div>
+  
+                <img src="./img/arr_right.png" alt="오른쪽 버튼 이미지" class="arr_btn arr_btn_r">
+              </div>
+  
+              <figcaption class="conv-tab_txt">
+                <strong>ㅋㅋ 다방</strong>
+                <p>최고급 원두와 건강한 재료로 즉석 제조되는<br>
+                  힐링 음료들이 가득한 넷마블인들의 편리한 휴식공간입니다.</p>
+              </figcaption>
+            </figure>
+  
+        </div>
+
+      </article>
+    </section>
+    <!-- 넷마블 둘러보기 섹션 끝 -->
+
+    <!-- 정도경영 섹션 시작 -->
+    <section id="n_manage" class="">
+      <h2 class="hide">정도경영</h2>
+      <article class="n_manage-n_art ctntarea">
+        <h3 class="sect-title">정도경영</h3>
+        <div class="n_manage-t_bg">
+          <ul class="n_manage-tab flexable">
+            <li class="manage-t_btn on">
+              <span class="m_t_btn-text">정도경영</span>
+            </li>
+  
+            <li class="manage-t_btn">
+              <span class="m_t_btn-text">윤리강령</span>
+
+            </li>
+          </ul>
+
+
+
+          <!-- 1번 -->
+          <div class="manage-t_ctnt m-t_ctnt01">
+
+            <p class="sub_title">넷마블 정도경영의 체계</p>
+
+            <figure class="manage_fig01 flexable">
+              <img src="./img/manage01.png" alt="">
+              <figcaption class="fig01_cap">
+                <p>
+                  넷마블 정도경영이 추구하는 최고의 가치
+                  <span>&#40;"본질에 충실", "진정성 있는 행동", "책임있는 결과"&#41;</span>
+                </p>
+                <p>정도경영 실전가치와 관련된 넷마블의 역할과 책임
+                  <span>&#40;"고객", "임직원", "투자자", "파트너사", "공동체"에 대한 역할&#38;책임&#41;</span>
+                </p>
+                <p>정도경영 실전가치와 윤리강령의<br>실효성을 강화하기 위한 기준</p>
+              </figcaption>
+            </figure>
+
+            <p class="sub_title m_top_small">넷마블 정도경영 실전 가치</p>
+            <p class="value_p">정도경영의 최상위 기준으로서, 넷마블의 영속&#40;생존&#38;성장&#41;을 위해 필수적인 정도경영의 실현 방향을 제시합니다.</p>
+
+            <div class="manage_value">
+              <dl class="value_box big_value_box">
+                <dt class="value_title">본질에 충실</dt>
+                <dd class="value_ctnt">
+                  <p class="value_sub_title">정도경영의 <span class="t_point">핵심적</span> 실전 가치</p>
+                  <span class="value_txt">일과 삶에 있어 본질에 맞는<br>목표를 설정하고 걸맞게 이루고자 함</span>
+                </dd>
+              </dl>
+
+              <div class="flexable value_awe_box"><i class="fa-solid fa-down-long"></i><i class="fa-solid fa-down-long"></i></div>
+
+              <div class="flexable value_box_wrap">
+                
+                <dl class="value_box small_value_box">
+                  <dt class="value_title">진정성 있는 행동</dt>
+                  <dd class="value_ctnt">
+                    <p class="value_sub_title">정도경영의 <span class="t_point">사전적</span> 실전 가치</p>
+                    <span class="value_txt">치열하게 고민하고<br>진실한 태도로 최선을 다해 실천함</span>
+                  </dd>
+                </dl>
+
+                <dl class="value_box small_value_box">
+                  <dt class="value_title">책임 있는 결과</dt>
+                  <dd class="value_ctnt">
+                    <p class="value_sub_title">정도경영의 <span class="t_point">사후적</span> 실전 가치</p>
+                    <span class="value_txt">결정과 행동의 결과에 대해<br>끝까지 성실하고 정직하게 대함</span>
+                  </dd>
+                </dl>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- 2번 -->
+          <div class="manage-t_ctnt m-t_ctnt02">
+
+            <p class="sub_title">윤리 강령</p>
+            <p class="value_p">정도경영 실천가치의 실천을 위한 넷마블의 중요한 역할과 책임을 윤리강령에 수록하였습니다.</p>
+
+            <ul class="flexable ethical">
+              <li class="ethical_li">
+                <p class="ethical_title">우리의<br>미션</p>
+                <span class="ethical_no">1</span>
+              </li>
+              <li class="ethical_li">
+                <p class="ethical_title">우리의<br>약속</p>
+                <span class="ethical_no">2</span>
+              </li>
+              <li class="ethical_li">
+                <p class="ethical_title">우리 회사의<br>가치 보호</p>
+                <span class="ethical_no">3</span>
+              </li>
+              <li class="ethical_li">
+                <p class="ethical_title">공생과 상생의<br>실천</p>
+                <span class="ethical_no">4</span>
+              </li>
+              <li class="ethical_li">
+                <p class="ethical_title">우리의<br>목표</p>
+                <span class="ethical_no">5</span>
+              </li>
+              <li class="ethical_li">
+                <p class="ethical_title">윤리실천을 위한<br>자세</p>
+                <span class="ethical_no">6</span>
+              </li>
+            </ul>
+
+          </div>
+
+
+        </div>
+      </article>
+    </section>
+    <!-- 정도경영 섹션 끝 -->
+
+  </main>
+
+  <!-- 푸터영역 -->
+  <footer>
+    <div class="f_top">
+      <select name="Family Site" id="family">
+        <option value="">Family Site</option>
+        <option value="http://netmarble.com">넷마블</option>
+        <option value="https://ch.netmarble.com/Index">채널 넷마블</option>
+        <option value="https://company.netmarble.com">넷마블 컴퍼니</option>
+      </select>
+    </div>
+
+    <div class="f_middle">
+      <h2><img src="./img/main_logo2.png" alt="넷마블"></h2>  
+      
+        <div class="f_nav">
+          <p><a href="#none" title="회사소개">회사소개</a><a href="#none" title="광고/제휴문의">광고/제휴문의</a><a href="#none" title="약관보기">약관보기</a><a href="#none" title="위치정보이용약관">위치정보이용약관</a></p>
+          <p><a href="#none" title="개인정보처리방침"><strong>개인정보처리방침</strong></a><a href="#none" title="청소년보호정책">청소년보호정책</a><a href="#none" title="전자우편">전자우편</a></p>
+          <p><a href="#none" title="사업자정보공개사이트"><strong>사업자정보공개사이트</strong></a><a href="#none" title="사이트맵">사이트맵</a></p>
+        </div>  
+
+      <dl>
+        <dt>푸터정보</dt>
+        <dd><span>(주)넷마블</span> <span>서울특별시 구로구 디지털로26길 38, G-Tower 넷마블</span></dd>
+        <dd><span>PC고객센터 : 0000-0000</span> <span>모바일 고객센터 : 0000-0000</span></dd>
+        <dd><span>FAX : 02-0000-0000</span> <span>사업자번호 : 000-00-00000</span></dd>
+        <dd><span>통신판매업 신고번호 : 제 2014-서울구로-0000호</span></dd>
+        <dd><span>각자대표집행임원 : 권영식, 도기욱</span> <span>호스팅서비스사업자 : 넷마블(주)</span></dd>
+        <dd><span>(주)넷마블</span> <span>서울특별시 구로구 디지털로26길 38, G-Tower 넷마블</span></dd>
+      </dl>
+      <address>Copyright &copy; Netmarble Corp. All Rights Reserved.</address>
+    </div>
+    
+    <div class="f_bottom">
+      <p>
+        <a href="./em.php?move_pc_screen=1" title="pc버전바로가기" class="pc_btn">PC버전 바로가기</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

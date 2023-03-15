@@ -1,0 +1,81 @@
+@charset "utf-8";
+main{
+  padding-top: 80px;
+}
+#join{
+  margin: 70px 0px;
+  position: relative;
+  width: 100%; height: 750px;
+}
+#join img{
+  width: 190px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#join form{
+  width: 400px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.join--wrap{ margin-top:175px;}
+.join--wrap legend{
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #4f3220;
+}
+.join--p01{
+  text-align: center;
+  font-size: 18px;
+  color:#aaa;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+input{
+  border-radius: 5px;
+  border:none;
+}
+.join--email, .join--id, .join--pw, .join--pw-check{
+  height: 55px;
+  width: 400px;
+  background-color: #f8f8f8;
+  color: #888;
+  padding-left: 15px;
+  line-height: 55px;
+  margin-bottom: 15px;
+}
+input[type="checkbox"] + label{
+  line-height: 30px;
+  color: #555;
+}
+input[type="checkbox"]{
+  border-radius: 50%;
+  appearance: none;
+  border: solid 1px #dedede;
+  background: #f8f8f8;
+  width: 20px;height: 20px;
+  accent-color: #ffd800;
+  cursor: pointer;
+  transition: 0.3;
+} 
+input[type="checkbox"]:checked {
+  background: #ffd800;
+  color: #fff;
+  
+}
+
+.join--btn{
+  font-size: 20px;
+  font-weight: bold;
+  width: 415px;
+  height: 67px;
+  line-height: 60px;
+  margin:30px 0px 20px 0px;
+  background-color: #ffd800;
+  color: #4f3220;  
+}
+
