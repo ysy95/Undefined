@@ -10,15 +10,15 @@ main{
   margin: 0 auto;
   text-align: center;
 }
-.login--wrap{ margin-bottom: 105px;
+.login-wrap{ margin-bottom: 105px;
 }
-.login--wrap legend{
+.login-wrap legend{
   font-size: 34px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #4f3220;
 }
-.login--p01{
+.login-p01{
   font-size: 18px;
   color:#aaa;
   font-weight: 600;
@@ -28,10 +28,7 @@ input{
   border-radius: 5px;
   border:none;
 }
-input:focus{
-  border: #ffd800 solid 2px;
-}
-.login--id, .login--pw{
+.login-id, .login-pw{
   height: 55px;
   width: 400px;
   background-color: #f8f8f8;
@@ -39,37 +36,40 @@ input:focus{
   padding-left: 15px;
   line-height: 55px;
   margin-bottom: 15px;
-  border: solid 2px #f8f8f8;
 }
-.login--btn, .login--join{
+.login-btn, .login-join{
+  display: inline-block;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   width: 415px;
-  height: 67px;
+  height: 60px;
   line-height: 60px;
+  border-radius: 10px;
 }
-.login--btn{
-  margin:30px 0px 20px 0px;
+.login-btn{
+  margin:20px 0px 20px 0px;
   background-color: #ffd800;
   color: #4f3220;  
 }
-.login--join{
+.login-join{
   background-color: #4f3220;
   color:#ffd800;
-  display: block;
-  border-radius: 5px;
 }
-.login--p02{color: #888;}
-.login--p02 a{
+.login-p02{color: #888;}
+.login-p02 a{
   color: #4f3220;
   text-decoration: underline;
 }
-.login--p03{
+.login-p03{
   color: #555;
   margin-bottom: 15px;
 }
-input[type=text]:focus{
-  outline: none;
-  border-color: var(--m-color01);
+.error{
+  font-size: var(--f-size01);
+  color: #f00;
+  text-align: center;
+  display: none;
+  height: 40px;
+  line-height: 40px;
 }
